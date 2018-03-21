@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    .news, .header {
+      background-color: #81D4FA;
+      height: 100vh;
+      min-height: 300px;
+    }
+
+    .main {
+      width: 80%;
+      height: 100vh;
+      min-height: 500px;
+      margin: auto;
+      padding: 50px 0;
+      border: 1px solid #000;
+      box-sizing: border-box;
+
+      display: flex;
+      flex-flow: row wrap;
+      /*
+        flex-flow: flex-direction flex-wrap
+        flex-direction: row;
+        flex-wrap: wrap;
+      */
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .card {
+      width: 26%;
+      height: 30%;
+      background-color: #90CAF9;
+    }
+  </style>
+</head>
+<body>
+  <div class="header"></div>
+  <div class="main">
+    <div class="card"></div>
+    <div class="card" style="order: -1; background-color: #1565C0"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+  </div>
+  <div class="news"></div>
+</body>
+</html>

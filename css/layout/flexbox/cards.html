@@ -1,0 +1,186 @@
+<!--
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://codeburst.io/build-a-minimalist-html-card-in-just-53-lines-of-code-with-flexbox-b40801927eb5
+https://github.com/bmorelli25/flexbox-card-tutorial
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flexbox Card Tutorial</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Open+Sans:400,600" rel="stylesheet">
+  <style>
+  body {
+    font-family: 'Open Sans', sans-serif;
+    min-height: 95vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+  }
+
+  .card {
+    width: 150px;                 /* Set width of cards */
+    display: flex;                /* Children use Flexbox */
+    flex-direction: column;       /* Rotate Axis */
+    border: 1px solid #80DEEA;    /* Set up Border */
+    border-radius: 4px;           /* Slightly Curve edges */
+    overflow: hidden;             /* Fixes the corners */
+    margin: 5px;                  /* Add space between cards */
+  }
+
+  .card-header {
+    color: #0097A7;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    border-bottom: 1px solid #80DEEA;
+    background-color: #E0F7FA;
+    padding: 5px 10px;
+  }
+
+  .card-main {
+    display: flex;              /* Children use Flexbox */
+    flex-direction: column;     /* Rotate Axis to Vertical */
+    justify-content: center;    /* Group Children in Center */
+    align-items: center;        /* Group Children in Center (on cross axis) */
+    padding: 15px 0;            /* Add padding to the top/bottom */
+  }
+
+  .material-icons {
+    font-size: 36px;
+    color: #0097A7;
+    margin-bottom: 5px;
+  }
+
+  .main-description {
+    color: #0097A7;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  /* IDs for additional colors*/
+  /* Colors from Google Material Design: https://material.io/guidelines/style/color.html*/
+
+  .or-border {
+    border-color: #FFE082;
+  }
+
+  .or-header {
+    background-color: #FFF8E1;
+    border-color: #FFE082;
+    color: #FFA000;
+  }
+
+  .or-color {
+    color: #FFA000;
+  }
+
+  .red-border {
+    border-color: #EF9A9A;
+  }
+
+  .red-header {
+    background-color: #FFEBEE;
+    border-color: #EF9A9A;
+    color: #D32F2F;
+  }
+
+  .red-color {
+    color: #D32F2F;
+  }
+  </style>
+</head>
+<body>
+  <div class="row">
+    <!-- CARD 1 -->
+    <div class="card">
+      <div class="card-header">7:25 AM</div>
+      <div class="card-main">
+        <i class="material-icons">flight_takeoff</i>
+        <div class="main-description">Boston</div>
+      </div>
+    </div>
+    <!-- CARD 2 -->
+    <div class="card">
+      <div class="card-header">8:15 PM</div>
+      <div class="card-main">
+        <i class="material-icons">flight_land</i>
+        <div class="main-description">Madrid</div>
+      </div>
+    </div>
+    <!-- CARD 3 -->
+    <div class="card">
+      <div class="card-header">Translate</div>
+      <div class="card-main">
+        <i class="material-icons">g_translate</i>
+        <div class="main-description">Spanish</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- CARD 1 -->
+    <div class="card or-border">
+      <div class="card-header or-header">Bike</div>
+      <div class="card-main">
+        <i class="material-icons or-color">directions_bike</i>
+        <div class="main-description or-color">13.1 Miles</div>
+      </div>
+    </div>
+    <!-- CARD 2 -->
+    <div class="card or-border">
+      <div class="card-header or-header">Boat</div>
+      <div class="card-main">
+        <i class="material-icons or-color">directions_boat</i>
+        <div class="main-description or-color">90 Minutes</div>
+      </div>
+    </div>
+    <!-- CARD 3 -->
+    <div class="card or-border">
+      <div class="card-header or-header">Drive</div>
+      <div class="card-main">
+        <i class="material-icons or-color">directions_car</i>
+        <div class="main-description or-color">48 Miles</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- CARD 1 -->
+    <div class="card red-border">
+      <div class="card-header red-header">Morning</div>
+      <div class="card-main">
+        <i class="material-icons red-color">free_breakfast</i>
+        <div class="main-description red-color">Coffee</div>
+      </div>
+    </div>
+    <!-- CARD 2 -->
+    <div class="card red-border">
+      <div class="card-header red-header">Afternoon</div>
+      <div class="card-main">
+        <i class="material-icons red-color">fitness_center</i>
+        <div class="main-description red-color">Gym</div>
+      </div>
+    </div>
+    <!-- CARD 3 -->
+    <div class="card red-border">
+      <div class="card-header red-header">Night</div>
+      <div class="card-main">
+        <i class="material-icons red-color">hot_tub</i>
+        <div class="main-description red-color">Hot Tub</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    @font-face {
+      scr: url(font/Lato-Regular.ttf);
+      font-family: Lato, sans-serif;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Lato, sans-serif;
+      background: #f0f0f0;
+      margin: 0px;
+      color: #333;
+      font-size: 14px;
+    }
+    .wrapper {
+      width: 940px;
+      margin: auto;
+    }
+    .white-wrapper {
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, .06);
+    }
+    .row {
+      display: inline-block;
+      vertical-align: top;
+    }
+    .list-links-block,
+    .list-links-inline {
+      list-style: none;
+      padding: 0px;
+    }
+    .list-links-inline li {
+      display: inline-block;
+    }
+    .grey-rule {
+      width: 90px;
+      height: 1px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      background-color: #c7c7c7;
+    }
+
+    /* header */
+    body>header {
+      background: #fff;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, .06);
+    }
+    body>header div.wrapper h1 {
+      font-size: 24px;
+      margin: 25px 0px;
+    }
+    body>header div.wrapper h1 a {
+      text-decoration: none;
+      color: #333;
+    }
+    body>header div.wrapper nav {
+      float: right;
+      margin-top: 20px;
+      margin-right: 0.5%;
+    }
+    body>header div.wrapper nav ul li {
+      margin-left: 20px;
+    }
+    body>header div.wrapper nav ul li a {
+      text-decoration: none;
+      color: #aaa;
+    }
+    body>header div.wrapper nav ul li a:hover,
+    body>header div.wrapper nav ul li a.active {
+      color: #333;
+    }
+
+    /* main */
+    body>main{
+      padding-top: 30px;
+      padding-bottom: 50px;
+    }
+
+    /* blog-info */
+    body>main>section.blog-info{
+      width: 24%;
+      background-color: #fff;
+    }
+    body>main>section.blog-info div.blog-description {
+      text-align: center;
+    }
+    body>main>section.blog-info div.blog-description img{
+      border-radius: 50%;
+      width: 70%;
+    }
+    body>main>section.blog-info div.blog-description p{
+      margin-bottom: 20px;
+      line-height: 145%;
+      text-align: left;
+    }
+    body>main>section.blog-info div.featured-posts ul li {
+      margin-top: 10px;
+    }
+    body>main>section.blog-info div.featured-posts ul li a {
+      text-decoration: none;
+      color: #aaa;
+    }
+    body>main>section.blog-info div.featured-posts ul li a:hover {
+      color: #333
+    }
+    body>main>section.blog-info div.social ul li {
+      width: 14%;
+      opacity: 0.36;
+      transition: opacity 200ms ease;
+    }
+    body>main>section.blog-info div.social ul li:hover {
+      opacity: 1;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrapper">
+      <h1 class="row">
+        <a href="#">Denalli</a>
+      </h1>
+
+      <nav class="row">
+        <ul class="list-links-inline">
+          <li><a class="active" href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrapper">
+    <section class="blog-info white-wrapper row">
+      <div class="blog-description">
+        <img src="img/person.jpeg" alt="">
+        <p>Denali is a simple responsive blog template. Easily add new posts using the Editor or change layout and design using the Designer.</p>
+      </div>
+      <div class="grey-rule"></div>
+
+      <div class="featured-posts">
+        <p>Featured Posts:</p>
+        <ul class="list-links-block">
+          <li><a href="#">According a funnily until pre-set or arrogant well cheerful</a></li>
+          <li><a href="#">Overlaid the jeepers uselessly much excluding</a></li>
+        </ul>
+      </div>
+      <div class="grey-rule"></div>
+
+      <div class="social">
+        <ul class="list-links-inline">
+          <li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/instagram.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/twitter.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/linkedin.svg" alt=""></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="posts-list row">
+      <!-- <article class="white-wrapper">
+        <div class="post-cover row">
+          <a href="#">
+            <img class="white-wrapper" src="img/cover1.jpg" alt="">
+          </a>
+        </div>
+        <div class="post-info row">
+          <div class="post-title">
+            <a href="#">
+              <h1>Wherever far wow thus a squirrel raccoon jeez jaguar this from along</h1>
+            </a>
+          </div>
+          <div class="post-detail">
+            <time>September 8, 2016</time> |
+            <a href="#">Art</a>
+          </div>
+          <div class="post-summary">
+            <p>The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind</p>
+            <a href="#">Read more...</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="white-wrapper">
+        <div class="post-cover row">
+          <a href="#">
+            <img class="white-wrapper" src="img/cover2.jpg" alt="">
+          </a>
+        </div>
+        <div class="post-info row">
+          <div class="post-title">
+            <a href="#">
+              <h1>According a funnily until pre-set or arrogant well cheerful</h1>
+            </a>
+          </div>
+          <div class="post-detail">
+            <time>September 8, 2016</time> |
+            <a href="#">Music</a>
+          </div>
+          <div class="post-summary">
+            <p>Single shot cultivar beans as chicory caffeine. Medium brewed, milk extra that froth pumpkin spice mocha. Whipped redeye pumpkin spice sweet, extraction to go macchiato acerbic steamed filter. Robusta grounds decaffeinated.</p>
+            <a href="#">Read more...</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="white-wrapper">
+        <div class="post-cover row">
+          <a href="#">
+            <img class="white-wrapper" src="img/cover3.jpg" alt="">
+          </a>
+        </div>
+        <div class="post-info row">
+          <div class="post-title">
+            <a href="#">
+              <h1>Coffee sugar, chicory seasonal espresso barista americano</h1>
+            </a>
+          </div>
+          <div class="post-detail">
+            <time>September 8, 2016</time> |
+            <a href="#">Music</a>
+          </div>
+          <div class="post-summary">
+            <p>Arista, percolator, cream, aromatic, fair trade, breve body instant lungo blue mountain cappuccino. Americano aroma mug espresso latte crema milk redeye acerbic. Galão robusta instant, decaffeinated, so fair trade wings.</p>
+            <a href="#">Read more...</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="white-wrapper">
+        <div class="post-cover row">
+          <a href="#">
+            <img class="white-wrapper" src="img/cover4.jpg" alt="">
+          </a>
+        </div>
+        <div class="post-info row">
+          <div class="post-title">
+            <a href="#">
+              <h1>Overlaid the jeepers uselessly much excluding</h1>
+            </a>
+          </div>
+          <div class="post-detail">
+            <time>September 8, 2016</time> |
+            <a href="#">Tech</a>
+          </div>
+          <div class="post-summary">
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+            <a href="#">Read more...</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="white-wrapper">
+        <div class="post-cover row">
+          <a href="#">
+            <img class="white-wrapper" src="img/cover5.jpg" alt="">
+          </a>
+        </div>
+        <div class="post-info row">
+          <div class="post-title">
+            <a href="#">
+              <h1>Coffee variety macchiato, as organic ut variety caffeine americano</h1>
+            </a>
+          </div>
+          <div class="post-detail">
+            <time>September 8, 2016</time> |
+            <a href="#">Travel</a>
+          </div>
+          <div class="post-summary">
+            <p>Saucer, crema carajillo, bar, mocha medium, latte cappuccino and espresso acerbic to go. Coffee, irish foam turkish coffee blue mountain seasonal. Turkish grinder medium, plunger pot, coffee viennese crema galão macchiato.</p>
+            <a href="#">Read more...</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="pagination">
+        <a href="">More posts →</a>
+      </div> -->
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <style>
+    @font-face {
+      src: url(font/Lora-Regular.ttf);
+      font-family: 'Lora', serif;
+    }
+    html {
+      font-family: 'Lora', serif;
+    }
+    body {
+      margin: 0px;
+    }
+
+    /* Header */
+    header {
+      background-image: linear-gradient(135deg, rgba(30, 33, 33, .70) 1%, rgba(32, 32, 32, .14) 98%), url(img/desk.jpg);
+      background-size: auto, cover;
+      background-position: 0px, 0px -150px;
+      background-attachment: fixed;
+      height: 70vh;
+      min-height: 250px;
+      min-width: 440px;
+    }
+    header p, header h1 {
+      text-align: center;
+      color: rgb(236, 236, 226);
+    }
+    header h1 {
+      font-family: 'Audiowide', cursive;
+      padding-top: 35vh;
+      margin: 0px;
+      font-size: 3em;
+      text-transform: uppercase;
+    }
+    header p {
+      font-size: 1.3em;
+    }
+
+    /* Main */
+    main {
+      padding: 100px 0px;
+      width: 960px;
+      margin: auto;
+      color: #333;
+    }
+    main section {
+      vertical-align: top;
+      width: 30%;
+      display: inline-block;
+      text-align: center;
+      margin: 20px 1%;
+    }
+    main section p {
+      color: #aaa;
+      text-align: left;
+    }
+
+    /* footer */
+    footer {
+      height: 25vh;
+      background-color: rgb(236, 236, 226);
+    }
+    footer section#social {
+      height: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    footer section#social a {
+      margin: 15px;
+      color: #555;
+    }
+    footer section#copyright {
+      text-align: center;
+      color: #555;
+    }
+    footer section#copyright i.fa-heart {
+      color: #f00;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Nome da Página</h1>
+    <p>Um breve subtítulo de impacto da página inicial.</p>
+  </header>
+
+  <!-- Content -->
+  <main>
+    <section>
+      <i class="fa fa-desktop fa-5x" aria-hidden="true"></i>
+      <h1>Consectetur lorem</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla atque id autem aliquid reiciendis minima explicabo eveniet, quidem libero dolore assumenda alias! Vitae in cupiditate obcaecati facere.</p>
+    </section>
+    <section>
+      <i class="fa fa-thermometer-quarter fa-5x" aria-hidden="true"></i>
+      <h1>Lorem ipsum dolor</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla atque id autem aliquid reiciendis minima explicabo eveniet, quidem libero dolore assumenda alias.</p>
+    </section>
+    <section>
+      <i class="fa fa-bar-chart fa-5x" aria-hidden="true"></i>
+      <h1>Consectetur elit</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla atque id autem aliquid reiciendis minima explicabo eveniet, quidem libero dolore assumenda alias, deleniti voluptate voluptatem.</p>
+    </section>
+    <section>
+      <i class="fa fa-envelope-o fa-5x" aria-hidden="true"></i>
+      <h1>Lorem ipsum dolor</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla atque id autem aliquid reiciendis minima explicabo eveniet, quidem libero dolore assumenda alias.</p>
+    </section>
+    <section>
+      <i class="fa fa-flask fa-5x" aria-hidden="true"></i>
+      <h1>Consectetur ipsum</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla atque id autem aliquid reiciendis minima explicabo eveniet, quidem libero dolore assumenda alias, deleniti voluptate voluptatem! Vitae.</p>
+    </section>
+    <section>
+      <i class="fa fa-film fa-5x" aria-hidden="true"></i>
+      <h1>Lorem ipsum dolor</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla atque id autem aliquid reiciendis minima explicabo eveniet, quidem libero dolore assumenda alias, deleniti voluptate voluptatem! Vitae in cupiditate obcaecati facere.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <section id="social">
+      <a href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+    </section>
+    <section id="copyright">
+      <span>@2016 feito com HTML <i class="fa fa-heart" aria-hidden="true"></i> CSS</span>
+    </section>
+  </footer>
+</body>
+</html>
