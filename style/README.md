@@ -52,7 +52,7 @@ Reference:
       <td style="font-family: Times">Lorem ipsum</td>
     </tr>
   </tbody>
-<table>
+</table>
 
 ### Styling (size + color)
 
