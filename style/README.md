@@ -10,7 +10,8 @@
 * [Remember](#remember)
 
 
-# Definition
+## Definition
+---
 
 Reference:
 * [Style Language](https://en.wikipedia.org/wiki/Style_language)
@@ -18,6 +19,7 @@ Reference:
 > "Style Language is a computer language that expresses the presentation of structured documents." [Wikipedia](https://en.wikipedia.org/wiki/Style_sheet_language)
 
 ## Problem
+---
 
 <table>
   <thead>
@@ -260,6 +262,7 @@ Output:
 | size | android:textSize | \Large | font-size | font-size |
 
 ## Remember
+---
 
 * Style Language have terms that define style properties
 * Style Language can work:
