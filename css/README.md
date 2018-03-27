@@ -1,8 +1,5 @@
 # CSS
 
-## Sumário
-
-* [References](#references)
 * [Hello World](#hello-world)
 * [How to apply your CSS to your HTML](#how-to-apply-your-css-to-your-html)
   * [Inline stylesheet](#inline-stylesheet)
@@ -59,21 +56,19 @@
 * [Links Úteis](#links-uteis)
 
 ## References
+---
 
-* * *
-
-CSS Awesome [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sotayamashita/awesome-css)<br>
-[How CSS Works](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/How_CSS_works)<br>
-Portais: [W3C](https://www.w3.org/standards/webdesign/htmlcss), [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) e  [WP](https://docs.webplatform.org/wiki/css)<br>
-Guias: [MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS) e [WP](https://docs.webplatform.org/wiki/css/tutorials)<br>
-Padrões: [Notícias](https://www.w3.org/Style/CSS/Overview.en.html), [CSS Current Status](https://www.w3.org/standards/techs/css#w3c_all), [CSS Specifications](https://www.w3.org/Style/CSS/specs.en.html)<br>
-Versões: [Draft](https://www.w3.org/TR/CSS/), [2](https://www.w3.org/TR/CSS2/), [Outros](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS3)<br>
+* CSS Awesome [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sotayamashita/awesome-css)<br>
+* Portais: [W3C](https://www.w3.org/standards/webdesign/htmlcss), [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) e  [WP](https://docs.webplatform.org/wiki/css)<br>
+* Guias: [MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS) e [WP](https://docs.webplatform.org/wiki/css/tutorials)<br>
+* Padrões: [Notícias](https://www.w3.org/Style/CSS/Overview.en.html), [CSS Current Status](https://www.w3.org/standards/techs/css#w3c_all), [CSS Specifications](https://www.w3.org/Style/CSS/specs.en.html)<br>
+* Versões: [Draft](https://www.w3.org/TR/CSS/), [2](https://www.w3.org/TR/CSS2/), [Outros](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS3)<br>
+* [How CSS Works \| MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/How_CSS_works)<br>
 
 ## Hello World
+---
 
-* * *
-
-[`index.html`](hello/index.html):
+[`hello/index.html`](hello/index.html):
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -84,12 +79,11 @@ Versões: [Draft](https://www.w3.org/TR/CSS/), [2](https://www.w3.org/TR/CSS2/),
 <body>
   <p style="color:blue;font-size:20px;">Olá, mundo!</p>
 </body>
-</html>  
+</html>
 ```  
 
 ## How to apply your CSS to your HTML
-
-* * *
+---
 
 MDN: [How to apply your CSS to your HTML](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/How_CSS_works#How_to_apply_your_CSS_to_your_HTML)
 
@@ -226,15 +220,13 @@ p {
 > What is the color of the first and last paragraph in the Inline, Internal, External and Mixed Stylesheet?
 
 ## Inheritance & Cascade
-
-* * *
+---
 
 Reference: [W3C](https://www.w3.org/TR/CSS22/cascade.html), [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance), [WP](https://docs.webplatform.org/wiki/tutorials/inheritance_and_cascade)<br>
 User style sheet: Stylish ([Plugin](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en) & [Gallery](http://userstyles.org/))<br>
 
 ## Properties
-
-* * *
+---
 
 References: [WP](https://docs.webplatform.org/wiki/css/properties), [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index) e [W3C](https://www.w3.org/TR/CSS2/propidx.html)<br>
 Cheat Sheet: [smashing](https://www.smashingmagazine.com/2009/07/css-3-cheat-sheet-pdf/) ([pdf](https://www.smashingmagazine.com/wp-content/uploads/images/css3-cheat-sheet/css3-cheat-sheet.pdf)), [w3school](http://www.w3schools.com/cssref/), [tutorialspoint](http://www.tutorialspoint.com/css/css_references.htm), [1stwebdesigner](http://www.1stwebdesigner.com/freebies/css-cheat-sheets-designers/))<br>
@@ -494,8 +486,7 @@ Values: contain \| cover \| auto \| &lt;length> \| &lt;percentage>
 #### [`cursor`](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor)
 
 ## Selectors
-
-* * *
+---
 
 <!-- TODO graphich, samples, obs -->
 
@@ -569,14 +560,12 @@ Grouping `elementname-1, elementname-2`<br>
 #### [`::selection`](https://developer.mozilla.org/en-US/docs/Web/CSS/::selection)
 
 ## Functions
-
-* * *
+---
 
 References: [WP](https://docs.webplatform.org/wiki/css/functions) e [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index)
 
 ## At-rules
-
-* * *
+---
 
 References: [WP](https://docs.webplatform.org/wiki/css/atrules) e [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule)
 
@@ -584,16 +573,14 @@ References: [WP](https://docs.webplatform.org/wiki/css/atrules) e [MDN](https://
 `@media`
 
 ## Media Queries
-
-* * *
+---
 
 References: [WP](https://docs.webplatform.org/wiki/css/mediaqueries), [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index) e [W3C](https://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/)
 
 media: `print`, `screen`
 
 ## Values
-
-* * *
+---
 
 #### [`<color>`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
 
@@ -679,15 +666,13 @@ color: hsla(270, 50%, 40%, 0.5);
 **Pastel Color**
 
 ## Effects
-
-* * *
+---
 
 * Counters CSS: [CSS Tricks](https://css-tricks.com/numbering-in-style/) e [Nested](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters)
 * [Cap Drops](https://css-tricks.com/snippets/css/drop-caps/)
 
 ## Links Úteis
-
-* * *
+---
 
 * Design
   * [Flat Design](https://en.wikipedia.org/wiki/Flat_design)
@@ -706,3 +691,10 @@ color: hsla(270, 50%, 40%, 0.5);
   * [PureCSS](http://purecss.io/)
   * [Materialize CSS](http://materializecss.com/)
   * [SemanticUI](http://semantic-ui.com/)
+
+<!-- TODO
+https://mdn.mozillademos.org/files/9461/css-declaration-small.png
+https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics
+
+https://github.com/mdn/beginner-html-site-styled (html; css)
+ -->
