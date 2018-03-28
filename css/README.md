@@ -359,19 +359,13 @@ Properties:
   * [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
 
 [inheritance/index.html](inheritance/index.html):
+```css
+body {
+  color: green;
+}
+```
+
 ```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/master.css">
-  <style>
-    body {
-      color: green;
-    }
-  </style>
-</head>
 <body>
   <h1>Lorem ipsum</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
@@ -389,22 +383,16 @@ Output:
 </div>
 
 [inheritance/not-inheritance.html](inheritance/not-inheritance.html):
+```css
+body {
+  color: green;
+}
+h1 {
+  color: red;
+}
+```
+
 ```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/master.css">
-  <style>
-    body {
-      color: green;
-    }
-    h1 {
-      color: red;
-    }
-  </style>
-</head>
 <body>
   <h1>Lorem ipsum</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
@@ -419,7 +407,6 @@ Output:
   <h1 style="color: red;">Lorem ipsum</h1>
   <p style="color: green;">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
   <p style="color: green;">Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
-  <p style="color: green;">Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
 </div>
 
 ## Properties
@@ -437,22 +424,16 @@ Properties:
 [`font`](https://developer.mozilla.org/en-US/docs/Web/CSS/font)
 
 [property/index.html](property/index.html):
+```css
+p {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: Times;
+}
+```
+
 ```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/master.css">
-  <style>
-    p {
-      font-size: 20px;
-      font-style: italic;
-      font-weight: bold;
-      font-family: Times;
-    }
-  </style>
-</head>
 <body>
   <p>Lorem ipsum dolor</p>
 </body>
@@ -468,19 +449,12 @@ Output:
 ### Shorthand properties
 
 [property/font-shorthand.html](property/font-shorthand.html):
+```css
+p {
+  font: italic bold 20px Times;
+}
+```
 ```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/master.css">
-  <style>
-    p {
-      font: italic bold 20px Times;
-    }
-  </style>
-</head>
 <body>
   <p>Lorem ipsum dolor</p>
 </body>
@@ -576,10 +550,12 @@ p {
 ```
 
 ```html
-<h1>Lorem ipsum</h1>
-<p id="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-<p>Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
-<p>Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
+<body>
+  <h1>Lorem ipsum</h1>
+  <p id="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p>Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
+  <p>Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
+</body>
 ```
 
 Output:
@@ -604,10 +580,12 @@ p {
 ```
 
 ```html
-<h1>Lorem ipsum</h1>
-<p class="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-<p class="red">Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
-<p>Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
+<body>
+  <h1>Lorem ipsum</h1>
+  <p class="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p class="red">Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
+  <p>Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
+</body>
 ```
 
 Output:
@@ -621,20 +599,86 @@ Output:
 
 ### Combinators
 
-#### `div p`
+#### `header ul`
+
+```css
+header ul {
+  list-style-type: none;
+}
+```
+
+```html
+<body>
+  <header>
+    <ul>
+      <li><a href="#">Menu 1</a></li>
+      <li><a href="#">Menu 2</a></li>
+    </ul>
+  </header>
+  <main>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+  </main>
+</body>
+```
+
+Output:
+
+<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+  <header>
+    <ul style="list-style-type: none;">
+      <li><a href="#">Menu 1</a></li>
+      <li><a href="#">Menu 2</a></li>
+    </ul>
+  </header>
+  <main>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+  </main>
+</div>
 
 ### Pseudo-class
-
-#### `:hover`
 
 #### `:first-child`
-<!-- TODO graphic -->
+```css
+p:first-child {
+  color: green;
+}
+```
+
+```html
+<body>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p>Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
+  <p>Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
+</body>
+```
+
+![HTML DOM](https://g.gravizo.com/svg?
+  digraph G {
+    body [label="<body>"]
+    p1 [label="<p>", style=filled, fillcolor=red]
+    p2 [label="<p>"]
+    p3 [label="<p>"]
+    body -> p1
+    body -> p2
+    body -> p3
+  }
+)
+
+Output:
+
+<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+  <p style="color: green;">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p>Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
+  <p>Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
+</div>
 
 #### `:nth-child`
-
-### Pseudo-class
-
-#### `::hover`
 
 <!-- TODO
 > Observação<br>

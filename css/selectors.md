@@ -47,7 +47,7 @@ h1, p
 | hover pseudo-class | [`:hover`](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover) | `a:hover` |
 | last-child pseudo-class | [`:last-child`](https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child) | `ul > li:last-child` |
 | link pseudo-class | [`:link`](https://developer.mozilla.org/en-US/docs/Web/CSS/:link) | `a:link` |
-| nth-child pseudo-class | [`:nth-child`](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child) | `ul > li:nth-child(2)` |(https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child) |
+| nth-child pseudo-class | [`:nth-child`](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child) | `ul > li:nth-child(2)` |
 | nth-of-type pseudo-class | [`:nth-of-type`](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-of-type) | `body > p:nth-of-type(1)`
 | visited pseudo-class | [`:visited`](https://developer.mozilla.org/en-US/docs/Web/CSS/:visited) | `a:visited`
 
