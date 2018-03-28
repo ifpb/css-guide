@@ -1,4 +1,8 @@
-# CSS Values
+# CSS values and units
+
+Reference:
+* [CSS values and units \| MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units) (Numeric values, Percentages, Colors, Coordinate positions, Functions)
+* [Value definition syntax \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax)
 
 <!-- TODO
 Actual value
@@ -84,3 +88,6 @@ color: hsla(270, 50%, 40%, 0.5);
 - [CMYK](https://en.wikipedia.org/wiki/CMYK_color_model) (subtractive color model)
 
 **Pastel Color**
+
+## [`<length>`](https://developer.mozilla.org/en-US/docs/Web/CSS/length)
+---

@@ -12,7 +12,6 @@
 * [Functions](#functions)
 * [At-rules](#at-rules)
 * [Media Queries](#media-queries)
-* [Values](#values)
 * [Links](#links)
 
 ## References
@@ -74,12 +73,12 @@ Output:
 <font size="20px" color="red" face="Helvetica">Lorem ipsum dolor</font>
 </div>
 
-#### [`<table bgcolor="">`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table#attr-bgcolor)
+#### [`<td bgcolor="">`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td#attr-bgcolor)
 
 ```html
-<table bgcolor="grey" border="1" cellspacing="0">
+<table border="1" cellspacing="0">
   <tr>
-    <td> Item 1.1</td>
+    <td bgcolor="grey"> Item 1.1</td>
     <td> Item 1.2</td>
   </tr>
 </table>
@@ -88,9 +87,9 @@ Output:
 Output:
 
 <div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
-  <table bgcolor="grey" border="1" cellspacing="0">
+  <table border="1" cellspacing="0">
     <tr>
-      <td> Item 1.1</td>
+      <td bgcolor="grey"> Item 1.1</td>
       <td> Item 1.2</td>
     </tr>
   </table>
@@ -354,6 +353,10 @@ p {
 
 Reference:
 * [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance)
+* [CSS 2.2 Specification - Appendix F. Full property table (Inherited?)](https://www.w3.org/TR/CSS22/propidx.html)
+
+Properties:
+  * [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
 
 [inheritance/index.html](inheritance/index.html):
 ```html
@@ -385,7 +388,7 @@ Output:
   <p style="color: green;">Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
 </div>
 
-[inheritance/not-inheritance.html](inheritance/index.html):
+[inheritance/not-inheritance.html](inheritance/not-inheritance.html):
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -426,11 +429,117 @@ References:
 * [WP](https://docs.webplatform.org/wiki/css/properties), [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index) e [W3C](https://www.w3.org/TR/CSS2/propidx.html)<br>
 * Cheat Sheet: [smashing](https://www.smashingmagazine.com/2009/07/css-3-cheat-sheet-pdf/) ([pdf](https://www.smashingmagazine.com/wp-content/uploads/images/css3-cheat-sheet/css3-cheat-sheet.pdf)), [w3school](http://www.w3schools.com/cssref/), [tutorialspoint](http://www.tutorialspoint.com/css/css_references.htm), [1stwebdesigner](http://www.1stwebdesigner.com/freebies/css-cheat-sheets-designers/)
 
-font-size
+Properties:
+  * [`font-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size), 
+[`font-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-style), 
+[`font-weight`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight), 
+[`font-family`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family), 
+[`font`](https://developer.mozilla.org/en-US/docs/Web/CSS/font)
+
+[property/index.html](property/index.html):
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/master.css">
+  <style>
+    p {
+      font-size: 20px;
+      font-style: italic;
+      font-weight: bold;
+      font-family: Times;
+    }
+  </style>
+</head>
+<body>
+  <p>Lorem ipsum dolor</p>
+</body>
+</html>  
+```
+
+Output:
+
+<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+  <p style="font: italic bold 20px Times;">Lorem ipsum dolor</p>
+</div>
 
 ### Shorthand properties
 
-font
+[property/font-shorthand.html](property/font-shorthand.html):
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/master.css">
+  <style>
+    p {
+      font: italic bold 20px Times;
+    }
+  </style>
+</head>
+<body>
+  <p>Lorem ipsum dolor</p>
+</body>
+</html>  
+```
+
+Output:
+
+<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+  <p style="font: italic bold 20px Times;">Lorem ipsum dolor</p>
+</div>
+
+### CSS values and units
+
+Reference:
+* [CSS values and units \| MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units) (Numeric values, Percentages, Colors, Coordinate positions, Functions)
+* [Value definition syntax \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax)
+
+#### [`<length>`](https://developer.mozilla.org/en-US/docs/Web/CSS/length)
+
+##### absolute units
+
+```css
+p {
+  font-size: 17px;
+}
+```
+
+##### relative units
+
+```css
+h1 {
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 105%;
+}
+```
+
+| tag | value | computed value |
+|-|-|-|
+| `body` | 16px | |
+| `h1` | 1.3rem | 16.48px |
+| `p` | 105% | 16.8px |
+
+#### [`<color>`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
+
+```css
+h1 {
+  color: red;
+}
+
+p {
+  color: rgb(255, 0, 0);
+}
+```
+
+[Color Table](values.md#color)
 
 ## Selectors
 ---
