@@ -147,7 +147,7 @@ Attributes:
   <title>Document</title>
 </head>
 <body>
-  <h1>Lorem ipsum</h1>
+  <h1 color: blue;>Lorem ipsum</h1>
   <p style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
   <p style="color: blue;">Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
   <p style="font-size: 20px; color: blue;">Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
@@ -157,8 +157,8 @@ Attributes:
 
 Output:
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
-  <h1>Lorem ipsum</h1>
+<div style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+  <h1 color: blue;>Lorem ipsum</h1>
   <p style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
   <p style="color: blue;">Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
   <p style="font-size: 20px; color: blue;">Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
@@ -659,7 +659,7 @@ p:hover {
 
 Output:
 
-<iframe src="selector/p-hover.html"></iframe>
+<iframe src="selector/p-hover.html" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
 #### `:first-child`
 ```css
@@ -742,7 +742,7 @@ http://www.gravizo.com
 Output:
 
 <div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
-  <h1>Lorem ipsum dolor</h1>
+  <h1 style="color: #606c71;>Lorem ipsum dolor</h1>
   <p style="color: green;">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
   <p>Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
   <p>Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
@@ -782,7 +782,7 @@ p:nth-child(2n) {
 Output:
 
 <div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
-  <h1>Lorem ipsum dolor</h1>
+  <h1 style="color: #606c71;>Lorem ipsum dolor</h1>
   <p style="color: green;">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
   <p>Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
   <p style="color: green;">Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
@@ -801,6 +801,8 @@ Output:
 References: 
 * [WP](https://docs.webplatform.org/wiki/css/functions) e [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index)
 
+### [`rgb()`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgb()),
+ [`rgba()`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgba())
 ```css
 h1 {
   color: rgb(255, 0, 0);
@@ -811,6 +813,7 @@ p {
 }
 ```
 
+### [`url()`](https://developer.mozilla.org/en-US/docs/Web/CSS/url#The_url()_functional_notation)
 ```css
 @import url('_color.css');
 @import url('_text.css');
@@ -884,7 +887,15 @@ Output:
   <p style="color: blue;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
 </div>
 
-#### [`@charset`](https://developer.mozilla.org/en-US/docs/Web/CSS/%40)
+#### [`@charset`](https://developer.mozilla.org/en-US/docs/Web/CSS/%40charset)
+
+```css
+@charset "utf-8";
+
+p {
+  color: green;
+}
+```
 
 ### conditional information
 
@@ -892,24 +903,126 @@ Output:
 
 #### [`@media`](https://developer.mozilla.org/en-US/docs/Web/CSS/%40media)
 
+```css
+p {
+  text-align: center;
+}
+
+@media print {
+  p {
+    text-align: left;
+  }
+}
+```
+
 #### [`@document`](https://developer.mozilla.org/en-US/docs/Web/CSS/%40document)
+
+Functions:
+* `url()`, `url-prefix()`, `domain()`, `regexp()`
+
+```css
+@document url(http://www.w3.org/) {
+  p {
+    color: red;
+  }
+}
+```
+
+#### [`@support`](https://developer.mozilla.org/en-US/docs/Web/CSS/%40support)
+
+```css
+@supports (--foo: green) {
+  body {
+    color: var(--varName);
+  }
+}
+```
 
 ### descriptive information
 
 #### [`@font-face`](https://developer.mozilla.org/en-US/docs/Web/CSS/%40font-face)
+
+```css
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2) format('woff2');
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+```
 
 ## Media Queries
 ---
 
 References: 
 * [WP](https://docs.webplatform.org/wiki/css/mediaqueries), [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index) e [W3C](https://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/)
+* [Media types](https://developer.mozilla.org/en-US/docs/Web/CSS/@media#Media_types): `all`, `print`, `screen`, `speech`
+* [Media features](https://developer.mozilla.org/en-US/docs/Web/CSS/@media#Media_features): `width`, `height`, `orientation`
+* [Logical operators](https://developer.mozilla.org/en-US/docs/Web/CSS/@media#Logical_operators): `and`, `not`, `only`
 
-#### Media features
+### Examples
 
-media: `print`, `screen`
+```css
+@media print {
+  /* rulesets */
+}
+@media screen {
+  /* rulesets */
+}
+@media screen, print {
+  /* rulesets */
+}
+@media screen and (min-width: 500px) {
+  /* rulesets */
+}
+```
+
+```css
+@import 'style.css' print;
+@import 'style.css' screen;
+@import 'style.css' screen, print;
+@import 'style.css' screen and (min-width: 500px);
+```
+
+```html
+<link rel="stylesheet" href="style.css" media="print">
+<link rel="stylesheet" href="style.css" media="screen">
+<link rel="stylesheet" href="style.css" media="screen, print">
+<link rel="stylesheet" href="style.css" media="screen and (min-width: 500px)">
+```
+
+### Responsive Design
+
+```css
+/* rulesets */
+
+@media screen and (min-width: 500px) {
+  /* rulesets */
+}
+
+@media screen and (min-width: 1000px) {
+  /* rulesets */
+}
+```
 
 ## Comments
 ---
+
+```css
+/* header */
+h1 {
+  color: green;
+}
+
+/* Content */
+p {
+  color: blue;
+}
+```
 
 ```html
 <!DOCTYPE html>
@@ -926,18 +1039,6 @@ media: `print`, `screen`
   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
 </body>
 </html>
-```
-
-```css
-/* header */
-h1 {
-  color: green;
-}
-
-/* Content */
-p {
-  color: blue;
-}
 ```
 
 ##  Cascade
