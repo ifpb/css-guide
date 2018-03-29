@@ -676,21 +676,7 @@ p:first-child {
 </body>
 ```
 
-<!-- 
-http://www.webgraphviz.com 
-http://www.gravizo.com
--->
-![HTML DOM](https://g.gravizo.com/svg?
-  digraph G {
-    body [label="<body>"]
-    p1 [label="<p>", style=filled, fillcolor=green]
-    p2 [label="<p>"]
-    p3 [label="<p>"]
-    body -> p1
-    body -> p2
-    body -> p3
-  }
-)
+![First Child](selector/first-child.png)
 
 Output:
 
@@ -721,23 +707,7 @@ p:nth-child(2) {
 </body>
 ```
 
-<!-- 
-http://www.webgraphviz.com 
-http://www.gravizo.com
--->
-![HTML DOM](https://g.gravizo.com/svg?
-  digraph G {
-    body [label="<body>"]
-    h11 [label="<h1>"]
-    p1 [label="<p>", style=filled, fillcolor=green]
-    p2 [label="<p>"]
-    p3 [label="<p>"]
-    body -> h11
-    body -> p1
-    body -> p2
-    body -> p3
-  }
-)
+![nth child](selector/nth-child2.png)
 
 Output:
 
@@ -765,19 +735,7 @@ p:nth-child(2n) {
 </body>
 ```
 
-![HTML DOM](https://g.gravizo.com/svg?
-  digraph G {
-    body [label="<body>"]
-    h11 [label="<h1>"]
-    p1 [label="<p>", style=filled, fillcolor=green]
-    p2 [label="<p>"]
-    p3 [label="<p>", style=filled, fillcolor=green]
-    body -> h11
-    body -> p1
-    body -> p2
-    body -> p3
-  }
-)
+![nth child 2n](selector/nth-child2n.png)
 
 Output:
 
@@ -1047,15 +1005,154 @@ p {
 Reference: 
 * [W3C](https://www.w3.org/TR/CSS22/cascade.html), [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance), [WP](https://docs.webplatform.org/wiki/tutorials/inheritance_and_cascade)
 
-### User style sheet (Stylish)
-
-Reference:
-* Stylish ([Plugin](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en) & [Gallery](http://userstyles.org/))
-
 <!-- TODO
 https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax
 https://developer.mozilla.org/@api/deki/files/6168/=css_syntax_-_statements_Venn_diag.png -->
 
+
+### Importance
+
+#### Declaration
+
+##### Normal
+
+```css
+p {
+  color: red;
+}
+
+p {
+  color: green;
+}
+```
+
+##### Important
+
+```css
+p {
+  color: red !important;
+}
+
+p {
+  color: green;
+}
+```
+
+![important css](https://memeexplorer.com/cache/846.jpg)
+
+#### Style sheet 
+
+##### User Agent Style Sheet
+
+[normalize.css](https://necolas.github.io/normalize.css/)
+
+##### Author Style Sheet
+
+`style`, `<style>`, `<link>`
+
+##### User Style Sheet
+
+[Stylish](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en): [Gallery](http://userstyles.org/)
+
+#### Important order
+
+| Declaration | Style sheets |
+|-|-|
+| | User Agent |
+| Normal | User |
+| Normal | Author |
+| Important | Author |
+| Important | User |
+
+### Specificity
+
+Value: **NNNN**
+
+| Number |	Selector |
+|-|-|
+| Thousands |	style attribute |
+| Hundreds | ID selector |
+| Tens | class selector, attribute selector, pseudo-class  |
+| Ones | element selector, pseudo-element |
+
+[cascade/specificity/index.html](cascade/specificity/index.html):
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    h1 {
+      color: blue;
+    }
+
+    #title {
+      color: orange;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="title" style="color: green;">Lorem ipsum</h1>
+</body>
+</html>
+```
+
+[cascade/specificity/css/style.css](cascade/specificity/css/style.css):
+```css
+h1 {
+  color: red;
+}
+```
+
+| Style	| Selector | Thousands | Hundreds | Tens | Ones | Total |
+|-|-|-|-|-|-|-|
+| color: green | `style` | 1 | 0 | 0 | 0 | 1000 |
+| color: orange | `#title` | 0 | 1 | 0 | 0 | 0100 |
+| color: blue | `h1` | 0 | 0 | 0 | 1 | 0001 |
+| color: red | `h1` | 0 | 0 | 0 | 1 | 0001 |
+
+#### CSS Question
+
+> Is it possible to inspect specificity?
+
+### Source order
+
+[cascade/source-code/index.html](cascade/source-code/index.html):
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    h1 {
+      color: blue;
+    }
+
+    body {
+      color: orange;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lorem ipsum</h1>
+</body>
+</html>
+```
+
+[cascade/source-code/css/style.css](cascade/source-code/css/style.css):
+```css
+h1 {
+  color: red;
+}
+```
 
 ## Links
 ---
