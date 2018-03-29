@@ -344,7 +344,8 @@ p {
   <p style="font-size: 20px; color: red; text-align: justify;">Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
 </div>
 
-### CSS Question
+#### CSS Question
+> 
 
 > What is the color of the first and last paragraph in the Inline, Internal, External and Mixed Stylesheet? Why?
 
@@ -643,6 +644,22 @@ Output:
 
 ### Pseudo-class
 
+#### `:hover`
+
+```css
+p:hover {
+      font-weight: bold;
+    }
+```
+
+```html
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatem ex autem incidunt, aut dolores veritatis nisi repellat perspiciatis nulla reiciendis eum doloribus fugit facere necessitatibus reprehenderit natus libero temporibus.</p>
+```
+
+Output:
+
+<iframe src="/Users/lucachaves/code/github/ifpb/css-guide/css/selector/p-hover.html"></iframe>
+
 #### `:first-child`
 ```css
 p:first-child {
@@ -658,10 +675,14 @@ p:first-child {
 </body>
 ```
 
+<!-- 
+http://www.webgraphviz.com 
+http://www.gravizo.com
+-->
 ![HTML DOM](https://g.gravizo.com/svg?
   digraph G {
     body [label="<body>"]
-    p1 [label="<p>", style=filled, fillcolor=red]
+    p1 [label="<p>", style=filled, fillcolor=green]
     p2 [label="<p>"]
     p3 [label="<p>"]
     body -> p1
@@ -678,18 +699,100 @@ Output:
   <p>Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
 </div>
 
-#### `:nth-child`
+#### `:nth-child(2)`
 
-<!-- TODO
-> Observação<br>
-> 1. É possível descrever este pseudo-class usando `:nth-child`
+```css
+p:first-child {
+  color: red;
+}
 
-> Observação<br>
-> 1. Este pseudo-class pode se comportar como type selector?
-> 1. Este pseudo-class pode se comportar como `:first-child`?
-> 4. Este pseudo-class pode se comporatar como general/adjacent sibling combinator selector?
-> 2. Como se selecionar apenas elementos de 2 em 2, ou de 3 em 3?
-> 3. É possível trazer os elementos pares ou ímpares? -->
+p:nth-child(2) {
+  color: green;
+}
+```
+
+```html
+<body>
+  <h1>Lorem ipsum dolor</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p>Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
+  <p>Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
+</body>
+```
+
+<!-- 
+http://www.webgraphviz.com 
+http://www.gravizo.com
+-->
+![HTML DOM](https://g.gravizo.com/svg?
+  digraph G {
+    body [label="<body>"]
+    h11 [label="<h1>"]
+    p1 [label="<p>", style=filled, fillcolor=green]
+    p2 [label="<p>"]
+    p3 [label="<p>"]
+    body -> h11
+    body -> p1
+    body -> p2
+    body -> p3
+  }
+)
+
+Output:
+
+<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+  <h1>Lorem ipsum dolor</h1>
+  <p style="color: green;">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p>Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
+  <p>Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
+</div>
+
+#### `:nth-child(2n)`
+
+```css
+p:nth-child(2n) {
+  color: green;
+}
+```
+
+```html
+<body>
+  <h1>Lorem ipsum dolor</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p>Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
+  <p>Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
+</body>
+```
+
+![HTML DOM](https://g.gravizo.com/svg?
+  digraph G {
+    body [label="<body>"]
+    h11 [label="<h1>"]
+    p1 [label="<p>", style=filled, fillcolor=green]
+    p2 [label="<p>"]
+    p3 [label="<p>", style=filled, fillcolor=green]
+    body -> h11
+    body -> p1
+    body -> p2
+    body -> p3
+  }
+)
+
+Output:
+
+<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+  <h1>Lorem ipsum dolor</h1>
+  <p style="color: green;">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p>Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
+  <p style="color: green;">Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
+</div>
+
+### CSS Question
+
+> * Is it possible to replace `:nth-child` with `:first-child`?
+> * Is it possible to replace `:first-child` with `:nth-child`?
+> * Is it possible to replace general/adjacent sibling combinator selector with `:nth-child`?
+> * Is it possible to select odd or even elements?
 
 ## Functions
 ---
@@ -697,7 +800,20 @@ Output:
 References: 
 * [WP](https://docs.webplatform.org/wiki/css/functions) e [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index)
 
-color
+```css
+h1 {
+  color: rgb(255, 0, 0);
+}
+
+p {
+  color: rgba(255, 0, 0, .5);
+}
+```
+
+```css
+@import url('_color.css');
+@import url('_text.css');
+```
 
 ## At-rules
 ---
@@ -705,7 +821,9 @@ color
 References: 
 * [WP](https://docs.webplatform.org/wiki/css/atrules) e [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule)
 
-### [`@import`](https://developer.mozilla.org/en-US/docs/Web/CSS/%40import)
+### meta-data information
+
+#### [`@import`](https://developer.mozilla.org/en-US/docs/Web/CSS/%40import)
 [@import/index.html](@import/index.html)
 ```html
 <!DOCTYPE html>
@@ -765,10 +883,19 @@ Output:
   <p style="color: blue;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
 </div>
 
+#### [`@charset`](https://developer.mozilla.org/en-US/docs/Web/CSS/%40)
 
-### [`@media`](https://developer.mozilla.org/en-US/docs/Web/CSS/%40media)
+### conditional information
 
-#### Media features
+(nested statements / conditional group rules / rulesets)
+
+#### [`@media`](https://developer.mozilla.org/en-US/docs/Web/CSS/%40media)
+
+#### [`@document`](https://developer.mozilla.org/en-US/docs/Web/CSS/%40document)
+
+### descriptive information
+
+#### [`@font-face`](https://developer.mozilla.org/en-US/docs/Web/CSS/%40font-face)
 
 ## Media Queries
 ---
@@ -776,10 +903,41 @@ Output:
 References: 
 * [WP](https://docs.webplatform.org/wiki/css/mediaqueries), [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index) e [W3C](https://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/)
 
+#### Media features
+
 media: `print`, `screen`
 
 ## Comments
 ---
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <!-- Header -->
+  <h1>Lorem ipsum</h1>
+
+  <!-- Content -->
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+</body>
+</html>
+```
+
+```css
+/* header */
+h1 {
+  color: green;
+}
+
+/* Content */
+p {
+  color: blue;
+}
+```
 
 ##  Cascade
 ---
@@ -789,8 +947,9 @@ Reference:
 * User style sheet: Stylish ([Plugin](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en) & [Gallery](http://userstyles.org/))
 
 <!-- TODO
-* Counters CSS: [CSS Tricks](https://css-tricks.com/numbering-in-style/) e [Nested](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters)
-* [Cap Drops](https://css-tricks.com/snippets/css/drop-caps/) -->
+https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax
+https://developer.mozilla.org/@api/deki/files/6168/=css_syntax_-_statements_Venn_diag.png -->
+
 
 ## Links
 ---
@@ -812,3 +971,7 @@ Reference:
   * [PureCSS](http://purecss.io/)
   * [Materialize CSS](http://materializecss.com/)
   * [SemanticUI](http://semantic-ui.com/)
+
+<!-- TODO
+* Counters CSS: [CSS Tricks](https://css-tricks.com/numbering-in-style/) e [Nested](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters)
+* [Cap Drops](https://css-tricks.com/snippets/css/drop-caps/) -->
