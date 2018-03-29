@@ -87,7 +87,7 @@ Output:
 Output:
 
 <div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
-  <table border="1" cellspacing="0">
+  <table border="1" cellspacing="0" style="display: table;">
     <tr>
       <td bgcolor="grey"> Item 1.1</td>
       <td> Item 1.2</td>
@@ -790,6 +790,7 @@ Output:
 
 ### CSS Question
 
+> * Is it possible to inspect `:hover`?
 > * Is it possible to replace `:nth-child` with `:first-child`?
 > * Is it possible to replace `:first-child` with `:nth-child`?
 > * Is it possible to replace general/adjacent sibling combinator selector with `:nth-child`?
@@ -801,8 +802,7 @@ Output:
 References: 
 * [WP](https://docs.webplatform.org/wiki/css/functions) e [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index)
 
-### [`rgb()`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgb()),
- [`rgba()`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgba())
+### [`rgb()`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgb()), [`rgba()`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgba())
 ```css
 h1 {
   color: rgb(255, 0, 0);
@@ -1046,7 +1046,11 @@ p {
 
 Reference: 
 * [W3C](https://www.w3.org/TR/CSS22/cascade.html), [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance), [WP](https://docs.webplatform.org/wiki/tutorials/inheritance_and_cascade)
-* User style sheet: Stylish ([Plugin](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en) & [Gallery](http://userstyles.org/))
+
+### User style sheet (Stylish)
+
+Reference:
+* Stylish ([Plugin](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en) & [Gallery](http://userstyles.org/))
 
 <!-- TODO
 https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax
