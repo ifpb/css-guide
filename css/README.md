@@ -646,6 +646,7 @@ Output:
 
 #### `:hover`
 
+[selector/p-hover.html](selector/p-hover.html)
 ```css
 p:hover {
       font-weight: bold;
@@ -658,7 +659,7 @@ p:hover {
 
 Output:
 
-<iframe src="/Users/lucachaves/code/github/ifpb/css-guide/css/selector/p-hover.html"></iframe>
+<iframe src="selector/p-hover.html"></iframe>
 
 #### `:first-child`
 ```css
