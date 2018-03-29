@@ -12,6 +12,7 @@
 * [Functions](#functions)
 * [At-rules](#at-rules)
 * [Media Queries](#media-queries)
+* [Cascade](#cascade)
 * [Links](#links)
 
 ## References
