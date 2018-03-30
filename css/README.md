@@ -148,7 +148,7 @@ Attributes:
   <title>Document</title>
 </head>
 <body>
-  <h1 color: blue;>Lorem ipsum</h1>
+  <h1 style="color: blue;">Lorem ipsum</h1>
   <p style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
   <p style="color: blue;">Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
   <p style="font-size: 20px; color: blue;">Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
@@ -159,7 +159,7 @@ Attributes:
 Output:
 
 <div style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
-  <h1 color: blue;>Lorem ipsum</h1>
+  <h1 style="color: blue;">Lorem ipsum</h1>
   <p style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
   <p style="color: blue;">Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
   <p style="font-size: 20px; color: blue;">Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
@@ -713,7 +713,7 @@ p:nth-child(2) {
 Output:
 
 <div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
-  <h1 style="color: #606c71;>Lorem ipsum dolor</h1>
+  <h1 style="color: #606c71;">Lorem ipsum dolor</h1>
   <p style="color: green;">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
   <p>Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
   <p>Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
@@ -907,10 +907,14 @@ Functions:
 }
 ```
 
-#### [`@support`](https://developer.mozilla.org/en-US/docs/Web/CSS/%40support)
+#### [`@support`](https://developer.mozilla.org/en-US/docs/Web/CSS/%40supports)
 
 ```css
-@supports (--foo: green) {
+@supports (--main-color: green;) {
+  :root {
+    --main-color: green;
+  }
+
   body {
     color: var(--varName);
   }
@@ -1214,5 +1218,6 @@ h1 {
   * [Bootsrap](http://getbootstrap.com/) ([cheat sheet](http://hackerthemes.com/bootstrap-cheatsheet/))
   * [Foundation](http://foundation.zurb.com/)
   * [PureCSS](http://purecss.io/)
+  * [Bulma](https://bulma.io)
   * [Materialize CSS](http://materializecss.com/)
   * [SemanticUI](http://semantic-ui.com/)
