@@ -769,11 +769,11 @@ Output:
 
 ### CSS Question
 
-> Is it possible to inspect `:hover`?
-> Is it possible to replace `:nth-child` with `:first-child`?
-> Is it possible to replace `:first-child` with `:nth-child`?
-> Is it possible to replace general/adjacent sibling combinator selector with `:nth-child`?
-> Is it possible to select odd or even elements?
+> Is it possible to inspect `:hover`?<br>
+> Is it possible to replace `:nth-child` with `:first-child`?<br>
+> Is it possible to replace `:first-child` with `:nth-child`?<br>
+> Is it possible to replace general/adjacent sibling combinator selector with `:nth-child`?<br>
+> Is it possible to select odd or even elements?<br>
 
 ## Functions
 ---
