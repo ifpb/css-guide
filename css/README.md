@@ -741,7 +741,7 @@ p:nth-child(2n) {
 Output:
 
 <div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
-  <h1 style="color: #606c71;>Lorem ipsum dolor</h1>
+  <h1 style="color: #606c71;">Lorem ipsum dolor</h1>
   <p style="color: green;">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
   <p>Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
   <p style="color: green;">Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
