@@ -750,7 +750,7 @@ Output:
 ### Pseudo-element
 
 #### `::selection`
-[selector/p-hover.html](selector/p-hover.html)
+[selector/p-selection.html](selector/p-selection.html)
 ```css
 p::selection {
   color: white;
