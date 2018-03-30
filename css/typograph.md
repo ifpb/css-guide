@@ -177,3 +177,6 @@ text-transform: lowercase;
 text-transform: none;
 text-transform: full-width;
 ```
+
+<!-- TODO
+* [Cap Drops](https://css-tricks.com/snippets/css/drop-caps/) -->

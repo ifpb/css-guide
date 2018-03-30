@@ -14,7 +14,8 @@
 ---
 
 Reference:
-* [Style Language](https://en.wikipedia.org/wiki/Style_language)
+* [Style Language \| Wikipedia](https://en.wikipedia.org/wiki/Style_language)
+* [Style Languague Slide](../slides/style.pdf)
 
 > "Style Language is a computer language that expresses the presentation of structured documents." [Wikipedia](https://en.wikipedia.org/wiki/Style_sheet_language)
 

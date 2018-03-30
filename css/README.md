@@ -1005,11 +1005,13 @@ p {
 
 Reference: 
 * [W3C](https://www.w3.org/TR/CSS22/cascade.html), [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance), [WP](https://docs.webplatform.org/wiki/tutorials/inheritance_and_cascade)
+* [Cascade Slide](../slides/cascade.pdf)
 
-<!-- TODO
-https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax
-https://developer.mozilla.org/@api/deki/files/6168/=css_syntax_-_statements_Venn_diag.png -->
+![statement css](https://developer.mozilla.org/@api/deki/files/6168/=css_syntax_-_statements_Venn_diag.png)<br>
+Fonte: [CSS Syntax \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax)
 
+![how css works](https://mdn.mozillademos.org/files/11781/rendering.svg)<br>
+Fonte: [How CSS works \| MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/How_CSS_works)
 
 ### Importance
 
@@ -1018,26 +1020,30 @@ https://developer.mozilla.org/@api/deki/files/6168/=css_syntax_-_statements_Venn
 ##### Normal
 
 ```css
-p {
+h1 {
   color: red;
 }
 
-p {
+h1 {
   color: green;
 }
 ```
 
-##### Important
+##### [Important](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance#Importance)
 
 ```css
-p {
+h1 {
   color: red !important;
 }
 
-p {
+h1 {
   color: green;
 }
 ```
+
+#### CSS Question
+
+> What is the color of <h1> Element?
 
 ![important css](https://memeexplorer.com/cache/846.jpg)
 
@@ -1065,9 +1071,9 @@ p {
 | Important | Author |
 | Important | User |
 
-### Specificity
+### [Specificity](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance#Specificity)
 
-Value: **NNNN**
+Specificity Value: **NNNN**
 
 | Number |	Selector |
 |-|-|
@@ -1075,6 +1081,8 @@ Value: **NNNN**
 | Hundreds | ID selector |
 | Tens | class selector, attribute selector, pseudo-class  |
 | Ones | element selector, pseudo-element |
+
+#### Example
 
 [cascade/specificity/index.html](cascade/specificity/index.html):
 ```html
@@ -1109,6 +1117,11 @@ h1 {
 }
 ```
 
+#### CSS Question
+
+> What is the color of <h1> Element?
+> Is it possible to inspect specificity?
+
 | Style	| Selector | Thousands | Hundreds | Tens | Ones | Total |
 |-|-|-|-|-|-|-|
 | color: green | `style` | 1 | 0 | 0 | 0 | 1000 |
@@ -1116,11 +1129,9 @@ h1 {
 | color: blue | `h1` | 0 | 0 | 0 | 1 | 0001 |
 | color: red | `h1` | 0 | 0 | 0 | 1 | 0001 |
 
-#### CSS Question
+### [Source order](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance#Source_order)
 
-> Is it possible to inspect specificity?
-
-### Source order
+#### Example 
 
 [cascade/source-code/index.html](cascade/source-code/index.html):
 ```html
@@ -1155,6 +1166,10 @@ h1 {
 }
 ```
 
+#### CSS Question
+
+> What is the color of <h1> Element?
+
 ## Links
 ---
 
@@ -1175,7 +1190,3 @@ h1 {
   * [PureCSS](http://purecss.io/)
   * [Materialize CSS](http://materializecss.com/)
   * [SemanticUI](http://semantic-ui.com/)
-
-<!-- TODO
-* Counters CSS: [CSS Tricks](https://css-tricks.com/numbering-in-style/) e [Nested](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters)
-* [Cap Drops](https://css-tricks.com/snippets/css/drop-caps/) -->
