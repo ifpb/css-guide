@@ -62,7 +62,7 @@ color: hsla(270, 50%, 40%, 0.5);
 
 | &lt;named-color&gt; values | &lt;hex-color> values<br>(#rrggbb & [#rrggbbaa](https://caniuse.com/#feat=css-rrggbbaa)) | &lt;rgb()> values | [&lt;hsl()> values](https://en.wikipedia.org/wiki/HSL_and_HSV) |
 |-|-|-|-|
-| <span style="color: white">white</span> | <span style="color: #ffffff">#ffffff</span> | <span style="color: rgb(255, 255, 255)">rgb(255, 0, 0)</span> | <span style="color: hsl(0, 0%, 100%)"> hsl(0, 0%, 100%)</span> |
+| <span style="color: white">white</span> | <span style="color: #ffffff">#ffffff</span> | <span style="color: rgb(255, 255, 255)">rgb(255, 255, 255)</span> | <span style="color: hsl(0, 0%, 100%)"> hsl(0, 0%, 100%)</span> |
 | <span style="color: black">black</span> | <span style="color: #000000">#000000</span> | <span style="color: rgb(0, 0, 0)">rgb(0, 0, 0)</span> | <span style="color: hsl(0, 0%, 0%)"> hsl(0, 0%, 0%)</span> |
 | <span style="color: red">red</span> | <span style="color: #ff0000">#ff0000</span> | <span style="color: rgb(255, 0, 0)">rgb(255, 0, 0)</span> | <span style="color: hsl(0, 100%, 50%)"> hsl(0, 100%, 50%)</span> |
 | <span style="color: green">green</span> | <span style="color: #00ff00">#00ff00</span> | <span style="color: rgb(0, 255, 0)">rgb(0, 255, 0)</span> | <span style="color: hsl(120, 100%, 50%)"> hsl(120, 100%, 50%)</span> |
