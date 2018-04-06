@@ -831,8 +831,8 @@ References:
   color: blue;
 }
 
-.rede {
-  color: rede;
+.red {
+  color: red;
 }
 
 .green {
