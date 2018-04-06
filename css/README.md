@@ -373,7 +373,6 @@ body {
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
   <p>Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
 </body>
-</html>  
 ```
 
 Output:
@@ -400,7 +399,6 @@ h1 {
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
   <p>Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
 </body>
-</html>  
 ```
 
 Output:
@@ -439,7 +437,6 @@ p {
 <body>
   <p>Lorem ipsum dolor</p>
 </body>
-</html>  
 ```
 
 Output:
@@ -460,7 +457,6 @@ p {
 <body>
   <p>Lorem ipsum dolor</p>
 </body>
-</html>  
 ```
 
 Output:
