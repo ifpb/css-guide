@@ -127,6 +127,34 @@ Reference:
 Output: [overleaf](https://www.overleaf.com/read/wtrfpyrdmqvn)
 <!-- Read & Edit Link https://www.overleaf.com/15115485pyyyxrrsvbmy -->
 
+### Open Document Style
+
+Reference:
+* [Open Document Format for Office Applications (OpenDocument) Version 1.2](http://docs.oasis-open.org/office/v1.2/OpenDocument-v1.2-part1.html)
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<office:document-content ... office:version="1.2">
+  ...
+  <office:automatic-styles>
+    ...
+    <style:style style:name="T1" style:family="text">
+      <style:text-properties fo:color="#0000ff" fo:font-size="18pt" ... />
+    </style:style>
+  </office:automatic-styles>
+  <office:body>
+    <office:text>
+      ...
+      <text:p text:style-name="P1">
+        <text:span text:style-name="T1">Lorem ipsum dolor</text:span>
+      </text:p>
+    </office:text>
+  </office:body>
+</office:document-content>
+```
+
+Output: [tex.odt](text.odt)
+
 ### Qt Style
 
 Reference:
@@ -143,7 +171,7 @@ int main(int argc, char **argv)
   QApplication app (argc, argv);
 
   QLabel* label = new QLabel("Lorem ipsum dolor");
-  label->setStyleSheet("QLabel { color : blue; font-size : 17px”);
+  label->setStyleSheet("QLabel { color : blue; font-size : 17px");
   label->show();
 
   return app.exec();
@@ -154,43 +182,6 @@ int main(int argc, char **argv)
 Ouput:
 
 ![Aplication]() -->
-
-#### Qt Style Sheet
-
-```
-qt
-├── stylesheet.qss
-└── app.cpp
-```
-
-[qt/app.qss](qt/style.qss)
-```c++
-QLabel { color : blue; font-size : 17px}
-```
-
-[app.cpp](app.cpp)
-```c++
-#include <QApplication>
-#include <QLabel>
-#include <QFile>
-#include <QString>
-
-int main(int argc, char **argv)
-{
-  QApplication app (argc, argv);
-
-  QFile File("style.qss");
-  File.open(QFile::ReadOnly);
-  QString StyleSheet = QLatin1String(File.readAll());
-  app->setStyleSheet(StyleSheet);
-
-  QLabel* label = new QLabel("Lorem ipsum dolor");
-  label->setStyleSheet("QLabel { color : blue; font-size : 17px”);
-  label->show();
-
-  return app.exec();
-}
-```
 
 ### CSS
 
@@ -257,10 +248,10 @@ Output:
 
 ### Comparing
 
-| style | Android | LaTeX | Qt | CSS |
-|-|-|-|-|-|
-| color | android:textColor | \color | color | color |
-| size | android:textSize | \Large | font-size | font-size |
+| style | Android | LaTeX | ODT | Qt | CSS |
+|-|-|-|-|-|-|
+| color | android:textColor | \color | color | color | color |
+| size | android:textSize | \Large | font-size | font-size | font-size |
 
 ## Remember
 ---
