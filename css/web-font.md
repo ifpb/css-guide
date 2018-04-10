@@ -3,6 +3,7 @@
 ## @font-face
 ---
 
+[web-font/@font-face/](web-font/@font-face/):
 ```
 site
 ├── css
@@ -32,6 +33,14 @@ Reference:
 
 ### Web
 
+[web-font/google/web/](web-font/google/web/):
+```
+site
+├── css
+│   └── master.css
+└── index.html
+```
+
 ```html
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 ```
@@ -46,6 +55,7 @@ p {
 
 ### Download
 
+[web-font/google/local/](web-font/google/local/):
 ```
 site
 ├── css
@@ -79,6 +89,14 @@ Reference:
 - [Font selection and synthesis](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization#font_selection_and_synthesis)
 - [Roboto Description](https://fonts.google.com/specimen/Roboto?selection.family=Roboto)
 
+[web-font/google/styles/](web-font/google/styles/):
+```
+site
+├── css
+│   └── master.css
+└── index.html
+```
+
 ```html
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 ```
@@ -96,6 +114,14 @@ p {
 ```
 
 #### Multiple Fonts
+
+[web-font/google/multiple/](web-font/google/multiple/):
+```
+site
+├── css
+│   └── master.css
+└── index.html
+```
 
 ```html
 <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
