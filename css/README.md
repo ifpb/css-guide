@@ -921,6 +921,9 @@ Functions:
 
 #### [`@font-face`](https://developer.mozilla.org/en-US/docs/Web/CSS/%40font-face)
 
+reference:
+- [Web Font Guide](web-font.md)
+
 ```css
 @font-face {
   font-family: 'Roboto';
