@@ -535,6 +535,60 @@ h1, p
 
 ### Basic selectors
 
+#### Element
+
+[selector/span.html](selector/span.html)
+```css
+h1 {
+  color: blue;
+}
+
+span {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: tomato;
+}
+```
+
+```html
+<h1>Lorem ipsum dolor</h1>
+<p>Lorem ipsum, <span>dolor</span> sit amet consectetur adipisicing elit. Id, quia...</p>
+```
+
+Output:
+
+<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+  <h1 style="color: blue;">Lorem ipsum dolor</h1>
+  <p>Lorem ipsum, <span style="font-weight: bold; font-size: 1.2rem; color: tomato;">dolor</span> sit amet consectetur adipisicing elit. Id, quia...</p>
+</div>
+
+[selector/div.html](selector/div.html)
+```css
+div {
+  color: tomato;
+}
+```
+
+```html
+<h1>Lorem ipsum</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+<div>
+  <p>Expedita, officia rem, non nulla harum ut fugit optio explicabo temporibus eligendi...</p>
+  <p>Perferendis eaque ullam harum illum quas repudiandae dolore minima labore quod...</p>
+</div>
+```
+
+Output:
+
+<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+  <h1 style="color: #606c71;">Lorem ipsum dolor</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+  <div style="color: tomato;">
+    <p>Expedita, officia rem, non nulla harum ut fugit optio explicabo temporibus eligendi...</p>
+    <p>Perferendis eaque ullam harum illum quas repudiandae dolore minima labore quod...</p>
+  </div>
+</div>
+
 #### `#id`
 
 ```css
@@ -659,6 +713,7 @@ Output:
 <iframe src="selector/p-hover.html" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
 #### `:first-child`
+
 ```css
 p:first-child {
   color: green;
@@ -1214,6 +1269,8 @@ h1 {
   * [Sass](http://sass-lang.com/)
   * [PostCSS](http://postcss.org/)
 * Framework:
+  * [Top CSS frameworks to follow in 2017](https://medium.com/@thomasmarciniak/top-css-frameworks-to-follow-in-2017-51d283dd00fb)
+  * [Popular CSS Libraries](http://cssdb.co/)
   * [Bootsrap](http://getbootstrap.com/) ([cheat sheet](http://hackerthemes.com/bootstrap-cheatsheet/))
   * [Foundation](http://foundation.zurb.com/)
   * [PureCSS](http://purecss.io/)

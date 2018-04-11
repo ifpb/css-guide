@@ -26,8 +26,3 @@
 #### [`border-radius`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius)
 
 #### [`box-shadow`](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)
-
-## Line Box
----
-
-#### [`vertical-align`](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align)
