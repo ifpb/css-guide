@@ -662,6 +662,10 @@ Output:
 .red {
   color: red;
 }
+
+h1.text-center.red {
+  font-size: 3rem;
+}
 ```
 
 ```html
