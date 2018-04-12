@@ -1,5 +1,20 @@
 # Typography
 
+* Text and Font
+  * Color
+  * Font Family
+  * Font Size
+  * Font Style
+  * Font Weight
+  * Text Decoration
+  * Text Transform
+  * Text drop shadows
+* Text layout
+  * Text Alignment
+  * Text Indent
+  * Line height
+  * Letter and word spacing
+
 ## Text and Font
 ---
 
@@ -189,33 +204,6 @@ font-weight: 900;
 | font-weight: 800; | <span style="font-weight: 800;">Lorem ipsum</span> |
 | font-weight: 900; | <span style="font-weight: 900;">Lorem ipsum</span> |
 
-
-### [Text align](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align)
-
-> <b>Values:</b> start \| end \| left \| right \| center \| justify \| match-parent
-
-```css
-/* Keyword values */
-text-align: left;
-text-align: right;
-text-align: center;
-text-align: justify;
-text-align: justify-all;
-text-align: start;
-text-align: end;
-text-align: match-parent;
-```
-
-#### Example
-
-| Style | Preview |
-|-|-|
-| text-align: left; | <div style="text-align: left; width: 200px">Lorem ipsum dolor amet, consectetur.</div> |
-| text-align: center; | <div style="text-align: center; width: 200px">Lorem ipsum dolor amet, consectetur.</div> |
-| text-align: right; | <div style="text-align: right; width: 200px">Lorem ipsum dolor amet, consectetur.</div> |
-| text-align: justify; | <div style="text-align: justify; width: 200px">Lorem ipsum dolor amet, consectetur.</div> |
-
-
 ### [Text decoration](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration)
 
 > <b>Values:</b> `<text-decoration-line>` || `<text-decoration-color>` || `<text-decoration-style>`<br>
@@ -245,32 +233,6 @@ text-decoration: underline wavy red;  /* Red wavy underlining */
 | text-decoration: underline red; | <span style="text-decoration: underline red;">Lorem ipsum</span> |
 | text-decoration: underline red wavy; | <span style="text-decoration: underline red wavy;">Lorem ipsum</span> |
 
-
-### [Text indent](https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent)
-
-> <b>Values:</b> `<length-percentage>`<br>
-> <br>
-> `<length-percentage>` = `<length>` | `<percentage>`
-
-#### Syntax
-
-```css
-/* <length> values */
-text-indent: 3mm;
-text-indent: 40px;
-
-/* <percentage> value
-   relative to the containing block width */
-text-indent: 15%;
-```
-
-#### Example
-
-| Style | Preview |
-|-|-|
-| text-indent: 3rem; | <div style="text-indent: 3rem; width: 200px">Lorem ipsum dolor amet, consectetur.</div> |
-
-
 ### [Text transform](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform)
 
 > <b>Values:</b> none \| capitalize \| uppercase \| lowercase \| full-width
@@ -294,3 +256,173 @@ text-transform: full-width;
 | text-transform: uppercase; | <span style="text-transform: uppercase;">Lorem ipsum</span> |
 | text-transform: lowercase; | <span style="text-transform: lowercase;">Lorem ipsum</span> |
 | text-transform: capitalize; | <span style="text-transform: capitalize;">Lorem ipsum</span> |
+
+### [Text drop shadows](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow)
+
+References:
+- [CSS3 Text Shadow Generator](https://css3gen.com/text-shadow/) 
+- [12 Fun CSS Text Shadows You Can Copy and Paste](https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/)
+- [CSS Text Effects From CodePen](https://freebiesupply.com/blog/css-text-effects-from-codepen/)
+- [CSS-Tricks text-shadow](https://css-tricks.com/almanac/properties/t/text-shadow/)
+
+#### Syntax
+
+```css
+/* offset-x | offset-y | blur-radius | color */
+text-shadow: 1px 1px 2px black; 
+
+/* color | offset-x | offset-y | blur-radius */
+text-shadow: #FC0 1px 0 10px; 
+
+/* offset-x | offset-y | color */
+text-shadow: 5px 5px #558ABB;
+
+/* color | offset-x | offset-y */
+text-shadow: white 2px 5px;
+
+/* offset-x | offset-y */
+text-shadow: 5px 10px;
+
+/* Global values */
+text-shadow: unset;
+```
+
+#### Simple shadow
+
+| Style | Preview |
+|-|-|-|
+| text-shadow: unset; | <span style="font-size: 1.5rem; text-shadow: unset;">Lorem ipsum</span> |
+| text-shadow: 1px 1px 2px black; | <span style="font-size: 1.5rem; text-shadow: 1px 1px 2px black;">Lorem ipsum</span> |
+| text-shadow: 10px 1px 2px black; | <span style="font-size: 1.5rem; text-shadow: 10px 1px 2px black;">Lorem ipsum</span> |
+| text-shadow: 1px 11px 2px black; | <span style="font-size: 1.5rem; text-shadow: 1px 10px 2px black;">Lorem ipsum</span> |
+| text-shadow: 1px 11px .5px black; | <span style="font-size: 1.5rem; text-shadow: 1px 10px .5px black;">Lorem ipsum</span> |
+| color: rgba(0,168,255,0.5);<br>text-shadow: 2px -1px 0 rgba(255,0,180,0.5); | <span style="font-size: 1.5rem; color: rgba(0,168,255,0.5);text-shadow: 2px -1px 0 rgba(255,0,180,0.5); text-transform: uppercase; letter-spacing: 3px;">Lorem ipsum</span> |
+
+
+
+#### Multiple shadow
+
+Fonte: [O surpreendente text-shadow](https://medium.com/jaguaribetech/o-surpreendente-text-shadow-1e3a9599ae4f)
+```css
+.shadow {
+  color: #f74646;
+  font-weight: bolder;
+  font-size: 6em;
+  text-shadow: -2px 0 0 #fff, 
+    -1px -1px 0 #fff,
+    0 -2px 0 #fff,
+    1px -1px 0 #fff,
+    2px 0 0 #fff,
+    1px 1px 0 #fff,
+     0 2px 0 #fff,
+    12px 16px 0 #00ac94;
+}
+```
+
+Output:
+
+<div style="color: #f74646; text-shadow: -2px 0 0 #fff, -1px -1px 0 #fff, 0 -2px 0 #fff, 1px -1px 0 #fff, 2px 0 0 #fff, 1px 1px 0 #fff,  0 2px 0 #fff, 12px 16px 0 #00ac94;  font-weight: bolder; font-size: 6em;">
+  Lorem
+</div>
+
+Fonte: [CSS Text Effects From CodePen](https://freebiesupply.com/blog/css-text-effects-from-codepen/)
+```css
+.long-shadow {
+  font-size:4rem; 
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #FFFFD9;
+  text-shadow: #03a488 1px 1px, #05a488 2px 2px, #08a588 3px 3px, #0aa688 4px 4px, #0da788 5px 5px, #0fa788 6px 6px, #12a887 7px 7px, #14a987 8px 8px, #17a987 9px 9px, #1aaa87 10px 10px, #1cab87 11px 11px, #1fac87 12px 12px, #21ac87 13px 13px, #24ad87 14px 14px, #26ae87 15px 15px, #29ae87 16px 16px, #2baf87 17px 17px, #2eb087 18px 18px, #30b086 19px 19px, #33b186 20px 20px, #36b286 21px 21px, #38b386 22px 22px, #3bb386 23px 23px, #3db486 24px 24px, #40b586 25px 25px, #42b586 26px 26px, #45b686 27px 27px, #47b786 28px 28px, #4ab886 29px 29px, #4db886 30px 30px, #4fb986 31px 31px, #52ba85 32px 32px, #54ba85 33px 33px, #57bb85 34px 34px, #59bc85 35px 35px, #5cbd85 36px 36px, #5ebd85 37px 37px, #61be85 38px 38px, #63bf85 39px 39px, #66bf85 40px 40px, #69c085 41px 41px, #6bc185 42px 42px, #6ec285 43px 43px, #70c284 44px 44px, #73c384 45px 45px, #75c484 46px 46px, #78c484 47px 47px, #7ac584 48px 48px, #7dc684 49px 49px, #80c784 50px 50px, #82c784 51px 51px, #85c884 52px 52px, #87c984 53px 53px, #8ac984 54px 54px, #8cca84 55px 55px, #8fcb84 56px 56px, #91cb83 57px 57px, #94cc83 58px 58px, #96cd83 59px 59px, #99ce83 60px 60px, #9cce83 61px 61px, #9ecf83 62px 62px, #a1d083 63px 63px, #a3d083 64px 64px, #a6d183 65px 65px, #a8d283 66px 66px, #abd383 67px 67px, #add383 68px 68px, #b0d482 69px 69px, #b3d582 70px 70px, #b5d582 71px 71px, #b8d682 72px 72px, #bad782 73px 73px, #bdd882 74px 74px, #bfd882 75px 75px, #c2d982 76px 76px, #c4da82 77px 77px, #c7da82 78px 78px, #c9db82 79px 79px, #ccdc82 80px 80px, #cfdd82 81px 81px, #d1dd81 82px 82px, #d4de81 83px 83px, #d6df81 84px 84px, #d9df81 85px 85px, #dbe081 86px 86px, #dee181 87px 87px, #e0e181 88px 88px, #e3e281 89px 89px, #e6e381 90px 90px, #e8e481 91px 91px, #ebe481 92px 92px, #ede581 93px 93px, #f0e680 94px 94px, #f2e680 95px 95px, #f5e780 96px 96px, #f7e880 97px 97px, #fae980 98px 98px, #fce980 99px 99px, #ffea80 100px 100px, #00A388 0px 0px;
+}
+```
+
+<div style="background: #FFEA80; height: 15rem; text-align:center; font-size:4rem; font-weight: 600; text-transform: uppercase; color: #FFFFD9;text-shadow: #03a488 1px 1px, #05a488 2px 2px, #08a588 3px 3px, #0aa688 4px 4px, #0da788 5px 5px, #0fa788 6px 6px, #12a887 7px 7px, #14a987 8px 8px, #17a987 9px 9px, #1aaa87 10px 10px, #1cab87 11px 11px, #1fac87 12px 12px, #21ac87 13px 13px, #24ad87 14px 14px, #26ae87 15px 15px, #29ae87 16px 16px, #2baf87 17px 17px, #2eb087 18px 18px, #30b086 19px 19px, #33b186 20px 20px, #36b286 21px 21px, #38b386 22px 22px, #3bb386 23px 23px, #3db486 24px 24px, #40b586 25px 25px, #42b586 26px 26px, #45b686 27px 27px, #47b786 28px 28px, #4ab886 29px 29px, #4db886 30px 30px, #4fb986 31px 31px, #52ba85 32px 32px, #54ba85 33px 33px, #57bb85 34px 34px, #59bc85 35px 35px, #5cbd85 36px 36px, #5ebd85 37px 37px, #61be85 38px 38px, #63bf85 39px 39px, #66bf85 40px 40px, #69c085 41px 41px, #6bc185 42px 42px, #6ec285 43px 43px, #70c284 44px 44px, #73c384 45px 45px, #75c484 46px 46px, #78c484 47px 47px, #7ac584 48px 48px, #7dc684 49px 49px, #80c784 50px 50px, #82c784 51px 51px, #85c884 52px 52px, #87c984 53px 53px, #8ac984 54px 54px, #8cca84 55px 55px, #8fcb84 56px 56px, #91cb83 57px 57px, #94cc83 58px 58px, #96cd83 59px 59px, #99ce83 60px 60px, #9cce83 61px 61px, #9ecf83 62px 62px, #a1d083 63px 63px, #a3d083 64px 64px, #a6d183 65px 65px, #a8d283 66px 66px, #abd383 67px 67px, #add383 68px 68px, #b0d482 69px 69px, #b3d582 70px 70px, #b5d582 71px 71px, #b8d682 72px 72px, #bad782 73px 73px, #bdd882 74px 74px, #bfd882 75px 75px, #c2d982 76px 76px, #c4da82 77px 77px, #c7da82 78px 78px, #c9db82 79px 79px, #ccdc82 80px 80px, #cfdd82 81px 81px, #d1dd81 82px 82px, #d4de81 83px 83px, #d6df81 84px 84px, #d9df81 85px 85px, #dbe081 86px 86px, #dee181 87px 87px, #e0e181 88px 88px, #e3e281 89px 89px, #e6e381 90px 90px, #e8e481 91px 91px, #ebe481 92px 92px, #ede581 93px 93px, #f0e680 94px 94px, #f2e680 95px 95px, #f5e780 96px 96px, #f7e880 97px 97px, #fae980 98px 98px, #fce980 99px 99px, #ffea80 100px 100px, #00A388 0px 0px;">
+  Lorem
+</div>
+
+## Text layout
+---
+
+### [Text Alignment](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align)
+
+> <b>Values:</b> start \| end \| left \| right \| center \| justify \| match-parent
+
+```css
+/* Keyword values */
+text-align: left;
+text-align: right;
+text-align: center;
+text-align: justify;
+text-align: justify-all;
+text-align: start;
+text-align: end;
+text-align: match-parent;
+```
+
+#### Example
+
+<table>
+  <thead>
+    <tr>
+      <th>Style</th>
+      <th>Preview</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>text-align: left;</td>
+      <td style="text-align: left; width: 200px">Lorem ipsum dolor amet, consectetur.</td>
+    </tr>
+    <tr>
+      <td>text-align: center;</td>
+      <td style="text-align: center; width: 200px">Lorem ipsum dolor amet, consectetur.</td>
+    </tr>
+    <tr>
+      <td>text-align: right;</td>
+      <td style="text-align: right; width: 200px">Lorem ipsum dolor amet, consectetur.</td>
+    </tr>
+    <tr>
+      <td>text-align: justify;</td>
+      <td style="text-align: justify; width: 200px">Lorem ipsum dolor amet, consectetur.</td>
+    </tr>
+  </tbody>
+</table>
+
+### [Text indent](https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent)
+
+> <b>Values:</b> `<length-percentage>`<br>
+> <br>
+> `<length-percentage>` = `<length>` | `<percentage>`
+
+#### Syntax
+
+```css
+/* <length> values */
+text-indent: 3mm;
+text-indent: 40px;
+
+/* <percentage> value
+   relative to the containing block width */
+text-indent: 15%;
+```
+
+#### Example
+
+<table>
+  <thead>
+    <tr>
+      <th>Style</th>
+      <th>Preview</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>text-indent: 3rem;</td>
+      <td style="text-indent: 3rem; width: 200px">Lorem ipsum dolor amet, consectetur.</td>
+    </tr>
+    <tr>
+      <td>text-indent: 20px;</td>
+      <td style="text-indent: 20px; width: 200px">Lorem ipsum dolor amet, consectetur.</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,6 +1,11 @@
 # CSS values and units
 
-Reference:
+* [`<color>`](#color)
+* [`<generic-family>`](#generic-family)
+* [`<family-name>`](#family-name)
+* [`<length>`](#length)
+
+## References
 * [CSS values and units \| MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units) (Numeric values, Percentages, Colors, Coordinate positions, Functions)
 * [Value definition syntax \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax)
 
@@ -14,8 +19,6 @@ Used value -->
 
 ## [`<color>`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
 ---
-
-**[Color Keyword](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Color_keywords)**
 
 ```css
 /* <named-color> */
@@ -60,6 +63,8 @@ color: hsl(270, 50%, 40%);
 color: hsla(270, 50%, 40%, 0.5);
 ```
 
+### Examples
+
 | `<named-color>` | `<hex-color>` | `<rgb-color>` | `<hsl-color>` |
 |-|-|-|-|
 | <span style="color: white">white</span> | <span style="color: #ffffff">#ffffff</span> | <span style="color: rgb(255, 255, 255)">rgb(255, 255, 255)</span> | <span style="color: hsl(0, 0%, 100%)"> hsl(0, 0%, 100%)</span> |
@@ -70,6 +75,8 @@ color: hsla(270, 50%, 40%, 0.5);
 | <span style="color: cyan">cyan</span> | <span style="color: #00ffff">#00ffff</span> | <span style="color: rgb(0, 255, 255)">rgb(0, 255, 255)</span> | <span style="color: hsl(180, 100%, 50%)"> hsl(180, 100%, 50%)</span> |
 | <span style="color: rebeccapurple">rebeccapurple</span> | <span style="color: #663399">#663399</span> <span style="color: #639">#639</span> | <span style="color: rgb(102, 51, 153)">rgb(102, 51, 153)</span><br><span style="color: rgba(102, 51, 153, 1)">rgba(102, 51, 153, 1)</span> | <span style="color: hsl(270, 50%, 40%)"> hsl(270, 50%, 40%)</span><br><span style="color: hsla(270, 50%, 40%, 1)"> hsla(270, 50%, 40%, 1)</span> |
 | <span style="color: rgba(102, 51, 153, 0.5)">rebeccapurple 50%</span> | <span style="color: #66339977">#66339977</span> <span style="color: #6397">#6397</span> | <span style="color: rgba(102, 51, 153, 0.5)">rgba(102, 51, 153, 0.5)</span> | <span style="color: hsla(270, 50%, 40%, 0.5)"> hsla(270, 50%, 40%, 0.5)</span> |
+
+### References
 
 **Tools**
 - [Color name](http://www.color-hex.com/color-names.html)
@@ -177,7 +184,7 @@ Font: [Web safe fonts (Core fonts for the Web)](https://en.wikipedia.org/wiki/Co
 
 | Unit | Description | Style | Syntax | Preview |
 |-|-|-|-|-|
-| px | One pixel | font-size: 20px; | `<abosolut-size>` | <span style="font-size: 20px;">Lorem ipsum</span> |
-| cm | One centimeter | font-size: 1cm; | `<abosolut-size>` | <span style="font-size: 1cm;">Lorem ipsum</span> |
-| mm | One millimeter | font-size: 10mm; | `<abosolut-size>` | <span style="font-size: 10mm;">Lorem ipsum</span> |
-| in | One inch | font-size: .2in; | `<abosolut-size>` | <span style="font-size: .2in;">Lorem ipsum</span> |
+| px | pixel | font-size: 20px; | `<abosolut-size>` | <span style="font-size: 20px;">Lorem ipsum</span> |
+| cm | centimeter | font-size: 1cm; | `<abosolut-size>` | <span style="font-size: 1cm;">Lorem ipsum</span> |
+| mm | millimeter | font-size: 10mm; | `<abosolut-size>` | <span style="font-size: 10mm;">Lorem ipsum</span> |
+| in | inch | font-size: .2in; | `<abosolut-size>` | <span style="font-size: .2in;">Lorem ipsum</span> |
