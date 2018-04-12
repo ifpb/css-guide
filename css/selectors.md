@@ -31,9 +31,9 @@ h1, p
 
 | Name | Pattern | Example |
 |-|-|-|
-| [Adjacent sibling combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_selectors) | `A + B` | `ul + li` |
-| [General sibling combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_selectors) | `A ~ B` | `ul ~ li` |
-| [Child combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_selectors) | `A > B` | `ul + li` |
+| [Adjacent sibling combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_selectors) | `A + B` | `h1 + p` |
+| [General sibling combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_selectors) | `A ~ B` | `h1 ~ p` |
+| [Child combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_selectors) | `A > B` | `ul > li` |
 | [Descendant combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_selectors) | `A B` | `ul li` |
 
 ## [Pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)

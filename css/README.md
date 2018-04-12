@@ -591,6 +591,7 @@ Output:
 
 #### `#id`
 
+[selector/id.html](selector/id.html):
 ```css
 p {
   color: green;
@@ -621,6 +622,7 @@ Output:
 
 #### `.class`
 
+[selector/class.html](selector/class.html):
 ```css
 p {
   color: green;
@@ -649,10 +651,33 @@ Output:
   <p style="color: green;">Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
 </div>
 
+#### `.class.class`
+
+[selector/classclass.html](selector/classclass.html):
+```css
+.text-center {
+  text-align: center;
+}
+
+.red {
+  color: red;
+}
+```
+
+```html
+<body>
+  <h1 class="red text-center">Lorem ipsum</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p class="red">Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
+  <p>Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
+</body>
+```
+
 ### Combinators
 
-#### `header ul`
+#### `header ul` (Descendant combinator)
 
+[selector/descendant-combinator.html](selector/descendant-combinator.html):
 ```css
 header ul {
   list-style-type: none;
@@ -692,6 +717,10 @@ Output:
     </ul>
   </main>
 </div>
+
+#### CSS Question
+
+> What is the selection of `body li`? How many elements?<br>
 
 ### Pseudo-class
 
@@ -798,6 +827,14 @@ Output:
   <p style="color: green;">Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
 </div>
 
+### CSS Question
+
+> Is it possible to inspect `:hover`?<br>
+> Is it possible to replace `:nth-child` with `:first-child`?<br>
+> Is it possible to replace `:first-child` with `:nth-child`?<br>
+> Is it possible to replace general/adjacent sibling combinator selector with `:nth-child`?<br>
+> Is it possible to select odd or even elements?<br>
+
 ### Pseudo-element
 
 #### `::selection`
@@ -817,14 +854,6 @@ p::selection {
 Output:
 
 <iframe src="selector/p-selection.html" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
-
-### CSS Question
-
-> Is it possible to inspect `:hover`?<br>
-> Is it possible to replace `:nth-child` with `:first-child`?<br>
-> Is it possible to replace `:first-child` with `:nth-child`?<br>
-> Is it possible to replace general/adjacent sibling combinator selector with `:nth-child`?<br>
-> Is it possible to select odd or even elements?<br>
 
 ## Functions
 ---

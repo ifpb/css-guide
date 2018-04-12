@@ -13,6 +13,8 @@
   - [Glyphicons](http://glyphicons.com/)
   - [Octicons](https://octicons.github.com/)
   - [Nerd Font](https://nerdfonts.com)
+  - [Weather Icon](https://erikflowers.github.io/weather-icons/)
+  - [Skycons](https://darkskyapp.github.io/skycons/)
 
 ## [Flat Icon Image](https://www.flaticon.com)
 ---
