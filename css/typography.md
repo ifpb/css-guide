@@ -82,7 +82,7 @@ body {
 
 ### [Font size](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size)
 
-> <b>Values:</b> [ `<absolute-size>` | `<relative-size>` | `<length>` | `<percentage>` | inherit ]<br>
+> <b>Values:</b> [ `<absolute-size>` | `<relative-size>` | [`<length>`](values.md#length) | `<percentage>` | inherit ]<br>
 ><br>
 >`<absolute-size>` = xx-small | x-small | small | medium | large | x-large | xx-large<br>
 >`<relative-size>` = larger | smaller<br>
@@ -117,7 +117,7 @@ font-size: 80%;
 |-|-|-|
 | font-size: small; | `<abosolut-size>` | <span style="font-size: small;">Lorem ipsum</span> |
 | font-size: large; | `<abosolut-size>` | <span style="font-size: large;">Lorem ipsum</span> |
-| font-size: larger; | `<abosolut-size>` | <span style="font-size: larger;">Lorem ipsum</span> |
+| font-size: larger; | `<relative-size>` | <span style="font-size: larger;">Lorem ipsum</span> |
 | font-size: 16px; | `<length>` | <span style="font-size: 16px;">Lorem ipsum</span> |
 | font-size: 1.5rem; | `<length>` | <span style="font-size: 1.5rem;">Lorem ipsum</span> |
 | font-size: 1.5em; | `<length>` | <span style="font-size: 1.5em;">Lorem ipsum</span> |
@@ -125,7 +125,7 @@ font-size: 80%;
 
 ### [Font style](https://developer.mozilla.org/en-US/docs/Web/CSS/font-style)
 
-> <b>Values:</b> normal | italic | oblique | inherit
+> <b>Values:</b> normal \| italic \| oblique \| inherit
 
 #### Syntax
 
@@ -146,7 +146,7 @@ font-style: oblique;
 
 ### [Font weight](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight)
 
-> <b>Values:</b> normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
+> <b>Values:</b> normal \| bold \| bolder \| lighter \| 100 \| 200 \| 300 \| 400 \| 500 \| 600 \| 700 \| 800 \| 900
 
 #### Syntax
 
@@ -209,7 +209,7 @@ text-align: match-parent;
 #### Example
 
 | Style | Preview |
-|-|-|-|
+|-|-|
 | text-align: left; | <div style="text-align: left; width: 200px">Lorem ipsum dolor amet, consectetur.</div> |
 | text-align: center; | <div style="text-align: center; width: 200px">Lorem ipsum dolor amet, consectetur.</div> |
 | text-align: right; | <div style="text-align: right; width: 200px">Lorem ipsum dolor amet, consectetur.</div> |
@@ -267,13 +267,13 @@ text-indent: 15%;
 #### Example
 
 | Style | Preview |
-|-|-|-|
+|-|-|
 | text-indent: 3rem; | <div style="text-indent: 3rem; width: 200px">Lorem ipsum dolor amet, consectetur.</div> |
 
 
 ### [Text transform](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform)
 
-> <b>Values:</b> none | capitalize | uppercase | lowercase | full-width
+> <b>Values:</b> none \| capitalize \| uppercase \| lowercase \| full-width
 
 #### Syntax
 
