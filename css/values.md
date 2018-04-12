@@ -72,6 +72,7 @@ color: hsla(270, 50%, 40%, 0.5);
 | <span style="color: rgba(102, 51, 153, 0.5)">rebeccapurple 50%</span> | <span style="color: #66339977">#66339977</span> <span style="color: #6397">#6397</span> | <span style="color: rgba(102, 51, 153, 0.5)">rgba(102, 51, 153, 0.5)</span> | <span style="color: hsla(270, 50%, 40%, 0.5)"> hsla(270, 50%, 40%, 0.5)</span> |
 
 **Tools**
+- [Color name](http://www.color-hex.com/color-names.html)
 - [Chrome DevTools: Color Picker](https://developers.google.com/web/tools/chrome-devtools/css/reference#color-picker)
 - Color Info
   - Tools
@@ -89,5 +90,94 @@ color: hsla(270, 50%, 40%, 0.5);
 
 **Pastel Color**
 
+## `<generic-family>`
+---
+
+References:
+- [Font Family](https://www.w3.org/Style/Examples/007/fonts.en.html)
+- [Top 30 Best Sans Serif Fonts](http://www.vectordiary.com/fonts/top-30-best-sans-serif-fonts/)
+- [Top 30 Best Serif Fonts](http://www.vectordiary.com/fonts/top-30-best-serif-fonts/)
+- [Top 30 Modern Fonts](http://www.vectordiary.com/fonts/top-30-modern-fonts/)
+- [Outros](https://www.w3.org/Style/Examples/007/fonts.en.html#font-family)
+
+<div style="font-size: 2rem;">
+  <span style="font-family: serif">Lorem</span>
+  <span style="font-family: sans-serif">Lorem</span>
+  <span style="font-family: monospace">Lorem</span>
+  <span style="font-family: cursive">Lorem</span>
+  <span style="font-family: fantasy">Lorem</span>
+</div>
+
+| `<generic-family>` | `<family-name>` |
+|-|-|
+| serif | Times, Times New Roman, Georgia, Century, Lucida, Didot |
+| sans-serif | Arial, Arial Black, Open Sans, Lucida Sans, Trebuchet MS, Verdana, Helvetica, Helvetica Neue, Gill Sans, Futura, San Fransisco, Tahoma, Ubuntu |
+| monospace | Courier, Courier New, Andale Mono, Monaco |
+| cursive | Brush Script MT, Comic Sans MS, Apple Chancery, Zapfino, Bradley Hand, Savoye Let |
+| fantasy | Impact, Papyrus, Luminari, Chalkduster, Chalkboard, Marker Felt, Trattatello, Cochin |
+
+### Default fonts
+
+| `<generic-family>` | Preview |
+|-|-|
+| serif | <span style="font-family: serif">Lorem ipsum</span> |
+| sans-serif | <span style="font-family: sans-serif">Lorem ipsum</span> |
+| monospace | <span style="font-family: monospace">Lorem ipsum</span> |
+| cursive | <span style="font-family: cursive">Lorem ipsum</span> |
+| fantasy | <span style="font-family: fantasy">Lorem ipsum</span> |
+
+> Chrome > settings > Appearance > Customize fonts
+
+## `<family-name>`
+---
+
+| `<family-name>` | `<generic-family>` | Preview |
+|-|-|-|
+| Times New Roman | serif | <span style="font-family: Times New Roman, serif">Lorem ipsum</span> |
+| Georgia | serif | <span style="font-family: Georgia, serif">Lorem ipsum</span> |
+| Arial | sans-serif | <span style="font-family: Arial, sans-serif">Lorem ipsum</span> |
+| Arial Black | sans-serif | <span style="font-family: Arial Black, sans-serif">Lorem ipsum</span> |
+| Trebuchet MS | sans-serif | <span style="font-family:  Trebuchet MS, sans-serif">Lorem ipsum</span> |
+| Verdana | sans-serif | <span style="font-family: Verdana, sans-serif">Lorem ipsum</span> |
+| Courier New | monospace | <span style="font-family: Courier New, monospace">Lorem ipsum</span> |
+| Andale Mono | monospace | <span style="font-family: Andale Mono, monospace">Lorem ipsum</span> |
+| Brush Script MT | cursive | <span style="font-family: Brush Script MT, monospace">Lorem ipsum</span> |
+| Comic Sans MS | cursive | <span style="font-family: Comic Sans MS, sans-serif">Lorem ipsum</span> |
+| Impact | fantasy | <span style="font-family: Impact, sans-serif">Lorem ipsum</span> |
+|  Webdings | fantasy | <span style="font-family:  Webdings, sans-serif">Lorem ipsum</span> |
+
+Font: [Web safe fonts (Core fonts for the Web)](https://en.wikipedia.org/wiki/Core_fonts_for_the_Web)
+
 ## [`<length>`](https://developer.mozilla.org/en-US/docs/Web/CSS/length)
 ---
+
+### Aboslute
+
+### Relative length units
+
+#### Font-relative lengths
+
+| Unit | Description | Style | Syntax | Preview |
+|-|-|-|-|-|
+| ch | 0-width | font-size: 1ch; | `<abosolut-size>` | <span style="font-size: 1ch;">Lorem ipsum</span> |
+| em | calculated font-size of the element | font-size: 1.5em; | `<abosolut-size>` | <span style="font-size: 1.5em;">Lorem ipsum</span> |
+| rem | calculated font-size of the root element | font-size: 1.5rem; | `<abosolut-size>` | <span style="font-size: 1.5rem;">Lorem ipsum</span> |
+| ex | x-heigth | font-size: 1ex; | `<abosolut-size>` | <span style="font-size: 1ex;">Lorem ipsum</span> |
+
+#### Viewport-percentage lengths
+
+| Unit | Description | Style | Syntax | Preview |
+|-|-|-|-|-|
+| vh | 1% of the height of the viewport | font-size: 1vh; | `<abosolut-size>` | <span style="font-size: 1vh;">Lorem ipsum</span> |
+| vw | 1% of the width of the viewport | font-size: 1vw; | `<abosolut-size>` | <span style="font-size: 1vw;">Lorem ipsum</span> |
+| vmin | smaller of vw and vh | font-size: 1vmin; | `<abosolut-size>` | <span style="font-size: 1vmin;">Lorem ipsum</span> |
+| vmax | larger of vw and vh | font-size: 1vmax; | `<abosolut-size>` | <span style="font-size: 1vmax;">Lorem ipsum</span> |
+
+### Absolute length units
+
+| Unit | Description | Style | Syntax | Preview |
+|-|-|-|-|-|
+| px | One pixel | font-size: 20px; | `<abosolut-size>` | <span style="font-size: 20px;">Lorem ipsum</span> |
+| cm | One centimeter | font-size: 20cm; | `<abosolut-size>` | <span style="font-size: 20cm;">Lorem ipsum</span> |
+| mm | One millimeter | font-size: 20mm; | `<abosolut-size>` | <span style="font-size: 20mm;">Lorem ipsum</span> |
+| in | One inch | font-size: 20in; | `<abosolut-size>` | <span style="font-size: 20in;">Lorem ipsum</span> |
