@@ -551,12 +551,21 @@ border-collapse: separate;
 ### Example
 
 ```css
+table {
+  width: 317px;
+}
+
 .separate {
   border-collapse: separate;
+  border-spacing: 2px;
 }
 
 .collapse {
   border-collapse: collapse;
+}
+
+tr {
+  border: 1px solid #000;
 }
 ```
 
@@ -593,7 +602,7 @@ border-collapse: separate;
 ```
 
 <div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
-  <table style="border-collapse: separate;margin-bottom: 1rem; border: 1px solid #000;">
+  <table style="width: 317px; border-spacing: 2px; border-collapse: separate;margin-bottom: 1rem; border: 1px solid #000;">
     <tbody>
       <tr>
         <td style="border: 1px solid #000;">Item 1.1</td>
@@ -607,6 +616,7 @@ border-collapse: separate;
       </tr>
     </tbody>
   </table>
+  
   <table>
     <tbody>
       <tr>
