@@ -1,13 +1,23 @@
 # Box Model
 
-* [Box Model](#box-model)
+* [Box Model](#box-model-1)
 * [Border](#border)
 * [Margin](#margin)
 * [Padding](#padding)
 * [Width](#width)
 * [Height](#height)
+* [Border Radius](#border-radius)
+* [Box Shadow](#box-shadow)
+* [Border Image](#border-image)
+* [Border Collapse](#border-collapse)
+* [Box Sizing](#box-sizing)
+* [Overflow](#overflow)
+* [Outline](#outline)
 
 ## Box Model
+---
+
+References
 - [Box model recap](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Box_model_recap)
 - [Styling borders using CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Borders)
 
@@ -70,6 +80,7 @@ ul li {
 </div>
 
 ## [Border](https://developer.mozilla.org/en-US/docs/Web/CSS/border)
+---
 
 > <b>Value:</b> `<br-width>` || `<br-style>` || `<color>`<br>
 > <br>
@@ -122,9 +133,27 @@ border: medium dashed green;
 | [`border-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-style) | [`border-top-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-style)<br>[`border-right-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-style)<br>[`border-bottom-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-style)<br>[`border-left-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-left-style) |
 | [`border-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-color) | [`border-top-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-color)<br>[`border-right-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-color)<br>[`border-bottom-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-color)<br>[`border-left-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-left-color) |
 
-## [Margin](https://developer.mozilla.org/en-US/docs/Web/CSS/border)
+```css
+span {
+  border: 2px solid #000;
+  border-top: dotted;
+  border-right: outset;
+  border-bottom: dashed;
+}
+```
 
-> <b>Value:</b> [ `<length>` | `<percentage>` | auto ]{1,4}
+```html
+<span>Lorem ipsum</span>
+```
+
+<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+  <span style="border: 2px solid #000; border-top: dotted; border-right: outset; border-bottom: dashed;">Lorem ipsum</span>
+</div>
+
+## [Margin](https://developer.mozilla.org/en-US/docs/Web/CSS/border)
+---
+
+> <b>Value:</b> [ `<length>` \| `<percentage>` \| auto ]{1,4}
 
 ### Syntax
 ```css
@@ -167,7 +196,24 @@ margin: 2px 1em 0 auto;
 |-|-|
 | [`margin`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin) | [`margin-bottom`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom)<br>[`margin-left`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-left)<br>[`margin-right`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-right)<br>[`margin-top`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top) |
 
+```css
+span {
+  border: 2px solid #000;
+  margin-left: 20px;
+  margin-right: 1em;
+}
+```
+
+```html
+<p>Lorem <span>ipsum</span> dolor.<p>
+```
+
+<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+  <p>Lorem <span style="border: 2px solid #000;margin-left: 20px; margin-right: 1em;">ipsum</span> dolor.<p>
+</div>
+
 ## [Padding](https://developer.mozilla.org/en-US/docs/Web/CSS/padding)
+---
 
 > <b>Value:</b> [ `<length>` | `<percentage>` ]{1,4}
 
@@ -210,9 +256,27 @@ p {
 |-|-|
 | [`padding`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding) | [`padding-bottom`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-bottom)<br>[`padding-left`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-left)<br>[`padding-right`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-right)<br>[`padding-top`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-top) |
 
-## [Width](https://developer.mozilla.org/en-US/docs/Web/CSS/width)
+```css
+span {
+  border: 2px solid #000;
+  padding-left: 20px;
+  padding-right: 1em;
+  padding-top: 1em;
+}
+```
 
-> <b>Value:</b> [ `<length>` | `<percentage>` | auto ]
+```html
+<p>Lorem <span>ipsum</span> dolor.<p>
+```
+
+<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+  <p>Lorem <span style="border: 2px solid #000;padding-left: 20px; padding-right: 1em; padding-top: 1em;">ipsum</span> dolor.<p>
+</div>
+
+## [Width](https://developer.mozilla.org/en-US/docs/Web/CSS/width)
+---
+
+> <b>Value:</b> [ `<length>` \| `<percentage>` \| auto ]
 
 ### Syntax
 
@@ -243,7 +307,6 @@ p {
 .ml__auto {
   margin-left: auto;
 }
-
 ```
 
 ```html
@@ -260,9 +323,30 @@ p {
   <p style="border: 5px solid #000; width: 400px; margin-left: auto;">Lorem ipsum</p>
 </div>
 
-## [Height](https://developer.mozilla.org/en-US/docs/Web/CSS/height)
+### [`min-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/min-width) and [`max-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width)
 
-> <b>Value:</b> [ `<length>` | `<percentage>` | auto ]
+
+```css
+p {
+  border: 5px solid #000;
+  width: 40%;
+  min-width: 200px;
+}
+```
+
+```html
+<p>Lorem ipsum</p>
+```
+
+<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+  <p style="border: 5px solid #000;width: 40%; min-width: 200px;">Lorem ipsum</p>
+</div>
+
+
+## [Height](https://developer.mozilla.org/en-US/docs/Web/CSS/height)
+---
+
+> <b>Value:</b> [ `<length>` \| `<percentage>` \| auto ]
 
 ### Syntax
 
@@ -282,45 +366,276 @@ p {
   border: 5px solid #000;
 }
 
-.h_50 {
-  height: 50px;
+.h_100 {
+  height: 100px;
 }
 ```
 
 ```html
 <p>Lorem ipsum</p>
 <p></p>
-<p class="w_400">Lorem ipsum</p>
+<p class="h_100">Lorem ipsum</p>
 ```
 
 <div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
   <p style="border: 5px solid #000;">Lorem ipsum</p>
   <p style="border: 5px solid #000;"></p>
-  <p style="border: 5px solid #000; height: 50px;">Lorem ipsum</p>
+  <p style="border: 5px solid #000; height: 100px;">Lorem ipsum</p>
 </div>
+
+## [Border Radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius)
+---
+
+> <b>Value:</b> `<length-percentage>`{1,4} [ / `<length-percentage>`{1,4} ]?<br>
+> <br>
+> `<length-percentage>` = `<length>` | `<percentage>`
+
+### Syntax
+
+```css
+/* Radius is set for all 4 sides */
+border-radius: 10px;
+
+/* top-left-and-bottom-right | top-right-and-bottom-left */
+border-radius: 10px 5%;
+
+/* top-left | top-right-and-bottom-left | bottom-right */
+border-radius: 2px 4px 2px;
+
+/* top-left | top-right | bottom-right | bottom-left */
+border-radius: 1px 0 3px 4px;
+
+/* (first radius values) / radius */
+border-radius: 10px 5% / 20px;
+
+/* (first radius values) / top-left-and-bottom-right | top-right-and-bottom-left */
+border-radius: 10px 5% / 20px 30px;
+
+/* (first radius values) / top-left | top-right-and-bottom-left | bottom-right */
+border-radius: 10px 5px 2em / 20px 25px 30%;
+
+/* (first radius values) / top-left | top-right | bottom-right | bottom-left */
+border-radius: 10px 5% / 20px 25em 30px 35em;
+```
+
+### Example
+
+```css
+p {
+  text-align: center;
+  border: 5px solid #000;
+  padding: .5rem;
+  width: 200px;
+}
+
+.br_10 {
+  border-radius: 10px;
+}
+
+.br_20_10 {
+  border-radius: 20px 10px;
+}
+
+```
+
+```html
+<p class="br_10">Lorem ipsum</p>
+<p class="br_20_10">Lorem ipsum</p>
+```
+
+<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+  <p style="text-align:center; border: 5px solid #000; padding: .5rem; width: 200px; border-radius: 10px;">Lorem ipsum</p>
+  <p style="text-align:center; border: 5px solid #000; padding: .5rem; width: 200px; border-radius: 20px 10px;">Lorem ipsum</p>
+</div>
+
+### Shorthand and Longhand options
+
+| Shorthand | Longhand |
+|-|-|
+| [`border-radius`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius) | [`border-top-left-radius`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-left-radius)<br>[`border-top-right-radius`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-right-radius)<br>[`border-bottom-right-radius`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-right-radius)<br>[`border-bottom-left-radius`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-left-radius) |
+
+
+```css
+border-radius: 1em/5em;
+
+/* ... is equivalent to: */
+border-top-left-radius:     1em 5em;
+border-top-right-radius:    1em 5em;
+border-bottom-right-radius: 1em 5em;
+border-bottom-left-radius:  1em 5em;
+```
+
+```css
+border-radius: 4px 3px 6px / 2px 4px;
+
+/* ... is equivalent to: */
+border-top-left-radius:     4px 2px;
+border-top-right-radius:    3px 4px;
+border-bottom-right-radius: 6px 2px;
+border-bottom-left-radius:  3px 4px;
+```
+
+## [Box Shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow) 
+---
+
+References:
+- [Box Shadow Generator](https://www.cssmatic.com/box-shadow)
+- [Box Shadow \| CSS Tricks](https://css-tricks.com/almanac/properties/b/box-shadow/)
+- [CSS3 Box Shadows Effects](https://codepen.io/haibnu/pen/FxGsI)
+- [Material Design Box Shadows](https://codepen.io/sdthornton/pen/wBZdXq)
+- [18 Amazing Effects You can Create with CSS3 Box Shadows](https://www.hongkiat.com/blog/creative-css-shadows/)
+
+> <b>Value:</b> none \| `<shadow>`<br>
+> <br>
+> `<shadow>` = inset? && `<length>`{2,4} && `<color>`?
+
+### Syntax
+
+```css
+/* offset-x | offset-y | color */
+box-shadow: 60px -16px teal;
+
+/* offset-x | offset-y | blur-radius | color */
+box-shadow: 10px 5px 5px black;
+
+/* offset-x | offset-y | blur-radius | spread-radius | color */
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+/* inset | offset-x | offset-y | color */
+box-shadow: inset 5em 1em gold;
+
+/* Any number of shadows, separated by commas */
+box-shadow: 3px 3px red, -1em 0 0.4em olive;
+```
+
+### Example
+
+```css
+p {
+  text-align: center;
+  border: 5px solid #000;
+  padding: .5rem;
+  width: 200px;
+}
+
+.bs_short {
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.6);
+}
+```
+
+```html
+<p class="bs_short">Lorem ipsum</p>
+```
+
+<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+  <p style="text-align:center; border: 5px solid #000; padding: .5rem; width: 200px; border-radius: 10px; box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.6);">Lorem ipsum</p>
+</div>
+
+## [Border Image](https://developer.mozilla.org/en-US/docs/Web/CSS/border-image)
+---
+
+## [Border Collapse](https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse)
+---
+
+> <b>Value:</b> collapse \| separate
+
+### Syntax
+
+```css
+/* Keyword values */
+border-collapse: collapse;
+border-collapse: separate;
+```
+
+### Example
+
+```css
+.separate {
+  border-collapse: separate;
+}
+
+.collapse {
+  border-collapse: collapse;
+}
+```
+
+```html
+<table class="separate">
+  <tbody>
+    <tr>
+      <td>Item 1.1</td>
+      <td>Item 1.2</td>
+      <td>Item 1.3</td>
+    </tr>
+    <tr>
+      <td>Item 2.1</td>
+      <td>Item 2.2</td>
+      <td>Item 2.3</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="collapse">
+  <tbody>
+    <tr>
+      <td>Item 1.1</td>
+      <td>Item 1.2</td>
+      <td>Item 1.3</td>
+    </tr>
+    <tr>
+      <td>Item 2.1</td>
+      <td>Item 2.2</td>
+      <td>Item 2.3</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+  <table style="border-collapse: separate;margin-bottom: 1rem; border: 1px solid #000;">
+    <tbody>
+      <tr>
+        <td style="border: 1px solid #000;">Item 1.1</td>
+        <td style="border: 1px solid #000;">Item 1.2</td>
+        <td style="border: 1px solid #000;">Item 1.3</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #000;">Item 2.1</td>
+        <td style="border: 1px solid #000;">Item 2.2</td>
+        <td style="border: 1px solid #000;">Item 2.3</td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <tbody>
+      <tr>
+        <td style="border: 1px solid #000;">Item 1.1</td>
+        <td style="border: 1px solid #000;">Item 1.2</td>
+        <td style="border: 1px solid #000;">Item 1.3</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #000;">Item 2.1</td>
+        <td style="border: 1px solid #000;">Item 2.2</td>
+        <td style="border: 1px solid #000;">Item 2.3</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+## [Box Sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
+---
+
+## [Overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
+---
+
+## [Outline](https://developer.mozilla.org/en-US/docs/Web/CSS/outline)
+---
 
 <!-- 
 TODO
 
-max-width
-
-min-width
-
 box-sizing
 https://mdn.mozillademos.org/files/13649/box-model-alt-small.png
 https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Box_model_recap
-
-overflow
-
-outline
-
-[`border-colapse`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-colapse)
-
-
-[`border-image`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-image)
-
-[`border-radius`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius)
-
-[`box-shadow`](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow) 
 
 -->
