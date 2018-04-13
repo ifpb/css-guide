@@ -1,19 +1,20 @@
 # Typography
 
-* Text and Font
-  * Color
-  * Font Family
-  * Font Size
-  * Font Style
-  * Font Weight
-  * Text Decoration
-  * Text Transform
-  * Text drop shadows
-* Text layout
-  * Text Alignment
-  * Text Indent
-  * Line height
-  * Letter and word spacing
+* [Text and Font](#text-and-font)
+  * [Color](#color)
+  * [Font Family](#font-family)
+  * [Font Size](#font-size)
+  * [Font Style](#font-style)
+  * [Font Weight](#font-weight)
+  * [Text Decoration](#text-decoration)
+  * [Text Transform](#text-transform)
+  * [Text drop shadows](#text-drop-shadows)
+* [Text Layout](#text-layout)
+  * [Text Alignment](#text-alignment)
+  * [Text Indent](#text-indent)
+  * [Line height](#line-height)
+  * [Letter spacing](#letter-spacing)
+  * [Word spacing](#word-spacing)
 
 ## Text and Font
 ---
@@ -53,7 +54,7 @@ color: hsl(30, 100%, 50%, .6);
 | color: hsl(9, 100%, 64%); | `<hsl-color>` | <span style="color: hsl(9, 100%, 64%)">Lorem ipsum</span> |
 | color: rgba(255,99,71, .6); | `<rgba-color>` | <span style="color: rgba(255,99,71, .6)">Lorem ipsum</span> |
 
-Fonte: [Tomato Color](http://www.color-hex.com/color/ff6347)
+Fonte: [Tomato Color](http://www.color-hex.com/color/ff6347) (Shades, Tints, Triadic Colors, Analogous Colors, Monochromatic Colors, Complementary Color)
 
 ### [Font family](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)
 
@@ -321,7 +322,7 @@ Fonte: [O surpreendente text-shadow](https://medium.com/jaguaribetech/o-surpreen
 
 Output:
 
-<div style="color: #f74646; text-shadow: -2px 0 0 #fff, -1px -1px 0 #fff, 0 -2px 0 #fff, 1px -1px 0 #fff, 2px 0 0 #fff, 1px 1px 0 #fff,  0 2px 0 #fff, 12px 16px 0 #00ac94;  font-weight: bolder; font-size: 6em;">
+<div style="text-align:center;color: #f74646; text-shadow: -2px 0 0 #fff, -1px -1px 0 #fff, 0 -2px 0 #fff, 1px -1px 0 #fff, 2px 0 0 #fff, 1px 1px 0 #fff,  0 2px 0 #fff, 12px 16px 0 #00ac94;  font-weight: bolder; font-size: 6em;">
   Lorem
 </div>
 
@@ -336,7 +337,7 @@ Fonte: [CSS Text Effects From CodePen](https://freebiesupply.com/blog/css-text-e
 }
 ```
 
-<div style="background: #FFEA80; height: 15rem; text-align:center; font-size:4rem; font-weight: 600; text-transform: uppercase; color: #FFFFD9;text-shadow: #03a488 1px 1px, #05a488 2px 2px, #08a588 3px 3px, #0aa688 4px 4px, #0da788 5px 5px, #0fa788 6px 6px, #12a887 7px 7px, #14a987 8px 8px, #17a987 9px 9px, #1aaa87 10px 10px, #1cab87 11px 11px, #1fac87 12px 12px, #21ac87 13px 13px, #24ad87 14px 14px, #26ae87 15px 15px, #29ae87 16px 16px, #2baf87 17px 17px, #2eb087 18px 18px, #30b086 19px 19px, #33b186 20px 20px, #36b286 21px 21px, #38b386 22px 22px, #3bb386 23px 23px, #3db486 24px 24px, #40b586 25px 25px, #42b586 26px 26px, #45b686 27px 27px, #47b786 28px 28px, #4ab886 29px 29px, #4db886 30px 30px, #4fb986 31px 31px, #52ba85 32px 32px, #54ba85 33px 33px, #57bb85 34px 34px, #59bc85 35px 35px, #5cbd85 36px 36px, #5ebd85 37px 37px, #61be85 38px 38px, #63bf85 39px 39px, #66bf85 40px 40px, #69c085 41px 41px, #6bc185 42px 42px, #6ec285 43px 43px, #70c284 44px 44px, #73c384 45px 45px, #75c484 46px 46px, #78c484 47px 47px, #7ac584 48px 48px, #7dc684 49px 49px, #80c784 50px 50px, #82c784 51px 51px, #85c884 52px 52px, #87c984 53px 53px, #8ac984 54px 54px, #8cca84 55px 55px, #8fcb84 56px 56px, #91cb83 57px 57px, #94cc83 58px 58px, #96cd83 59px 59px, #99ce83 60px 60px, #9cce83 61px 61px, #9ecf83 62px 62px, #a1d083 63px 63px, #a3d083 64px 64px, #a6d183 65px 65px, #a8d283 66px 66px, #abd383 67px 67px, #add383 68px 68px, #b0d482 69px 69px, #b3d582 70px 70px, #b5d582 71px 71px, #b8d682 72px 72px, #bad782 73px 73px, #bdd882 74px 74px, #bfd882 75px 75px, #c2d982 76px 76px, #c4da82 77px 77px, #c7da82 78px 78px, #c9db82 79px 79px, #ccdc82 80px 80px, #cfdd82 81px 81px, #d1dd81 82px 82px, #d4de81 83px 83px, #d6df81 84px 84px, #d9df81 85px 85px, #dbe081 86px 86px, #dee181 87px 87px, #e0e181 88px 88px, #e3e281 89px 89px, #e6e381 90px 90px, #e8e481 91px 91px, #ebe481 92px 92px, #ede581 93px 93px, #f0e680 94px 94px, #f2e680 95px 95px, #f5e780 96px 96px, #f7e880 97px 97px, #fae980 98px 98px, #fce980 99px 99px, #ffea80 100px 100px, #00A388 0px 0px;">
+<div style="background: #FFEA80; height: 200px; text-align:center; font-size:4rem; font-weight: 600; text-transform: uppercase; color: #FFFFD9;text-shadow: #03a488 1px 1px, #05a488 2px 2px, #08a588 3px 3px, #0aa688 4px 4px, #0da788 5px 5px, #0fa788 6px 6px, #12a887 7px 7px, #14a987 8px 8px, #17a987 9px 9px, #1aaa87 10px 10px, #1cab87 11px 11px, #1fac87 12px 12px, #21ac87 13px 13px, #24ad87 14px 14px, #26ae87 15px 15px, #29ae87 16px 16px, #2baf87 17px 17px, #2eb087 18px 18px, #30b086 19px 19px, #33b186 20px 20px, #36b286 21px 21px, #38b386 22px 22px, #3bb386 23px 23px, #3db486 24px 24px, #40b586 25px 25px, #42b586 26px 26px, #45b686 27px 27px, #47b786 28px 28px, #4ab886 29px 29px, #4db886 30px 30px, #4fb986 31px 31px, #52ba85 32px 32px, #54ba85 33px 33px, #57bb85 34px 34px, #59bc85 35px 35px, #5cbd85 36px 36px, #5ebd85 37px 37px, #61be85 38px 38px, #63bf85 39px 39px, #66bf85 40px 40px, #69c085 41px 41px, #6bc185 42px 42px, #6ec285 43px 43px, #70c284 44px 44px, #73c384 45px 45px, #75c484 46px 46px, #78c484 47px 47px, #7ac584 48px 48px, #7dc684 49px 49px, #80c784 50px 50px, #82c784 51px 51px, #85c884 52px 52px, #87c984 53px 53px, #8ac984 54px 54px, #8cca84 55px 55px, #8fcb84 56px 56px, #91cb83 57px 57px, #94cc83 58px 58px, #96cd83 59px 59px, #99ce83 60px 60px, #9cce83 61px 61px, #9ecf83 62px 62px, #a1d083 63px 63px, #a3d083 64px 64px, #a6d183 65px 65px, #a8d283 66px 66px, #abd383 67px 67px, #add383 68px 68px, #b0d482 69px 69px, #b3d582 70px 70px, #b5d582 71px 71px, #b8d682 72px 72px, #bad782 73px 73px, #bdd882 74px 74px, #bfd882 75px 75px, #c2d982 76px 76px, #c4da82 77px 77px, #c7da82 78px 78px, #c9db82 79px 79px, #ccdc82 80px 80px, #cfdd82 81px 81px, #d1dd81 82px 82px, #d4de81 83px 83px, #d6df81 84px 84px, #d9df81 85px 85px, #dbe081 86px 86px, #dee181 87px 87px, #e0e181 88px 88px, #e3e281 89px 89px, #e6e381 90px 90px, #e8e481 91px 91px, #ebe481 92px 92px, #ede581 93px 93px, #f0e680 94px 94px, #f2e680 95px 95px, #f5e780 96px 96px, #f7e880 97px 97px, #fae980 98px 98px, #fce980 99px 99px, #ffea80 100px 100px, #00A388 0px 0px;">
   Lorem
 </div>
 
@@ -371,19 +372,19 @@ text-align: match-parent;
   <tbody>
     <tr>
       <td>text-align: left;</td>
-      <td style="text-align: left; width: 200px">Lorem ipsum dolor amet, consectetur.</td>
+      <td style="text-align: left; width: 240px">Lorem ipsum dolor amet, consectetur.</td>
     </tr>
     <tr>
       <td>text-align: center;</td>
-      <td style="text-align: center; width: 200px">Lorem ipsum dolor amet, consectetur.</td>
+      <td style="text-align: center; width: 240px">Lorem ipsum dolor amet, consectetur.</td>
     </tr>
     <tr>
       <td>text-align: right;</td>
-      <td style="text-align: right; width: 200px">Lorem ipsum dolor amet, consectetur.</td>
+      <td style="text-align: right; width: 240px">Lorem ipsum dolor amet, consectetur.</td>
     </tr>
     <tr>
       <td>text-align: justify;</td>
-      <td style="text-align: justify; width: 200px">Lorem ipsum dolor amet, consectetur.</td>
+      <td style="text-align: justify; width: 240px">Lorem ipsum dolor amet, consectetur.</td>
     </tr>
   </tbody>
 </table>
@@ -426,3 +427,170 @@ text-indent: 15%;
     </tr>
   </tbody>
 </table>
+
+### [Line height](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height)
+
+> <b>Value:</b> normal \| `<number>` \| `<length>` \| `<percentage>`
+
+#### Syntax
+
+```css
+/* Keyword value */
+line-height: normal;
+
+/* <number> values */
+line-height: 3.5;
+
+/* <length> values */
+line-height: 3em;
+
+/* <percentage> values */
+line-height: 34%;
+```
+
+#### Example
+
+<table>
+  <thead>
+    <tr>
+      <th>Style</th>
+      <th>Preview</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>line-height: normal;</td>
+      <td style="line-height: normal; width: 240px">Lorem ipsum dolor amet, consectetur.</td>
+    </tr>
+    <tr>
+      <td>line-height: 1.5;</td>
+      <td style="line-height: 1.5; width: 240px">Lorem ipsum dolor amet, consectetur.</td>
+    </tr>
+    <tr>
+      <td>line-height: 1.5em;</td>
+      <td style="line-height: 1.5em; width: 240px">Lorem ipsum dolor amet, consectetur.</td>
+    </tr>
+    <tr>
+      <td>line-height: 150%;</td>
+      <td style="line-height: 150%; width: 240px">Lorem ipsum dolor amet, consectetur.</td>
+    </tr>
+  </tbody>
+</table>
+
+### [Letter spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing)
+
+> <b>Value:</b> normal \| `<length>`
+
+#### Syntax
+
+```css
+/* Keyword value */
+letter-spacing: normal;
+
+/* <length> values */
+letter-spacing: 0.3em;
+```
+
+#### Example
+
+<table>
+  <thead>
+    <tr>
+      <th>Style</th>
+      <th>Preview</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>letter-spacing: normal;</td>
+      <td style="letter-spacing: normal; width: 240px">Lorem ipsum dolor amet, consectetur.</td>
+    </tr>
+    <tr>
+      <td>letter-spacing: 0.1em;</td>
+      <td style="letter-spacing: 0.1em; width: 240px">Lorem ipsum dolor amet, consectetur.</td>
+    </tr>
+    <tr>
+      <td>letter-spacing: 0.2em;</td>
+      <td style="letter-spacing: 0.2em; width: 240px">Lorem ipsum dolor amet, consectetur.</td>
+    </tr>
+  </tbody>
+</table>
+
+### [Word spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing)
+
+> <b>Value:</b> normal \| `<length>` \|  `<percentage>`
+
+#### Syntax
+
+```css
+/* Keyword value */
+word-spacing: normal;
+
+/* <length> values */
+word-spacing: 0.3em;
+
+/* <percentage> values */
+word-spacing: 110%;
+```
+
+#### Example
+
+<table>
+  <thead>
+    <tr>
+      <th>Style</th>
+      <th>Preview</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>word-spacing: normal;</td>
+      <td style="word-spacing: normal; width: 240px">Lorem ipsum dolor amet, consectetur.</td>
+    </tr>
+    <tr>
+      <td>word-spacing: 0.1em;</td>
+      <td style="word-spacing: 0.1em; width: 240px">Lorem ipsum dolor amet, consectetur.</td>
+    </tr>
+    <tr>
+      <td>word-spacing: 1em;</td>
+      <td style="word-spacing: 1em; width: 240px">Lorem ipsum dolor amet, consectetur.</td>
+    </tr>
+  </tbody>
+</table>
+
+## [Font shorthand](https://developer.mozilla.org/en-US/docs/Web/CSS/font)
+---
+
+> <b>Value:</b> [ [ `<font-style>` || `<font-variant>` || `<font-weight>` || `<font-stretch>` ]? `<font-size>` [ / `<line-height>` ]? `<font-family>` ] | caption | icon | menu | message-box | small-caption | status-bar<br>
+> <br>
+> `<font-stretch>` = normal \| ultra-condensed \| extra-condensed \| condensed \| semi-condensed \| semi-expanded \| expanded \| extra-expanded \| ultra-expanded<br>
+> `<font-variant>` = nomral \| small-caps 
+
+#### Syntax
+
+```css
+/* `<font-size>` `<font-family>` */
+font: 80% sans-serif;
+
+/* `<font-style>` `<font-size>` `<font-family>` */
+font: italic 1.5rem sans-serif;
+
+/* `<font-style>` `<font-weight>` `<font-size>` `<font-family>` */
+font: italic bold 1.5rem sans-serif;
+
+/* `<font-style>` `<font-weight>` `<font-size>`/`<line-height>` `<font-family>` */
+font: italic bold 1.5rem/1.5 sans-serif;
+
+/* `<font-style>` `<font-variant>` `<font-weight>` `<font-size>`/`<line-height>` `<font-family>` */
+font: italic small-caps bold 1.5rem/1.5 sans-serif;
+```
+
+#### Example
+
+| Style | Preview |
+|-|-|-|
+| font: 80% sans-serif; | <span style="font-size: 1.5rem; font: 80% sans-serif;">Lorem ipsum<br>dolor</span> |
+| font: italic 1.5rem sans-serif; | <span style="font-size: 1.5rem; font: italic 1.5rem sans-serif;">Lorem ipsum<br>dolor</span> |
+| font: italic bold 1.5rem sans-serif; | <span style="font-size: 1.5rem; font: italic bold 1.5rem sans-serif;">Lorem ipsum<br>dolor</span> |
+| font: italic bold 1.5rem/1.8 sans-serif; | <span style="font-size: 1.5rem; font: italic bold 1.5rem/1.8 sans-serif;">Lorem ipsum<br>dolor</span> |
+| font: italic small-caps bold 1.5rem/1.8 sans-serif; | <span style="font-size: 1.5rem; font: italic small-caps bold 1.5rem/1.8 sans-serif;">Lorem ipsum<br>dolor</span> |
