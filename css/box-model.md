@@ -1,6 +1,13 @@
 # Box Model
 
-References:
+* [Box Model](#box-model)
+* [Border](#border)
+* [Margin](#margin)
+* [Padding](#padding)
+* [Width](#width)
+* [Height](#height)
+
+## Box Model
 - [Box model recap](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Box_model_recap)
 - [Styling borders using CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Borders)
 
