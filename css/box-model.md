@@ -133,6 +133,7 @@ border: medium dashed green;
 | [`border-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-style) | [`border-top-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-style)<br>[`border-right-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-style)<br>[`border-bottom-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-style)<br>[`border-left-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-left-style) |
 | [`border-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-color) | [`border-top-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-color)<br>[`border-right-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-color)<br>[`border-bottom-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-color)<br>[`border-left-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-left-color) |
 
+
 ```css
 span {
   border: 2px solid #000;
@@ -196,6 +197,7 @@ margin: 2px 1em 0 auto;
 |-|-|
 | [`margin`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin) | [`margin-bottom`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom)<br>[`margin-left`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-left)<br>[`margin-right`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-right)<br>[`margin-top`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top) |
 
+
 ```css
 span {
   border: 2px solid #000;
@@ -205,11 +207,11 @@ span {
 ```
 
 ```html
-<p>Lorem <span>ipsum</span> dolor.<p>
+<p>Lorem <span>ipsum</span> dolor.</p>
 ```
 
 <div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
-  <p>Lorem <span style="border: 2px solid #000;margin-left: 20px; margin-right: 1em;">ipsum</span> dolor.<p>
+  <p>Lorem <span style="border: 2px solid #000;margin-left: 20px; margin-right: 1em;">ipsum</span> dolor.</p>
 </div>
 
 ## [Padding](https://developer.mozilla.org/en-US/docs/Web/CSS/padding)
@@ -255,6 +257,7 @@ p {
 | Shorthand | Longhand |
 |-|-|
 | [`padding`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding) | [`padding-bottom`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-bottom)<br>[`padding-left`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-left)<br>[`padding-right`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-right)<br>[`padding-top`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-top) |
+
 
 ```css
 span {
@@ -435,7 +438,6 @@ p {
 .br_20_10 {
   border-radius: 20px 10px;
 }
-
 ```
 
 ```html
@@ -625,17 +627,11 @@ border-collapse: separate;
 ## [Box Sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
 ---
 
+![](https://mdn.mozillademos.org/files/13649/box-model-alt-small.png)<br>
+Fonte: [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Box_model_recap)
+
 ## [Overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
 ---
 
 ## [Outline](https://developer.mozilla.org/en-US/docs/Web/CSS/outline)
 ---
-
-<!-- 
-TODO
-
-box-sizing
-https://mdn.mozillademos.org/files/13649/box-model-alt-small.png
-https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Box_model_recap
-
--->
