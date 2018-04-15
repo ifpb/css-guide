@@ -1,14 +1,16 @@
 ## Background
 ---
 
-[Strip Generator](http://www.stripegenerator.com/)<br>
-[Gradient](http://www.generateit.net/gradient/index.php)<br>
-[Imagens](http://www.freepik.com/free-vectors/background)<br>
-Sprite CSS<br>
+<!-- 
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Backgrounds
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Advanced_box_effects -->
 
-#### [`background`](https://developer.mozilla.org/en-US/docs/Web/CSS/background)
-
-Values: &lt;attachment> &lt;box> &lt;background-color> &lt;bg-image> &lt;position> &lt;repeat-style> &lt;bg-size>
+References:
+* [Strip Generator](http://www.stripegenerator.com/)
+* [Gradient](http://www.generateit.net/gradient/index.php)
+* [Imagens](http://www.freepik.com/free-vectors/background)
+* Sprite CSS
+* Unspalsh
 
 #### [`background-attachment`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment)
 
@@ -33,3 +35,12 @@ Values: &lt;repeat-style> (repeat \| repeat-x \| repeat-y \| no-repeat)
 #### [`background-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size)
 
 Values: contain \| cover \| auto \| &lt;length> \| &lt;percentage>
+
+#### [`background`](https://developer.mozilla.org/en-US/docs/Web/CSS/background)
+
+Values: &lt;attachment> &lt;box> &lt;background-color> &lt;bg-image> &lt;position> &lt;repeat-style> &lt;bg-size>
+
+<!-- 
+Filer
+Gradient
+ -->

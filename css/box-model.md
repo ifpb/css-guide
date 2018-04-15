@@ -307,7 +307,7 @@ p {
   margin: auto;
 }
 
-.ml__auto {
+.ml_auto {
   margin-left: auto;
 }
 ```

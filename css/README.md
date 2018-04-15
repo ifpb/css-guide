@@ -834,7 +834,6 @@ Output:
 ### CSS Question
 
 > Is it possible to inspect `:hover`?<br>
-> Is it possible to replace `:nth-child` with `:first-child`?<br>
 > Is it possible to replace `:first-child` with `:nth-child`?<br>
 > Is it possible to replace general/adjacent sibling combinator selector with `:nth-child`?<br>
 > Is it possible to select odd or even elements?<br>
@@ -864,6 +863,7 @@ Output:
 
 References: 
 * [WP](https://docs.webplatform.org/wiki/css/functions) e [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index)
+* [Color Table](values.md#color)
 
 ### [`rgb()`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgb()), [`rgba()`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgba())
 ```css
