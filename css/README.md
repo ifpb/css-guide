@@ -876,12 +876,6 @@ p {
 }
 ```
 
-### [`url()`](https://developer.mozilla.org/en-US/docs/Web/CSS/url#The_url()_functional_notation)
-```css
-@import url('_color.css');
-@import url('_text.css');
-```
-
 ## At-rules
 ---
 
