@@ -1,7 +1,7 @@
 # Perguntas
 
 * Tipografia
-  * Quais são os estilos de alinhamento e ap para fonte?
+  * Quais são os estilos de alinhamento e aparência para fonte?
   * Qual cor combina com o vermelho tomate?
   * Se não for definido nenhum font-family, qual será a fonte atribuída?
   * O que acontece se font-family não possuir a fonte instalada no computador?
@@ -12,11 +12,11 @@
   * Até quantos pesos podem existir em uma fonte?
   * Como mudamos a aparência default de um link?
   * Por que os designers preferem texto alinhados a esquerda?
-  * Como funciona a sobra para um text?
+  * Como funciona a sobra para um texto?
 * Web fonte
   * Quais são as configurações existentes para habilitar um Web Fonte?
   * É possível usar mais de uma Web Fonte?
-  * Qual é a recomendação para se difinir uma fonte da Web? O que acontece se a fonte não for baixada?
+  * Qual é a recomendação para se definir uma fonte da Web? O que acontece se a fonte não for baixada?
   * Que estilo de fontes podemos aplicar na Web fonte? É possível utilizar mais de um estilo simultaneamente?
   * Como usamos fontes do Google Fonte? O que os links do Google Fonte trazem?
   * É possível identicar uma combinação de fontes no Google Font? Qual é a melhor combinação para a fonte Roboto?
@@ -28,6 +28,7 @@
 * Box model
   * O que é box model? Quais estilos podemos aplicar em um Box?
   * Como um box pode ser exibido no navegador?
+  * Existe alguma exceção de elemento inline que permite definir largura?
   * É possível personalizar um border específico? Por exemplo, a borda inferior?
   * Como centralizamos um parágrafo de largura pré-definida?
   * Qual é a melhor maneira de definir altura de um Box?
