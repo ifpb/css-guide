@@ -17,10 +17,11 @@
   * Quais são as configurações existentes para habilitar um Web Fonte?
   * É possível usar mais de uma Web Fonte?
   * Qual é a recomendação para se definir uma fonte da Web? O que acontece se a fonte não for baixada?
-  * Que estilo de fontes podemos aplicar na Web fonte? É possível utilizar mais de um estilo simultaneamente?
-  * Como usamos fontes do Google Fonte? O que os links do Google Fonte trazem?
-  * É possível identicar uma combinação de fontes no Google Font? Qual é a melhor combinação para a fonte Roboto?
-  * Em que situações seria recomendado baixar o arquivo de fonte do Google Fontes?
+  * Que estilos de fonte podemos aplicar na definição de uma Web fonte?
+  * Como usamos fontes do Google Fonte? 
+  * O que os links css do Google Fonte trazem?
+  * É possível identicar uma combinação agradável entre fontes do Google Font? Por exemplo, qual é a melhor combinação para a fonte Roboto?
+  * Em que situações seriam recomendadas baixar o arquivo de fonte do Google Fontes?
 * Ícone
   * Qual a diferença entre ícones de imagem e de fonte? Qual seria sua preferência entre ambas?
   * Como estilizamos um ícone de imagem e de fonte?

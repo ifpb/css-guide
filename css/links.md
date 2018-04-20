@@ -2,6 +2,8 @@
 
 References:
 - [Styling Hyperlinks \| W3C](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links)
+- [Outline \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/outline)
+- [Cursor \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor)
 
 ## Link States
 
@@ -9,7 +11,7 @@ References:
 |-|-|-|-|
 | Unvisited | :link | color: rgb(0, 0, 238); | <a href="#" style="text-decoration: underline; cursor: pointer; color: rgb(0, 0, 238);">link</a> |
 | Visited | :visited | color: rgb(85, 26, 139); | <a href="#" style="text-decoration: underline; cursor: auto; color: rgb(85, 26, 139);">link</a> |
-| Hover | :hover | cursor: pointer; | <a href="#" style="text-decoration: underline; cursor: auto; color: rgb(85, 26, 139);">link</a> |
+| Hover | :hover | cursor: pointer; | <a href="#" style="text-decoration: underline; cursor: pointer; color: rgb(85, 26, 139);">link</a> |
 | Focus | :focus | outline: rgb(59, 153, 252) auto 5px; | <a href="#" style="text-decoration: underline; cursor: auto; color: rgb(0, 0, 238); outline: rgb(59, 153, 252) auto 5px;">link</a> |
 | Active | :active | color: rgb(238, 0, 0); | <a href="#" style="text-decoration: underline; cursor: auto; color: rgb(238, 0, 0);">link</a> |
 
@@ -24,18 +26,22 @@ a {
 
 
 a:link {
-  color: blue;
+  color: #2bdfbb;  
 }
 
 a:visited {
-  color: purple;
+  color: #156f5d;
 }
 
 a:active {
-  color: red;
+  color: #df2b4f;
 }
 
 a:hover, a:active, a:focus {
   text-decoration: underline;
 }
 ```
+
+Output:
+
+<iframe src="link/index.html" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>

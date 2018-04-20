@@ -46,25 +46,23 @@ li img {
 ```
 
 ```html
-<body>
-  <ul>
-    <li>
-      <a href="#">
-        <img src="img/facebook.svg" alt="Logo Facebook">
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="img/instagram.svg" alt="Logo Instagram">
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <img src="img/twitter.svg" alt="Logo Twitter">
-      </a>
-    </li>
-  </ul>
-</body>
+<ul>
+  <li>
+    <a href="#">
+      <img src="img/facebook.svg" alt="Logo Facebook">
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <img src="img/instagram.svg" alt="Logo Instagram">
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <img src="img/twitter.svg" alt="Logo Twitter">
+    </a>
+  </li>
+</ul>
 ```
 
 Output:
@@ -87,47 +85,17 @@ site
 ```
 
 ```css
-ul {
-  list-style-type: none;
-}
-
-li a {
+a {
+  font-size: 2rem;
+  color: #3b5898;
   text-decoration: none;
-}
-
-li:nth-child(1) .fa-facebook-f {
-  font-size: 1.5rem;
-  color: #3b5898;
-}
-
-li:nth-child(2) .fa-facebook {
-  color: #3b5898;
 }
 ```
 
 ```html
-<body>
-  <ul>
-    <li>
-      <a href="#">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <i class="fab fa-facebook fa-2x"></i>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <span class="fa-stack fa-1x">
-          <i class="fas fa-square fa-stack-2x" style="color: #3b5898;"></i>
-          <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-        </span>
-      </a>
-    </li>
-  </ul>
-</body>
+<a href="#">
+  <i class="fab fa-facebook"></i>
+</a>
 ```
 
 ## Google [Material Icon]((https://material.io/icons/))
@@ -145,15 +113,7 @@ site
 ```
 
 ```css
-ul {
-  list-style-type: none;
-}
-
-li {
-  display: inline;
-}
-
-li a {
+a {
   text-decoration: none;
 }
 
@@ -168,18 +128,7 @@ li a {
 ```
 
 ```html
-<body>
-  <ul>
-    <li>
-      <a href="#">
-        <i class="material-icons">school</i>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <i class="material-icons">android</i>
-      </a>
-    </li>
-  </ul>
-</body>
+<a href="#">
+  <i class="material-icons">school</i>
+</a>
 ```

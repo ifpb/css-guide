@@ -4,15 +4,15 @@ a {
 }
 
 a:link {
-  color: blue;
+  color: #2bdfbb;  
 }
 
 a:visited {
-  color: purple;
+  color: #156f5d;
 }
 
 a:active {
-  color: red;
+  color: #df2b4f;
 }
 
 a:hover,
