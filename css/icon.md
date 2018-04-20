@@ -98,6 +98,10 @@ a {
 </a>
 ```
 
+Output:
+
+<iframe src="icon/font-awesome/" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
+
 ## Google [Material Icon]((https://material.io/icons/))
 ---
 
@@ -132,3 +136,7 @@ a {
   <i class="material-icons">school</i>
 </a>
 ```
+
+Output:
+
+<iframe src="icon/material-icon/" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
