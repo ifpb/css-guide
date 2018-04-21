@@ -17,7 +17,7 @@
 ## Box Model
 ---
 
-References
+References:
 - [Box model recap](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Box_model_recap)
 - [Styling borders using CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Borders)
 
@@ -26,6 +26,10 @@ Fonte: [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Bo
 
 ## [Display](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
 
+References:
+- [Content sectioning \| W3C](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning)
+- [Text content \| W3C](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Text_content)
+- [Inline text semantics \| W3C](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Inline_text_semantics)
 
 | Display | Flow | Margin, Border, Padding | Height | Width |
 |-|-|-|-|-|-|-|
@@ -602,7 +606,7 @@ tr {
 ```
 
 <div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
-  <table style="width: 317px; border-spacing: 2px; border-collapse: separate;margin-bottom: 1rem; border: 1px solid #000;">
+  <table style="display: table; border-spacing: 2px; border-collapse: separate;margin-bottom: 1rem; border: 1px solid #000;">
     <tbody>
       <tr>
         <td style="border: 1px solid #000;">Item 1.1</td>
@@ -617,7 +621,7 @@ tr {
     </tbody>
   </table>
   
-  <table>
+  <table style="display: table;"> 
     <tbody>
       <tr>
         <td style="border: 1px solid #000;">Item 1.1</td>
@@ -642,5 +646,84 @@ Fonte: [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Bo
 ## [Overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
 ---
 
+> <b>Value:</b> visible \| hidden \| clip \| scroll \| auto
+
+### Syntax
+
+```css
+/* Keyword values */
+overflow: visible;
+overflow: hidden;
+overflow: scroll;
+overflow: auto;
+```
+
+### Example
+
+<table>
+  <thead>
+    <tr>
+      <th>Style</th>
+      <th>Preview</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>overflow: visible;</td>
+      <td>
+        <div style="overflow: visible; border: 1px solid #000; width: 200px; height: 2rem;">Lorem ipsum dolor amet, consectetur.</div>
+      </td>
+    </tr>
+    <tr>
+      <td>overflow: hidden;</td>
+      <td>
+        <div style="overflow: hidden; border: 1px solid #000; width: 200px; height: 2rem;">Lorem ipsum dolor amet, consectetur.</div>
+      </td>
+    </tr>
+    <tr>
+      <td>overflow: scroll;</td>
+      <td>
+        <div style="overflow: scroll; border: 1px solid #000; width: 200px; height: 2rem;">Lorem ipsum dolor amet, consectetur.</div>
+      </td>
+    </tr>
+    <tr>
+      <td>overflow: auto;</td>
+      <td>
+        <div style="overflow: auto; border: 1px solid #000; width: 200px; height: 2rem;">Lorem ipsum dolor amet, consectetur.</div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 ## [Outline](https://developer.mozilla.org/en-US/docs/Web/CSS/outline)
 ---
+
+> <b>Value:</b> [ `<outline-color>` || `<outline-style>` || `<outline-width>` ]
+> <br>
+> `<outline-color>` = `<color>`<br>
+> `<outline-style>` = none \| hidden \| dotted \| dashed \| solid \| double \| groove \| ridge \| inset \| outset<br>
+> `<outline-width>` = <length> \| thin \| medium \| thick<br>
+
+### Syntax
+
+```css
+/* style */
+outline: solid;
+
+/* color | style */
+outline: #f66 dashed;
+
+/* style | width */
+outline: inset thick;
+
+/* color | style | width */
+outline: green solid 3px;
+```
+
+### Example
+
+| Style | Preview |
+|-|-|-|
+| outline: solid; | <span style="outline: solid;">Lorem ipsum<br>dolor</span> |
+| outline: #f66 dashed; | <span style="outline: #f66 dashed;">Lorem ipsum<br>dolor</span> |
+| outline: green solid 3px; | <span style="outline: green solid 3px;">Lorem ipsum<br>dolor</span> |
