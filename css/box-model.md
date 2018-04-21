@@ -539,7 +539,7 @@ p {
 ## [Border Image](https://developer.mozilla.org/en-US/docs/Web/CSS/border-image)
 ---
 
-> <b>Value:</b> `<border-image-source>` || `<border-image-slice>` [ / `<border-image-width>` | / `<border-image-width>`? / `<border-image-outset>` ]? || `<border-image-repeat>`
+> <b>Value:</b> `<border-image-source>` \|\| `<border-image-slice>` [ / `<border-image-width>` \| / `<border-image-width>`? / `<border-image-outset>` ]? \|\| `<border-image-repeat>`
 
 ### Syntax
 
@@ -561,8 +561,8 @@ border-image: url("/images/border.png") 27 23 / 50px 30px / 1rem round space;
 
 | Style | Preview |
 |-|-|-|
-| border-image: linear-gradient(red, blue) 27; | <span style="border-image: linear-gradient(red, blue) 27;">Lorem ipsum dolor</span> |
-| border-image: linear-gradient(red, blue) 27 / 35px; | <span style="border-image: linear-gradient(red, blue) 27 / 35px;">Lorem ipsum dolor</span> |
+| border-image: linear-gradient(red, blue) 7; | <span style="border-image: linear-gradient(red, blue) 7;">Lorem ipsum dolor</span> |
+| border-image: linear-gradient(red, blue) 7 / 5px; | <span style="border-image: linear-gradient(red, blue) 7 / 5px;">Lorem ipsum dolor</span> |
 
 ### Shorthand and Longhand options
 
