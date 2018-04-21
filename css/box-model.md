@@ -539,6 +539,38 @@ p {
 ## [Border Image](https://developer.mozilla.org/en-US/docs/Web/CSS/border-image)
 ---
 
+> <b>Value:</b> `<border-image-source>` || `<border-image-slice>` [ / `<border-image-width>` | / `<border-image-width>`? / `<border-image-outset>` ]? || `<border-image-repeat>`
+
+### Syntax
+
+```css
+/* source | slice */
+border-image: linear-gradient(red, blue) 27;
+
+/* source | slice | repeat */
+border-image: url("/images/border.png") 27 space;
+
+/* source | slice | width */
+border-image: linear-gradient(red, blue) 27 / 35px;
+
+/* source | slice | width | outset | repeat */
+border-image: url("/images/border.png") 27 23 / 50px 30px / 1rem round space;
+```
+
+### Example
+
+| Style | Preview |
+|-|-|-|
+| border-image: linear-gradient(red, blue) 27; | <span style="border-image: linear-gradient(red, blue) 27;">Lorem ipsum dolor</span> |
+| border-image: linear-gradient(red, blue) 27 / 35px; | <span style="border-image: linear-gradient(red, blue) 27 / 35px;">Lorem ipsum dolor</span> |
+
+### Shorthand and Longhand options
+
+| Shorthand | Longhand |
+|-|-|
+| [`border-image`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-image) | [`border-image-source`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-source)<br>[`border-image-slice`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-slice)<br>[`border-image-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-width)<br>[`border-image-outset`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-outset)<br>[`border-image-repeat`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-repeat) |
+
+
 ## [Border Collapse](https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse)
 ---
 
@@ -643,6 +675,41 @@ tr {
 ![](https://mdn.mozillademos.org/files/13649/box-model-alt-small.png)<br>
 Fonte: [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Box_model_recap)
 
+> <b>Value:</b> content-box \| border-box
+
+### Syntax
+
+```css
+/* Keyword values */
+box-sizing: content-box;
+box-sizing: border-box;
+```
+
+### Example
+
+<table>
+  <thead>
+    <tr>
+      <th>Style</th>
+      <th>Preview</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>box-sizing: content-box;</td>
+      <td>
+        <div style="box-sizing: content-box; border: 5px solid #000; width: 200px;">Lorem ipsum dolor</div>
+      </td>
+    </tr>
+    <tr>
+      <td>box-sizing: border-box;</td>
+      <td>
+        <div style="box-sizing: border-box; border: 5px solid #000; width: 200px;">Lorem ipsum dolor</div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 ## [Overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
 ---
 
@@ -724,6 +791,6 @@ outline: green solid 3px;
 
 | Style | Preview |
 |-|-|-|
-| outline: solid; | <span style="outline: solid;">Lorem ipsum<br>dolor</span> |
-| outline: #f66 dashed; | <span style="outline: #f66 dashed;">Lorem ipsum<br>dolor</span> |
-| outline: green solid 3px; | <span style="outline: green solid 3px;">Lorem ipsum<br>dolor</span> |
+| outline: solid; | <span style="outline: solid;">Lorem ipsum dolor</span> |
+| outline: #f66 dashed; | <span style="outline: #f66 dashed;">Lorem ipsum dolor</span> |
+| outline: green solid 3px; | <span style="outline: green solid 3px;">Lorem ipsum dolor</span> |
