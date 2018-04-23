@@ -80,7 +80,7 @@ Output:
 <div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
   <table border="1" cellspacing="0" style="display: table;">
     <tr>
-      <td bgcolor="grey"> Item 1.1</td>
+      <td bgcolor="yellow"> Item 1.1</td>
       <td> Item 1.2</td>
     </tr>
   </table>
@@ -106,7 +106,7 @@ Output:
   </ul>
 </div>
 
-## How to apply your CSS to your HTML
+## [How to apply your CSS to your HTML](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/How_CSS_works#How_to_apply_your_CSS_to_your_HTML)
 ---
 
 ### Inline styles
@@ -337,7 +337,7 @@ p {
   * [`<link>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link)
 
 
-## Properties
+## [Properties](https://docs.webplatform.org/wiki/css/properties)
 ---
 
 ### Text Properties
@@ -451,7 +451,7 @@ p {
   * [CSS values and units \| MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units) (Numeric values, Percentages, Colors, Coordinate positions, Functions)
 * [Value definition syntax \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax)
 
-## Selectors
+## [Selectors](https://docs.webplatform.org/wiki/css/selectors)
 ---
 
 ### Group of Selectors 
@@ -797,7 +797,7 @@ Output:
   * [global](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes): `id`, `class`
 
 
-## Functions
+## [Functions](https://docs.webplatform.org/wiki/css/functions)
 ---
 
 ### [`rgb()`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgb()), [`rgba()`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgba())
@@ -815,7 +815,7 @@ p {
 * Doc: [WP](https://docs.webplatform.org/wiki/css/functions) e [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index)
 * [Color Table](values.md#color)
 
-## At-rules
+## [At-rules](https://docs.webplatform.org/wiki/css/atrules)
 ---
 
 ### meta-data information
@@ -955,11 +955,13 @@ p {
 }
 ```
 
-## Media Queries
+### References
+* Doc: [WP](https://docs.webplatform.org/wiki/css/atrules) e [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule)
+
+## [Media Queries](https://docs.webplatform.org/wiki/css/mediaqueries)
 ---
 
-References: 
-* [WP](https://docs.webplatform.org/wiki/css/mediaqueries), [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index) e [W3C](https://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/)
+### Syntax
 * [Media types](https://developer.mozilla.org/en-US/docs/Web/CSS/@media#Media_types): `all`, `print`, `screen`, `speech`
 * [Media features](https://developer.mozilla.org/en-US/docs/Web/CSS/@media#Media_features): `width`, `height`, `orientation`
 * [Logical operators](https://developer.mozilla.org/en-US/docs/Web/CSS/@media#Logical_operators): `and`, `not`, `only`
@@ -1010,9 +1012,10 @@ References:
 ```
 
 ### References
-* Doc: [WP](https://docs.webplatform.org/wiki/css/atrules) e [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule)
+* Doc: [WP](https://docs.webplatform.org/wiki/css/mediaqueries), [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index) e [W3C](https://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/)
 
-## Comments
+
+## [Comments](https://developer.mozilla.org/en-US/docs/Web/CSS/Comments)
 ---
 
 ```css
@@ -1044,7 +1047,7 @@ p {
 </html>
 ```
 
-## Inheritance
+## [Inheritance](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance)
 ---
 
 [inheritance/index.html](inheritance/index.html):

@@ -568,9 +568,9 @@ Output:
 ## [Opacity](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
 ---
 
-> <b>Value:</b> <number><br>
+> <b>Value:</b> `<number>`<br>
 > <br>
-> <number> (0..1)
+> `<number>` (0..1)
 
 ### Syntax
 
@@ -594,7 +594,7 @@ img:hover {
 
 Output:
 
-<iframe src="opacity/index.html" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
+<iframe src="opacity/index.html" width="100%" height="400px" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
 ## References
 ---
