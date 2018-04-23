@@ -1,1 +1,0 @@
-[`border-colapse`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-colapse)

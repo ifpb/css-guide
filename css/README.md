@@ -1,19 +1,20 @@
 # CSS
 
+* [References](#References)
 * [Problem](#problem)
 * [How to apply your CSS to your HTML](#how-to-apply-your-css-to-your-html)
   * [Inline styles](#inline-styles)
   * [Internal stylesheet](#internal-stylesheet)
   * [External stylesheet](#external-stylesheet)
   * [Mixed stylesheet](#mixed-stylesheet)
+* Syntax
+  * [Properties](#properties)
+  * [Selectors](#selectors)
+  * [Functions](#functions)
+  * [At-rules](#at-rules)
+  * [Media Queries](#media-queries)
+  * [Comments](#comments)
 * [Inheritance](#inheritance)
-* [Properties](#properties)
-* [Selectors](#selectors)
-* [Functions](#functions)
-* [At-rules](#at-rules)
-* [Media Queries](#media-queries)
-* [Cascade](#cascade)
-* [Links](#links)
 
 ## References
 ---
@@ -1105,183 +1106,7 @@ p {
 </html>
 ```
 
-##  Cascade
----
-
-Reference: 
-* [W3C](https://www.w3.org/TR/CSS22/cascade.html), [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance), [WP](https://docs.webplatform.org/wiki/tutorials/inheritance_and_cascade)
-* [Cascade Slide](../slides/cascade.pdf)
-
-### Cascade???
-
-#### CSS Statement
-
-![css statement](https://developer.mozilla.org/@api/deki/files/6168/=css_syntax_-_statements_Venn_diag.png)<br>
-Fonte: [CSS Syntax \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax)
-
-#### How CSS Works
-
-![how css works](https://mdn.mozillademos.org/files/11781/rendering.svg)<br>
-Fonte: [How CSS works \| MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/How_CSS_works)
-
-### Importance
-
-#### Declaration
-
-##### Normal
-
-```css
-h1 {
-  color: red;
-}
-
-h1 {
-  color: green;
-}
-```
-
-##### [Important](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance#Importance)
-
-```css
-h1 {
-  color: red !important;
-}
-
-h1 {
-  color: green;
-}
-```
-
-#### CSS Question
-
-> What is the color of <h1> Element?
-
-![important css](https://memeexplorer.com/cache/846.jpg)
-
-#### Style sheet 
-
-##### User Agent Style Sheet
-
-[normalize.css](https://necolas.github.io/normalize.css/)
-
-##### Author Style Sheet
-
-`style`, `<style>`, `<link>`
-
-##### User Style Sheet
-
-[Stylish](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en): [Gallery](http://userstyles.org/)
-
-#### Important order
-
-| Declaration | Style sheets |
-|-|-|
-| | User Agent |
-| Normal | User |
-| Normal | Author |
-| Important | Author |
-| Important | User |
-
-### [Specificity](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance#Specificity)
-
-Specificity Value: **NNNN**
-
-| Number |	Selector |
-|-|-|
-| Thousands |	style attribute |
-| Hundreds | ID selector |
-| Tens | class selector, attribute selector, pseudo-class  |
-| Ones | element selector, pseudo-element |
-
-#### Example
-
-[cascade/specificity/index.html](cascade/specificity/index.html):
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    h1 {
-      color: blue;
-    }
-
-    #title {
-      color: orange;
-    }
-  </style>
-</head>
-<body>
-  <h1 id="title" style="color: green;">Lorem ipsum</h1>
-</body>
-</html>
-```
-
-[cascade/specificity/css/style.css](cascade/specificity/css/style.css):
-```css
-h1 {
-  color: red;
-}
-```
-
-#### CSS Question
-
-> What is the color of <h1> Element?
-> Is it possible to inspect specificity?
-
-| Style	| Selector | Thousands | Hundreds | Tens | Ones | Total |
-|-|-|-|-|-|-|-|
-| color: green | `style` | 1 | 0 | 0 | 0 | 1000 |
-| color: orange | `#title` | 0 | 1 | 0 | 0 | 0100 |
-| color: blue | `h1` | 0 | 0 | 0 | 1 | 0001 |
-| color: red | `h1` | 0 | 0 | 0 | 1 | 0001 |
-
-### [Source order](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance#Source_order)
-
-#### Example 
-
-[cascade/source-code/index.html](cascade/source-code/index.html):
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    h1 {
-      color: blue;
-    }
-
-    body {
-      color: orange;
-    }
-  </style>
-</head>
-<body>
-  <h1>Lorem ipsum</h1>
-</body>
-</html>
-```
-
-[cascade/source-code/css/style.css](cascade/source-code/css/style.css):
-```css
-h1 {
-  color: red;
-}
-```
-
-#### CSS Question
-
-> What is the color of <h1> Element?
-
-## Links
+## Other References
 ---
 
 * Design

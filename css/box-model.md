@@ -25,6 +25,7 @@ References:
 Fonte: [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Box_model_recap)
 
 ## [Display](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
+---
 
 References:
 - [Content sectioning \| W3C](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning)
@@ -35,7 +36,8 @@ References:
 |-|-|-|-|-|-|-|
 | Inline | surrounding text without creating line breaks before | Ok |  |  |
 | Block | stacked upon other boxes | Ok | Ok | Ok |
-| Inline-block |  surrounding text without creating line breaks before | Ok | Ok | Ok |
+| Inline-block | surrounding text without creating line breaks before | Ok | Ok | Ok |
+| none | turns off the display of an element | | | |
 
 ### Inline box
 
