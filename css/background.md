@@ -2,6 +2,8 @@
 
 * [Background Color](#background-color)
 * [Background Image](#background-image)
+* [Background Image (Gradient)](#background-image-gradient)
+* [Background Image (Multiple backgrounds)](#background-image-multiple-backgrounds)
 * [Background Repeat](#background-repeat)
 * [Background Position](#background-position)
 * [Background Attachment](#background-attachment)
@@ -85,7 +87,7 @@ Output:
 - [Unspalsh](https://unsplash.com)
 - [Freepik](http://www.freepik.com/free-vectors/background)
 
-## Background Image (Gradient)
+## [Background Image (Gradient)](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Backgrounds#Background_image_gradients)
 ---
 
 ### Linear Gradient
@@ -154,7 +156,7 @@ Output:
 * [radial-gradient()](https://developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient)
 * [repeating-radial-gradient()](https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-radial-gradient)
 
-## Background Image (Multiple backgrounds)
+## [Background Image (Multiple backgrounds)](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Backgrounds#Multiple_backgrounds)
 ---
 
 [background/bg-image-multiple/](background/bg-image-multiple/):
@@ -351,23 +353,256 @@ Output:
 ## [Background Attachment](https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment)
 ---
 
-> <b>Value:</b> fixed \| scrool
+> <b>Value:</b> fixed \| scrool \| local
+
+### Syntax
+
+```css
+/* Keyword values */
+background-attachment: scroll;
+background-attachment: fixed;
+background-attachment: local;
+```
+
+### Example
+
+[background/bg-attachement/](background/bg-attachement/)
+```css
+header {
+  background-color: tomato;
+  background-image: url(img/clock.jpg);
+  background-position: 0 -100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+}
+```
+
+Output:
+
+<iframe src="background/bg-attachment/index.html" width="100%" height="500px" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
 ## [Background Blend Mode](https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode)
 ---
 
+> <b>Value:</b> `<blend-mode>`<br>
+> <br>
+> `<blend-mode>` = normal \| multiply \| screen \| overlay \| darken \| lighten \| color-dodge \| color-burn \| hard-light \| soft-light \| difference \| exclusion \| hue \| saturation \| color \| luminosity
+
+### Syntax
+
+```css
+/* One value */
+background-blend-mode: normal;
+
+/* Two values, one per background */
+background-blend-mode: darken, luminosity;
+```
+
+### Example
+
+[background/bg-blend-mode/](background/bg-blend-mode/):
+```css
+.bg {
+  background-image: url(img/computer.jpg);
+  background-size: cover;
+  background-color: rgba(1, 193, 120, .9);
+}
+
+.normal {
+  background-blend-mode: normal;
+}
+
+.multiply {
+  background-blend-mode: multiply;
+}
+
+.screen {
+  background-blend-mode: screen;
+}
+
+.overlay {
+  background-blend-mode: overlay;
+}
+
+.darken {
+  background-blend-mode: darken;
+}
+
+.lighten {
+  background-blend-mode: lighten;
+}
+```
+
+Output:
+
+<div style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+  <div style="width: 150px; height: 150px; display: inline-block; background-image: url(background/bg-blend-mode/img/computer.jpg); background-size: cover; background-blend-mode: normal; background-color: rgba(1, 193, 120, .9);"></div>
+  <div style="width: 150px; height: 150px; display: inline-block; background-image: url(background/bg-blend-mode/img/computer.jpg); background-size: cover; background-blend-mode: multiply; background-color: rgba(1, 193, 120, .9);"></div>
+  <div style="width: 150px; height: 150px; display: inline-block; background-image: url(background/bg-blend-mode/img/computer.jpg); background-size: cover; background-blend-mode: screen; background-color: rgba(1, 193, 120, .9);"></div>
+  <div style="width: 150px; height: 150px; display: inline-block; background-image: url(background/bg-blend-mode/img/computer.jpg); background-size: cover; background-blend-mode: overlay; background-color: rgba(1, 193, 120, .9);"></div>
+  <div style="width: 150px; height: 150px; display: inline-block; background-image: url(background/bg-blend-mode/img/computer.jpg); background-size: cover; background-blend-mode: darken; background-color: rgba(1, 193, 120, .9);"></div>
+  <div style="width: 150px; height: 150px; display: inline-block; background-image: url(background/bg-blend-mode/img/computer.jpg); background-size: cover; background-blend-mode: lighten; background-color: rgba(1, 193, 120, .9);"></div>
+</div>
+
+### References
+
+* [background-blend-mode \| CSS Tricks](https://css-tricks.com/almanac/properties/b/background-blend-mode/)
+
 ## [Background Shorthand](https://developer.mozilla.org/en-US/docs/Web/CSS/background)
 ---
 
-> <b>Value:</b> `<attachment>` `<box>` `<background-color>` `<bg-image>` `<position>` `<repeat-style>` `<bg-size>`
+> <b>Value:</b> [ `<bg-layer>` , ]* `<final-bg-layer>`<br>
+> <br>
+> `<bg-layer>` = `<bg-image>` || `<bg-position>` [ / `<bg-size>` ]? || `<repeat-style>` || `<attachment>` || `<box>` || `<box>`<br>
+> `<final-bg-layer>` = `<background-color>` || `<bg-image>` || `<bg-position>` [ / `<bg-size>` ]? || `<repeat-style>` || `<attachment>` || `<box>` || `<box>`
+
+### Syntax
+
+```css
+/* Using a <background-color> */
+background: green;
+
+/* Using a <bg-image> and <repeat-style> */
+background: url("test.jpg") repeat-y;
+
+/* Using a <box> and <background-color> */
+background: border-box red;
+
+/* A single image, centered and scaled */
+background: no-repeat center/80% url("../img/image.png");
+```
+
+### Example
+
+```css
+header {
+  background-color: tomato;
+  background-image: url(img/clock.jpg);
+  background-position: 0 -100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+}
+```
+
+```css
+header {
+  background: tomato url(../img/clock.jpg) 0 -100px/cover no-repeat fixed;
+  background-blend-mode: multiply; 
+}
+```
 
 ## [Filter](https://developer.mozilla.org/en-US/docs/Web/CSS/filter)
 ---
 
+> <b>Value:</b> none \| [ `<filter-function>` \| `<url>` ]+<br>
+> <br>
+> `<filter-function>` = `<blur()`> \| `<brightness()`> \| `<contrast()`> \| `<drop-shadow()`> \| `<grayscale()`> \| `<hue-rotate()`> \| `<invert()`> \| `<opacity()`> \| `<saturate()`> \| `<sepia()`>
+
+### Syntax
+
+```css
+/* URL to SVG filter */
+filter: url("filters.svg#filter-id");
+
+/* <filter-function> values */
+filter: blur(5px);
+filter: brightness(0.4);
+filter: contrast(200%);
+filter: drop-shadow(16px 16px 20px blue);
+filter: grayscale(50%);
+filter: hue-rotate(90deg);
+filter: invert(75%);
+filter: opacity(25%);
+filter: saturate(30%);
+filter: sepia(60%);
+
+/* Multiple filters */
+filter: contrast(175%) brightness(3%);
+```
+
+### Example
+
+```css
+.bg {
+  background-image: url(img/computer.jpg);
+  background-size: cover;
+  background-color: rgba(1, 193, 120, .9);
+}
+
+.blur {
+  filter: blur(5px);
+}
+
+.brightness {
+  filter: brightness(0.4);
+}
+
+.contrast {
+  filter: contrast(200%);
+}
+
+.grayscale {
+  filter: grayscale(50%);
+}
+
+.sepia {
+  filter: sepia(60%);
+}
+```
+
+Output:
+
+<div style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+  <div style="width: 150px; height: 150px; display: inline-block; background-image: url(background/bg-blend-mode/img/computer.jpg); background-size: cover;"></div>
+  <div style="width: 150px; height: 150px; display: inline-block; background-image: url(background/bg-blend-mode/img/computer.jpg); background-size: cover; filter: blur(5px);"></div>
+  <div style="width: 150px; height: 150px; display: inline-block; background-image: url(background/bg-blend-mode/img/computer.jpg); background-size: cover; filter: brightness(0.4);"></div>
+  <div style="width: 150px; height: 150px; display: inline-block; background-image: url(background/bg-blend-mode/img/computer.jpg); background-size: cover; filter: contrast(200%);"></div>
+  <div style="width: 150px; height: 150px; display: inline-block; background-image: url(background/bg-blend-mode/img/computer.jpg); background-size: cover; filter: grayscale(50%);"></div>
+  <div style="width: 150px; height: 150px; display: inline-block; background-image: url(background/bg-blend-mode/img/computer.jpg); background-size: cover; filter: sepia(90%);"></div>
+</div>
+
 ## [Opacity](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
 ---
 
- <!-- 
-https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Backgrounds
-https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Advanced_box_effects 
--->
+> <b>Value:</b> <number><br>
+> <br>
+> <number> (0..1)
+
+### Syntax
+
+```css
+opacity: 0;
+opacity: 0.33;
+opacity: 1;
+```
+
+### Example
+
+```css
+img {
+  opacity: .5;
+}
+
+img:hover {
+  opacity: 1;
+}
+```
+
+Output:
+
+<iframe src="opacity/index.html" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
+
+## References
+---
+
+* [Changing background styles using CSS \| MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Backgrounds)
+* [Advanced box effects \| MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Advanced_box_effects )
+* `background-clip`
+  * [`background-clip`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip)
+  * [-webkit-background-clip:text CSS effect](https://codepen.io/Jintos/pen/crlxk)
+* [`background-origin`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin)
+
