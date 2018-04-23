@@ -1,6 +1,5 @@
 # CSS
 
-* [References](#References)
 * [Problem](#problem)
 * [How to apply your CSS to your HTML](#how-to-apply-your-css-to-your-html)
   * [Inline styles](#inline-styles)
@@ -15,17 +14,7 @@
   * [Media Queries](#media-queries)
   * [Comments](#comments)
 * [Inheritance](#inheritance)
-
-## References
----
-
-* CSS Awesome [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sotayamashita/awesome-css)
-* Portais: [W3C](https://www.w3.org/standards/webdesign/htmlcss), [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) e  [WP](https://docs.webplatform.org/wiki/css)
-* Guias: [MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS) e [WP](https://docs.webplatform.org/wiki/css/tutorials)
-* Padrões: [Notícias](https://www.w3.org/Style/CSS/Overview.en.html), [CSS Current Status](https://www.w3.org/standards/techs/css#w3c_all), [CSS Specifications](https://www.w3.org/Style/CSS/specs.en.html)
-* Versões: [Draft](https://www.w3.org/TR/CSS/), [2](https://www.w3.org/TR/CSS2/), [Outros](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS3)
-* [How CSS Works \| MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/How_CSS_works)
-* [History of HTML & CSS](http://www.wdtonline.com/wdtMagazine/MemberWorks/WiserWays/csshtml.htm)
+* [References](#References)
 
 ## Problem
 ---
@@ -120,13 +109,7 @@ Output:
 ## How to apply your CSS to your HTML
 ---
 
-Reference:
-* [How to apply your CSS to your HTML \| MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/How_CSS_works#How_to_apply_your_CSS_to_your_HTML)
-
 ### Inline styles
-
-Attributes:
-* [global](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes): `style`
 
 #### CSS Declaration
 
@@ -167,9 +150,6 @@ Output:
 </div>
 
 ### Internal stylesheet
-
-Reference:
-* [Style rule syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Basic_rule_syntax)
 
 #### CSS rulesets
 
@@ -237,9 +217,6 @@ Output:
 </div>
 
 ### External stylesheet
-
-Elements:
-  * [`<link>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link)
 
 ### Structure
 
@@ -351,74 +328,21 @@ p {
 
 > What is the color of the first and last paragraph in the Inline, Internal, External and Mixed Stylesheet? Why?
 
-## Inheritance
----
+### References
+* [How to apply your CSS to your HTML \| MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/How_CSS_works#How_to_apply_your_CSS_to_your_HTML)
+* [Style rule syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Basic_rule_syntax)
+* Attributes:
+  * [global](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes): `style`
+* Elements:
+  * [`<link>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link)
 
-Reference:
-* [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance)
-* [CSS 2.2 Specification - Appendix F. Full property table (Inherited?)](https://www.w3.org/TR/CSS22/propidx.html)
-
-Properties:
-  * [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
-
-[inheritance/index.html](inheritance/index.html):
-```css
-body {
-  color: green;
-}
-```
-
-```html
-<body>
-  <h1>Lorem ipsum</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-  <p>Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
-</body>
-```
-
-Output:
-
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
-  <h1 style="color: green;">Lorem ipsum</h1>
-  <p style="color: green;">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-  <p style="color: green;">Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
-</div>
-
-[inheritance/not-inheritance.html](inheritance/not-inheritance.html):
-```css
-body {
-  color: green;
-}
-h1 {
-  color: red;
-}
-```
-
-```html
-<body>
-  <h1>Lorem ipsum</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-  <p>Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
-</body>
-```
-
-Output:
-
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
-  <h1 style="color: red;">Lorem ipsum</h1>
-  <p style="color: green;">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-  <p style="color: green;">Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
-</div>
 
 ## Properties
 ---
 
-References: 
-* [WP](https://docs.webplatform.org/wiki/css/properties), [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index) e [W3C](https://www.w3.org/TR/CSS2/propidx.html)<br>
-* Cheat Sheet: [smashing](https://www.smashingmagazine.com/2009/07/css-3-cheat-sheet-pdf/) ([pdf](https://www.smashingmagazine.com/wp-content/uploads/images/css3-cheat-sheet/css3-cheat-sheet.pdf)), [w3school](http://www.w3schools.com/cssref/), [tutorialspoint](http://www.tutorialspoint.com/css/css_references.htm), [1stwebdesigner](http://www.1stwebdesigner.com/freebies/css-cheat-sheets-designers/)
+### Text Properties
 
-Properties:
-  * [`font-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size), 
+[`font-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size), 
 [`font-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-style), 
 [`font-weight`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight), 
 [`font-family`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family), 
@@ -468,10 +392,6 @@ Output:
 
 ### CSS values and units
 
-Reference:
-* [CSS values and units \| MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units) (Numeric values, Percentages, Colors, Coordinate positions, Functions)
-* [Value definition syntax \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax)
-
 #### [`<length>`](https://developer.mozilla.org/en-US/docs/Web/CSS/length)
 
 ##### absolute units
@@ -512,17 +432,27 @@ p {
 }
 ```
 
-[Color Table](values.md#color)
+### Other Properties
+
+* [Typography](typography.html)
+* [Web Font](web-font.html)
+* [Icons](icon.html)
+* [Hyperlinks](links.html)
+* [Box model](box-model.html)
+* [Background](background.html)
+
+### References
+
+* Properties:
+  * Doc: [WP](https://docs.webplatform.org/wiki/css/properties), [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index) e [W3C](https://www.w3.org/TR/CSS2/propidx.html)<br>
+  * Cheat Sheet: [smashing](https://www.smashingmagazine.com/2009/07/css-3-cheat-sheet-pdf/) ([pdf](https://www.smashingmagazine.com/wp-content/uploads/images/css3-cheat-sheet/css3-cheat-sheet.pdf)), [w3school](http://www.w3schools.com/cssref/), [tutorialspoint](http://www.tutorialspoint.com/css/css_references.htm), [1stwebdesigner](http://www.1stwebdesigner.com/freebies/css-cheat-sheets-designers/)
+* Color
+  * [Color Table](values.md#color)
+  * [CSS values and units \| MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units) (Numeric values, Percentages, Colors, Coordinate positions, Functions)
+* [Value definition syntax \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax)
 
 ## Selectors
 ---
-
-References: 
-* [WP](https://docs.webplatform.org/wiki/css/selectors), [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Selectors), W3C ([Level 3](https://www.w3.org/TR/2011/REC-css3-selectors-20110929/#selectors) e [Level 4](https://www.w3.org/TR/2013/WD-selectors4-20130502/#overview))
-* [Selectors Table](selectors.md)
-
-Attributes:
-* [global](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes): `id`, `class`
 
 ### Group of Selectors 
 
@@ -859,12 +789,16 @@ Output:
 
 <iframe src="selector/p-selection.html" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
+### References
+* Selectors:
+  * Doc: [WP](https://docs.webplatform.org/wiki/css/selectors), [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Selectors), W3C ([Level 3](https://www.w3.org/TR/2011/REC-css3-selectors-20110929/#selectors) e [Level 4](https://www.w3.org/TR/2013/WD-selectors4-20130502/#overview))
+  * [Selectors Table](selectors.md)
+* Attributes:
+  * [global](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes): `id`, `class`
+
+
 ## Functions
 ---
-
-References: 
-* [WP](https://docs.webplatform.org/wiki/css/functions) e [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index)
-* [Color Table](values.md#color)
 
 ### [`rgb()`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgb()), [`rgba()`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgba())
 ```css
@@ -877,11 +811,12 @@ p {
 }
 ```
 
+### References
+* Doc: [WP](https://docs.webplatform.org/wiki/css/functions) e [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index)
+* [Color Table](values.md#color)
+
 ## At-rules
 ---
-
-References: 
-* [WP](https://docs.webplatform.org/wiki/css/atrules) e [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule)
 
 ### meta-data information
 
@@ -1074,6 +1009,9 @@ References:
 }
 ```
 
+### References
+* Doc: [WP](https://docs.webplatform.org/wiki/css/atrules) e [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule)
+
 ## Comments
 ---
 
@@ -1106,9 +1044,73 @@ p {
 </html>
 ```
 
-## Other References
+## Inheritance
 ---
 
+[inheritance/index.html](inheritance/index.html):
+```css
+body {
+  color: green;
+}
+```
+
+```html
+<body>
+  <h1>Lorem ipsum</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p>Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
+</body>
+```
+
+Output:
+
+<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+  <h1 style="color: green;">Lorem ipsum</h1>
+  <p style="color: green;">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p style="color: green;">Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
+</div>
+
+[inheritance/not-inheritance.html](inheritance/not-inheritance.html):
+```css
+body {
+  color: green;
+}
+h1 {
+  color: red;
+}
+```
+
+```html
+<body>
+  <h1>Lorem ipsum</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p>Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
+</body>
+```
+
+Output:
+
+<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+  <h1 style="color: red;">Lorem ipsum</h1>
+  <p style="color: green;">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p style="color: green;">Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
+</div>
+
+### References
+* [Inheritance \| MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance)
+* [CSS 2.2 Specification - Appendix F. Full property table (Inherited?)](https://www.w3.org/TR/CSS22/propidx.html)
+
+## References
+---
+
+* CSS
+  * CSS Awesome [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sotayamashita/awesome-css)
+  * Portais: [W3C](https://www.w3.org/standards/webdesign/htmlcss), [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS) e  [WP](https://docs.webplatform.org/wiki/css)
+  * Guias: [MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS) e [WP](https://docs.webplatform.org/wiki/css/tutorials)
+  * Padrões: [Notícias](https://www.w3.org/Style/CSS/Overview.en.html), [CSS Current Status](https://www.w3.org/standards/techs/css#w3c_all), [CSS Specifications](https://www.w3.org/Style/CSS/specs.en.html)
+  * Versões: [Draft](https://www.w3.org/TR/CSS/), [2](https://www.w3.org/TR/CSS2/), [Outros](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS3)
+  * [How CSS Works \| MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/How_CSS_works)
+  * [History of HTML & CSS](http://www.wdtonline.com/wdtMagazine/MemberWorks/WiserWays/csshtml.htm)
 * Design
   * [Flat Design](https://en.wikipedia.org/wiki/Flat_design)
   * [Material Design](http://www.google.com/design/spec/material-design/introduction.html): [Icons](https://materialdesignicons.com/), [Cores](http://www.materialui.co/), [Exemplos](http://www.materialup.com/),  [Bootstrap](http://fezvrasta.github.io/bootstrap-material-design/), [Materialize CSS](http://materializecss.com/), [getmdl](https://getmdl.io/), [Material UI](http://www.material-ui.com/)
