@@ -69,7 +69,7 @@ Output:
 ```html
 <table border="1" cellspacing="0">
   <tr>
-    <td bgcolor="grey"> Item 1.1</td>
+    <td bgcolor="yellow"> Item 1.1</td>
     <td> Item 1.2</td>
   </tr>
 </table>
