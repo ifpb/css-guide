@@ -1,11 +1,7 @@
 # Styling Hyperlinks
 
-References:
-- [Styling Hyperlinks \| W3C](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links)
-- [Outline \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/outline)
-- [Cursor \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor)
-
 ## Link States
+---
 
 | State | Selector | Style | Preview |
 |-|-|-|-|
@@ -45,3 +41,10 @@ a:hover, a:active, a:focus {
 Output:
 
 <iframe src="link/index.html" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
+
+## References
+---
+
+- [Styling Hyperlinks \| W3C](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links)
+- [Outline \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/outline)
+- [Cursor \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor)

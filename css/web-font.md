@@ -1,9 +1,13 @@
 # Web Font
 
-References:
-- [Web fonts \| MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts)
+* [Web Font (@font-face)](#web-font-font-face)
+* [Google Fonts](#google-fonts)
+  * [Web](#web)
+  * [Download](#download)
+  * [Customize](#customize)
+  * [Multiple Fonts](#multiple-fonts)
 
-## @font-face
+## Web Font (@font-face)
 ---
 
 [web-font/@font-face/](web-font/@font-face/):
@@ -86,12 +90,6 @@ p {
 
 ### Customize 
 
-#### Style
-
-Reference:
-- [Font selection and synthesis](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization#font_selection_and_synthesis)
-- [Roboto Description](https://fonts.google.com/specimen/Roboto?selection.family=Roboto)
-
 [web-font/google/styles/](web-font/google/styles/):
 ```
 site
@@ -116,7 +114,7 @@ p {
 }
 ```
 
-#### Multiple Fonts
+### Multiple Fonts
 
 [web-font/google/multiple/](web-font/google/multiple/):
 ```
@@ -140,13 +138,18 @@ p {
 }
 ```
 
-## Fonts Gallery
+## References
 ---
 
-References:
-- [Adobe Typekit](https://typekit.com)
-- [Skyfonts](https://skyfonts.com)
-- [Font Squirrel](https://www.fontsquirrel.com/)
-- [My Fonts](https://www.myfonts.com)
-- [Font Spring](https://www.fontspring.com)
-- [Ubuntu Fonte](https://design.ubuntu.com/font/)
+- Web Fonts:
+  - [Web fonts \| MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts)
+- Google Fonts:
+  - [Font selection and synthesis](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization#font_selection_and_synthesis)
+  - [Roboto Description](https://fonts.google.com/specimen/Roboto?selection.family=Roboto)
+- Fonts Gallery:
+  - [Adobe Typekit](https://typekit.com)
+  - [Skyfonts](https://skyfonts.com)
+  - [Font Squirrel](https://www.fontsquirrel.com/)
+  - [My Fonts](https://www.myfonts.com)
+  - [Font Spring](https://www.fontspring.com)
+  - [Ubuntu Fonte](https://design.ubuntu.com/font/)

@@ -1,6 +1,21 @@
-# Selectors
+# [Selectors](https://docs.webplatform.org/wiki/css/selectors)
+
+* [Group of Selectors](#group-of-selectors)
+* [Basic selectors](#basic-selectors)
+  * [Element](#element)
+  * [`#id`](#id)
+  * [`.class`](#class), [`.class.class`](#classclass)
+* [Combinators](#combinators)
+  * [Descendant combinator](#descendant-combinator)
+* [Pseudo-class](#pseudo-class)
+  * [`:hover`](#hover)
+  * [`:first-child`](first-child)
+  * `:nth-child()`: [`:nth-child(2)`](#nth-child2), [`:nth-child(2n)`](#nth-child2n)
+* [Pseudo-element](#pseudo-element)
+  * [`::selection`](#selection)
 
 ## Group of Selectors 
+---
 
 ```css
 elementname-1, elementname-2
@@ -10,55 +25,340 @@ elementname-1, elementname-2
 h1, p
 ```
 
-## [Basic selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors#Basic_selectors)
+## Basic selectors
+---
 
-| Name | Pattern | Example | |
-|-|-|-|-|
-| [Universal selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors) | `*` |  `*` | |
-| [Type selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors) | `E` | `p` | |
-| [Class selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors) | `E.classname` <br> `.classname` | `p.odd` <br> `odd` | |
-| [ID selector](https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors) | `E#idname` <br> `#idname` | `p#first-paragraph` <br> `#first-paragraph` | |
-| [Attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) | `E[attr]` | `p[lang]` | contain attribute |
-| [Attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) | `[attr]` | `[lang]` |  contain attribute |
-| [Attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) | `[attr=value]` | `[lang="pt-BR"]` |  value is exactly value |
-| [Attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) | `[attr~=value]` | `[class~="odd"]` |  value is a whitespace-separated list of words, one of which is exactly value |
-| [Attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) | `[attr|=value]` | `[lang|="BR"]` |  value can be exactly value or can begin with value immediately followed by a hyphen |
-| [Attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) | `[attr^=value]` | `[lang^="pt"]` |  value value is prefixed (preceded) by value |
-| [Attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) | `[attr$=value]` | `[lang$="BR"]` |  value is suffixed (followed) by value |
-| [Attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) | `[attr*=value]` | `[class*="odd"]` |  value contains at least one occurrence of value within the string |
+### Element
 
-## [Combinators](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors#Combinators)
+[selector/span.html](selector/span.html)
+```css
+h1 {
+  color: blue;
+}
 
-| Name | Pattern | Example |
-|-|-|-|
-| [Adjacent sibling combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_selectors) | `A + B` | `h1 + p` |
-| [General sibling combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_selectors) | `A ~ B` | `h1 ~ p` |
-| [Child combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_selectors) | `A > B` | `ul > li` |
-| [Descendant combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_selectors) | `A B` | `ul li` |
+span {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: tomato;
+}
+```
 
-## [Pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
+```html
+<h1>Lorem ipsum dolor</h1>
+<p>Lorem ipsum, <span>dolor</span> sit amet consectetur adipisicing elit. Id, quia...</p>
+```
 
-| Name | Pattern | Example |
-|-|-|-|
-| active pseudo-class | [`:active`](https://developer.mozilla.org/en-US/docs/Web/CSS/:active) | `a:active` |
-| checked pseudo-class | [`:checked`](https://developer.mozilla.org/en-US/docs/Web/CSS/:checked) | `input:checked` |
-| focus pseudo-class | [`:focus`](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus) | `input:focus` |
-| first-child pseudo-class | [`:first-child`](https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child) | `ul > li:first-child` |
-| hover pseudo-class | [`:hover`](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover) | `a:hover` |
-| last-child pseudo-class | [`:last-child`](https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child) | `ul > li:last-child` |
-| link pseudo-class | [`:link`](https://developer.mozilla.org/en-US/docs/Web/CSS/:link) | `a:link` |
-| nth-child pseudo-class | [`:nth-child`](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child) | `ul > li:nth-child(2)` |
-| nth-of-type pseudo-class | [`:nth-of-type`](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-of-type) | `body > p:nth-of-type(1)`
-| visited pseudo-class | [`:visited`](https://developer.mozilla.org/en-US/docs/Web/CSS/:visited) | `a:visited`
+Output:
 
-## [Pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
+<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+  <h1 style="color: blue;">Lorem ipsum dolor</h1>
+  <p>Lorem ipsum, <span style="font-weight: bold; font-size: 1.2rem; color: tomato;">dolor</span> sit amet consectetur adipisicing elit. Id, quia...</p>
+</div>
 
-| Name | Pattern | Example |
-|-|-|-|
-| after pseudo-element | [`::after`](https://developer.mozilla.org/en-US/docs/Web/CSS/::after) | `p::after` |
-| before pseudo-element | [`::before`](https://developer.mozilla.org/en-US/docs/Web/CSS/::before) | `p::before` |
-| first-letter pseudo-element | [`::first-letter`](https://developer.mozilla.org/en-US/docs/Web/CSS/::first-letter) | `p::first-letter` |
-| first-line pseudo-element | [`::first-line`](https://developer.mozilla.org/en-US/docs/Web/CSS/::first-line) | `p::first-line` |
-| selection pseudo-element | [`::selection`](https://developer.mozilla.org/en-US/docs/Web/CSS/::selection) | `p::selection` |
+[selector/div.html](selector/div.html)
+```css
+div {
+  color: tomato;
+}
+```
 
-Fonte: [Selectors Level 3 \| W3C](https://www.w3.org/TR/2011/REC-css3-selectors-20110929/#selectors)
+```html
+<h1>Lorem ipsum</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+<div>
+  <p>Expedita, officia rem, non nulla harum ut fugit optio explicabo temporibus eligendi...</p>
+  <p>Perferendis eaque ullam harum illum quas repudiandae dolore minima labore quod...</p>
+</div>
+```
+
+Output:
+
+<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+  <h1 style="color: #606c71;">Lorem ipsum dolor</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+  <div style="color: tomato;">
+    <p>Expedita, officia rem, non nulla harum ut fugit optio explicabo temporibus eligendi...</p>
+    <p>Perferendis eaque ullam harum illum quas repudiandae dolore minima labore quod...</p>
+  </div>
+</div>
+
+### `#id`
+
+[selector/id.html](selector/id.html):
+```css
+p {
+  color: green;
+}
+
+#first {
+  color: red;
+}
+```
+
+```html
+<body>
+  <h1>Lorem ipsum</h1>
+  <p id="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p>Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
+  <p>Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
+</body>
+```
+
+Output:
+
+<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+  <h1 style="color: #606c71;">Lorem ipsum</h1>
+  <p style="color: red;">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p style="color: green;">Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
+  <p style="color: green;">Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
+</div>
+
+### `.class`
+
+[selector/class.html](selector/class.html):
+```css
+p {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+```
+
+```html
+<body>
+  <h1>Lorem ipsum</h1>
+  <p class="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p class="red">Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
+  <p>Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
+</body>
+```
+
+Output:
+
+<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+  <h1 style="color: #606c71;">Lorem ipsum</h1>
+  <p style="color: red;">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p style="color: red;">Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
+  <p style="color: green;">Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
+</div>
+
+### `.class.class`
+
+[selector/classclass.html](selector/classclass.html):
+```css
+.text-center {
+  text-align: center;
+}
+
+.red {
+  color: red;
+}
+
+h1.text-center.red {
+  font-size: 3rem;
+}
+```
+
+```html
+<body>
+  <h1 class="red text-center">Lorem ipsum</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p class="red">Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
+  <p>Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
+</body>
+```
+
+## Combinators
+---
+
+### Descendant combinator
+
+[selector/descendant-combinator.html](selector/descendant-combinator.html):
+```css
+header ul {
+  list-style-type: none;
+}
+```
+
+```html
+<body>
+  <header>
+    <ul>
+      <li><a href="#">Menu 1</a></li>
+      <li><a href="#">Menu 2</a></li>
+    </ul>
+  </header>
+  <main>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+  </main>
+</body>
+```
+
+Output:
+
+<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+  <header>
+    <ul style="list-style-type: none;">
+      <li><a href="#">Menu 1</a></li>
+      <li><a href="#">Menu 2</a></li>
+    </ul>
+  </header>
+  <main>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+  </main>
+</div>
+
+### CSS Question
+
+> What is the selection of `body li`? How many elements?<br>
+
+## Pseudo-class
+---
+
+### `:hover`
+
+[selector/p-hover.html](selector/p-hover.html)
+```css
+p:hover {
+      font-weight: bold;
+    }
+```
+
+```html
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatem ex autem incidunt, aut dolores veritatis nisi repellat perspiciatis nulla reiciendis eum doloribus fugit facere necessitatibus reprehenderit natus libero temporibus.</p>
+```
+
+Output:
+
+<iframe src="selector/p-hover.html" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
+
+### `:first-child`
+
+```css
+p:first-child {
+  color: green;
+}
+```
+
+```html
+<body>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p>Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
+  <p>Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
+</body>
+```
+
+![First Child](selector/first-child.png)
+
+Output:
+
+<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+  <p style="color: green;">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p>Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
+  <p>Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
+</div>
+
+### `:nth-child(2)`
+
+```css
+p:first-child {
+  color: red;
+}
+
+p:nth-child(2) {
+  color: green;
+}
+```
+
+```html
+<body>
+  <h1>Lorem ipsum dolor</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p>Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
+  <p>Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
+</body>
+```
+
+![nth child](selector/nth-child2.png)
+
+Output:
+
+<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+  <h1 style="color: #606c71;">Lorem ipsum dolor</h1>
+  <p style="color: green;">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p>Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
+  <p>Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
+</div>
+
+### `:nth-child(2n)`
+
+```css
+p:nth-child(2n) {
+  color: green;
+}
+```
+
+```html
+<body>
+  <h1>Lorem ipsum dolor</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p>Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
+  <p>Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
+</body>
+```
+
+![nth child 2n](selector/nth-child2n.png)
+
+Output:
+
+<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+  <h1 style="color: #606c71;">Lorem ipsum dolor</h1>
+  <p style="color: green;">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p>Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
+  <p style="color: green;">Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
+</div>
+
+### CSS Question
+
+> Is it possible to inspect `:hover`?<br>
+> Is it possible to replace `:first-child` with `:nth-child`?<br>
+> Is it possible to replace general/adjacent sibling combinator selector with `:nth-child`?<br>
+> Is it possible to select odd or even elements?<br>
+
+## Pseudo-element
+---
+
+### `::selection`
+[selector/p-selection.html](selector/p-selection.html)
+```css
+p::selection {
+  color: white;
+  background-color: grey;
+}
+```
+
+```html
+<h1>Lorem ispsum dolor</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatem ex autem incidunt, aut dolores veritatis nisi repellat perspiciatis nulla reiciendis eum doloribus fugit facere necessitatibus reprehenderit natus libero temporibus.</p>
+```
+
+Output:
+
+<iframe src="selector/p-selection.html" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
+
+## References
+---
+
+* Selectors:
+  * Doc: [WP](https://docs.webplatform.org/wiki/css/selectors), [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Selectors), W3C ([Level 3](https://www.w3.org/TR/2011/REC-css3-selectors-20110929/#selectors) e [Level 4](https://www.w3.org/TR/2013/WD-selectors4-20130502/#overview))
+  * [Selectors Table](selectors.md)
+* Attributes:
+  * [global](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes): `id`, `class`
