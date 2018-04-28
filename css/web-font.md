@@ -1,11 +1,11 @@
 # Web Font
 
 * [Web Font (@font-face)](#web-font-font-face)
-* [Google Fonts](#google-fonts)
-  * [Web](#web)
-  * [Download](#download)
-  * [Customize](#customize)
-  * [Multiple Fonts](#multiple-fonts)
+* Google Fonts
+  * [Web](#google-fonts-web)
+  * [Download](#google-fonts-download)
+  * [Customize](#google-fonts-customize)
+  * [Multiple Fonts](#google-fonts-multiple-fonts)
 
 ## Web Font (@font-face)
 ---
@@ -31,14 +31,8 @@ p {
 }
 ```
 
-## Google Fonts
+## Google Fonts (Web)
 ---
-
-Reference:
-- [Repository](https://fonts.google.com)
-- [Web Font Optimization](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization)
-
-### Web
 
 [web-font/google/web/](web-font/google/web/):
 ```
@@ -60,7 +54,8 @@ p {
 }
 ```
 
-### Download
+## Google Fonts (Download)
+---
 
 [web-font/google/local/](web-font/google/local/):
 ```
@@ -88,7 +83,8 @@ p {
 
 `unicode-range`: [Basic Latin](https://codepoints.net/basic_latin), [Latin-1 Supplement](https://codepoints.net/latin-1_supplement)
 
-### Customize 
+## Google Fonts (Customize)
+---
 
 [web-font/google/styles/](web-font/google/styles/):
 ```
@@ -114,7 +110,8 @@ p {
 }
 ```
 
-### Multiple Fonts
+## Google Fonts (Multiple Fonts)
+---
 
 [web-font/google/multiple/](web-font/google/multiple/):
 ```
@@ -146,6 +143,8 @@ p {
 - Google Fonts:
   - [Font selection and synthesis](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization#font_selection_and_synthesis)
   - [Roboto Description](https://fonts.google.com/specimen/Roboto?selection.family=Roboto)
+  - [Repository](https://fonts.google.com)
+  - [Web Font Optimization](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization)
 - Fonts Gallery:
   - [Adobe Typekit](https://typekit.com)
   - [Skyfonts](https://skyfonts.com)

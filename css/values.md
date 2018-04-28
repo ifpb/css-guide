@@ -1,23 +1,11 @@
-# CSS values and units
+# Values and Units
 
 * [`<color>`](#color)
 * [`<generic-family>`](#generic-family)
 * [`<family-name>`](#family-name)
 * [`<length>`](#length)
 
-## References
-* [CSS values and units \| MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units) (Numeric values, Percentages, Colors, Coordinate positions, Functions)
-* [Value definition syntax \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax)
-
-<!-- TODO
-Actual value
-Computed value
-Initial value
-Resolved value
-Specified value
-Used value -->
-
-## [`<color>`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
+## [&lt;color>](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
 ---
 
 ```css
@@ -63,7 +51,7 @@ color: hsl(270, 50%, 40%);
 color: hsla(270, 50%, 40%, 0.5);
 ```
 
-### Examples
+### Color Table
 
 | `<named-color>` | `<hex-color>` | `<rgb-color>` | `<hsl-color>` |
 |-|-|-|-|
@@ -77,38 +65,25 @@ color: hsla(270, 50%, 40%, 0.5);
 | <span style="color: rebeccapurple">rebeccapurple</span> | <span style="color: #639">#639</span><br><span style="color: #663399">#663399</span><br><span style="color: #663399ff">#663399ff</span> | <span style="color: rgb(102, 51, 153)">rgb(102, 51, 153)</span><br><span style="color: rgba(102, 51, 153, 1)">rgba(102, 51, 153, 1)</span> | <span style="color: hsl(270, 50%, 40%)"> hsl(270, 50%, 40%)</span><br><span style="color: hsla(270, 50%, 40%, 1)"> hsla(270, 50%, 40%, 1)</span> |
 | <span style="color: rgba(102, 51, 153, 0.5)">rebeccapurple 50%</span> | <span style="color: #6397">#6397</span><br><span style="color: #66339977">#66339977</span> | <span style="color: rgba(102, 51, 153, 0.5)">rgba(102, 51, 153, 0.5)</span> | <span style="color: hsla(270, 50%, 40%, 0.5)"> hsla(270, 50%, 40%, 0.5)</span> |
 
-### References
+<!-- 
+### Material Color
+### Pastel Color 
+-->
 
-**Tools**
-- [Color name](http://www.color-hex.com/color-names.html)
-- Suport [#rrggbbaa](https://caniuse.com/#feat=css-rrggbbaa)
-- [Chrome DevTools: Color Picker](https://developers.google.com/web/tools/chrome-devtools/css/reference#color-picker)
-- Color Info
-  - Tools
-    - [rgbTo](http://rgb.to/)
-    - [color-hex](http://www.color-hex.com/)
-    - [colourco](http://www.colourco.de/)
-    - Google Search
-  - Rebecca Purple Info (#663399):
-    - [color-hex](http://www.color-hex.com/color/663399) (Shades, Tints, Triadic Colors, Analogous Colors, Monochromatic Colors, Complementary Color, Related Colors)
-    - [rgbTo](http://rgb.to/rgb/102,51,153)
+### Example 
 
-**[Color Model](https://en.wikipedia.org/wiki/Color_model)**
-- [RGB](https://en.wikipedia.org/wiki/RGB_color_model) (additive color model)
-- [CMYK](https://en.wikipedia.org/wiki/CMYK_color_model) (subtractive color model)
-- [HSL and HSV](https://en.wikipedia.org/wiki/HSL_and_HSV)
+```css
+h1 {
+  color: red;
+}
 
-**Pastel Color**
+p {
+  color: rgb(255, 0, 0);
+}
+```
 
-## `<generic-family>`
+## [&lt;generic-family>]()
 ---
-
-References:
-- [Font Family](https://www.w3.org/Style/Examples/007/fonts.en.html)
-- [Top 30 Best Sans Serif Fonts](http://www.vectordiary.com/fonts/top-30-best-sans-serif-fonts/)
-- [Top 30 Best Serif Fonts](http://www.vectordiary.com/fonts/top-30-best-serif-fonts/)
-- [Top 30 Modern Fonts](http://www.vectordiary.com/fonts/top-30-modern-fonts/)
-- [Outros](https://www.w3.org/Style/Examples/007/fonts.en.html#font-family)
 
 <div style="font-size: 2rem;">
   <span style="font-family: serif">Lorem</span>
@@ -138,7 +113,7 @@ References:
 
 > Chrome > settings > Appearance > Customize fonts
 
-## `<family-name>`
+## [&lt;family-name>]()
 ---
 
 | `<family-name>` | `<generic-family>` | Preview |
@@ -158,7 +133,7 @@ References:
 
 Font: [Web safe fonts (Core fonts for the Web)](https://en.wikipedia.org/wiki/Core_fonts_for_the_Web)
 
-## [`<length>`](https://developer.mozilla.org/en-US/docs/Web/CSS/length)
+## [&lt;length>](https://developer.mozilla.org/en-US/docs/Web/CSS/length)
 ---
 
 ### Relative length units
@@ -189,3 +164,69 @@ Font: [Web safe fonts (Core fonts for the Web)](https://en.wikipedia.org/wiki/Co
 | cm | centimeter | font-size: 1cm; | `<abosolut-size>` | <span style="font-size: 1cm;">Lorem ipsum</span> |
 | mm | millimeter | font-size: 10mm; | `<abosolut-size>` | <span style="font-size: 10mm;">Lorem ipsum</span> |
 | in | inch | font-size: .2in; | `<abosolut-size>` | <span style="font-size: .2in;">Lorem ipsum</span> |
+
+### Example
+
+#### Absolute Units
+
+```css
+p {
+  font-size: 17px;
+}
+```
+
+#### Relative Units
+
+```css
+h1 {
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 105%;
+}
+```
+
+| tag | value | computed value |
+|-|-|-|
+| `body` | 16px | |
+| `h1` | 1.3rem | 16.48px |
+| `p` | 105% | 16.8px |
+
+## References
+---
+
+* [CSS values and units \| MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units) (Numeric values, Percentages, Colors, Coordinate positions, Functions)
+* [Value definition syntax \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax)
+* Color
+  * Tools
+    * [Color name](http://www.color-hex.com/color-names.html)
+    * Suport [#rrggbbaa](https://caniuse.com/#feat=css-rrggbbaa)
+    * [Chrome DevTools: Color Picker](https://developers.google.com/web/tools/chrome-devtools/css/reference#color-picker)
+    * Color Info
+      * Tools
+        * [rgbTo](http://rgb.to/)
+        * [color-hex](http://www.color-hex.com/)
+        * [colourco](http://www.colourco.de/)
+        * Google Search
+      * Rebecca Purple Info (#663399):
+        * [color-hex](http://www.color-hex.com/color/663399) (Shades, Tints, Triadic Colors, Analogous Colors, Monochromatic Colors, Complementary Color, Related Colors)
+        * [rgbTo](http://rgb.to/rgb/102,51,153)
+  * [Color Model](https://en.wikipedia.org/wiki/Color_model)
+    * [RGB](https://en.wikipedia.org/wiki/RGB_color_model) (additive color model)
+    * [CMYK](https://en.wikipedia.org/wiki/CMYK_color_model) (subtractive color model)
+    * [HSL and HSV](https://en.wikipedia.org/wiki/HSL_and_HSV)
+* Generic Family
+  * [Font Family](https://www.w3.org/Style/Examples/007/fonts.en.html)
+  * [Top 30 Best Sans Serif Fonts](http://www.vectordiary.com/fonts/top-30-best-sans-serif-fonts/)
+  * [Top 30 Best Serif Fonts](http://www.vectordiary.com/fonts/top-30-best-serif-fonts/)
+  * [Top 30 Modern Fonts](http://www.vectordiary.com/fonts/top-30-modern-fonts/)
+  * [Outros](https://www.w3.org/Style/Examples/007/fonts.en.html#font-family)
+
+<!-- TODO
+Actual value
+Computed value
+Initial value
+Resolved value
+Specified value
+Used value -->

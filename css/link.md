@@ -13,6 +13,9 @@
 
 Properties: [color](https://developer.mozilla.org/en-US/docs/Web/CSS/color), [cursor](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor), [outline](https://developer.mozilla.org/en-US/docs/Web/CSS/outline), [text-decoration](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration)
 
+## Example
+---
+
 [link/index.html](link/index.html):
 ```css
 a {

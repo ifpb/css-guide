@@ -3,30 +3,29 @@
 * [Problem](problem.md)
 * [CSS Local](css-local.md)
 * Syntax
-  * [Properties](properties.md)
-    * [Values](values.md)
+  * [Properties](properties.md) and [Values](values.md)
   * Selectors: [intro](selectors.md), [table](selectors-table.md)
   * [Functions](functions.md)
   * [At-rules](at-rules.md)
   * [Media Queries](media-queries.md)
   * [Comments](comments.md)
-* [Inheritance](inheritance.md), [Cascade](#cascade.md)
+* [Inheritance](inharitance.md)
+* [Cascade](cascade.md)
 * Styling
   * [Typography](typography.md)
-  * [Link](link.md)
+  * [Hyperlink](link.md)
   * [Web font](web-font.md)
   * [Icon](icon.md)
   * [Box model](box-model.md)
   * [Background](background.md)
-  * [Table](table.md)
-  * [List](list.md)
-  * [Form](form.md)
-  * [Generated Content](generated-content.md)
-  * Layout
-  * Animation
+  * [Table](#)
+  * [List](#)
+  * [Form](#)
+  * [Generated Content](#)
+  * [Layout](#)
+  * [Animation](#)
 
 ## References
----
 
 * CSS
   * CSS Awesome [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sotayamashita/awesome-css)

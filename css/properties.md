@@ -66,50 +66,6 @@ Output:
 * [Box model](box-model.html)
 * [Background](background.html)
 
-
-## Values and Units
----
-
-### [`<length>`](https://developer.mozilla.org/en-US/docs/Web/CSS/length)
-
-#### absolute units
-
-```css
-p {
-  font-size: 17px;
-}
-```
-
-#### relative units
-
-```css
-h1 {
-  font-size: 1.3rem;
-}
-
-p {
-  font-size: 105%;
-}
-```
-
-| tag | value | computed value |
-|-|-|-|
-| `body` | 16px | |
-| `h1` | 1.3rem | 16.48px |
-| `p` | 105% | 16.8px |
-
-### [`<color>`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
-
-```css
-h1 {
-  color: red;
-}
-
-p {
-  color: rgb(255, 0, 0);
-}
-```
-
 ## References
 ---
 

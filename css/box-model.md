@@ -1,5 +1,6 @@
 # Box Model
 
+* [Display](#display)
 * [Box Model](#box-model-1)
 * [Border](#border)
 * [Margin](#margin)
@@ -14,23 +15,11 @@
 * [Overflow](#overflow)
 * [Outline](#outline)
 
-## Box Model
----
-
-References:
-- [Box model recap](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Box_model_recap)
-- [Styling borders using CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Borders)
-
 ![Box Model](https://mdn.mozillademos.org/files/13647/box-model-standard-small.png)<br>
 Fonte: [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Box_model_recap)
 
 ## [Display](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
 ---
-
-References:
-- [Content sectioning \| W3C](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning)
-- [Text content \| W3C](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Text_content)
-- [Inline text semantics \| W3C](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Inline_text_semantics)
 
 | Display | Flow | Margin, Border, Padding | Height | Width |
 |-|-|-|-|-|-|-|
@@ -485,13 +474,6 @@ border-bottom-left-radius:  3px 4px;
 ## [Box Shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow) 
 ---
 
-References:
-- [Box Shadow Generator](https://www.cssmatic.com/box-shadow)
-- [Box Shadow \| CSS Tricks](https://css-tricks.com/almanac/properties/b/box-shadow/)
-- [CSS3 Box Shadows Effects](https://codepen.io/haibnu/pen/FxGsI)
-- [Material Design Box Shadows](https://codepen.io/sdthornton/pen/wBZdXq)
-- [18 Amazing Effects You can Create with CSS3 Box Shadows](https://www.hongkiat.com/blog/creative-css-shadows/)
-
 > <b>Value:</b> none \| `<shadow>`<br>
 > <br>
 > `<shadow>` = inset? && `<length>`{2,4} && `<color>`?
@@ -796,3 +778,19 @@ outline: green solid 3px;
 | outline: solid; | <span style="outline: solid;">Lorem ipsum dolor</span> |
 | outline: #f66 dashed; | <span style="outline: #f66 dashed;">Lorem ipsum dolor</span> |
 | outline: green solid 3px; | <span style="outline: green solid 3px;">Lorem ipsum dolor</span> |
+
+## References
+---
+
+- [Box model recap](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Box_model_recap)
+- [Styling borders using CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Borders)
+- Display
+  - [Content sectioning \| W3C](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning)
+  - [Text content \| W3C](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Text_content)
+  - [Inline text semantics \| W3C](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Inline_text_semantics)
+- Box shadow
+  - [Box Shadow Generator](https://www.cssmatic.com/box-shadow)
+  - [Box Shadow \| CSS Tricks](https://css-tricks.com/almanac/properties/b/box-shadow/)
+  - [CSS3 Box Shadows Effects](https://codepen.io/haibnu/pen/FxGsI)
+  - [Material Design Box Shadows](https://codepen.io/sdthornton/pen/wBZdXq)
+  - [18 Amazing Effects You can Create with CSS3 Box Shadows](https://www.hongkiat.com/blog/creative-css-shadows/)
