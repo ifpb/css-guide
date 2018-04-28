@@ -9,7 +9,7 @@
   * [At-rules](at-rules.md)
   * [Media Queries](media-queries.md)
   * [Comments](comments.md)
-* [Inheritance](inharitance.md)
+* [Inheritance](inheritance.md)
 * [Cascade](cascade.md)
 * Styling
   * [Typography](typography.md)
