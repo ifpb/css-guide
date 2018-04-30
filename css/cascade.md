@@ -72,15 +72,22 @@ h1 {
 
 #### User Agent Style Sheet
 
-[normalize.css](https://necolas.github.io/normalize.css/)
+* [Firefox (Gecko)](https://dxr.mozilla.org/mozilla-central/source/layout/style/res/html.css)
+* [Safari (WebKit)](https://trac.webkit.org/browser/trunk/Source/WebCore/css/html.css)
+* [Chrome (Blink)](https://chromium.googlesource.com/chromium/blink/+/master/Source/core/css/html.css)
+* [Microsoft Edge (EdgeHTML)](https://gist.github.com/jonathantneal/abc52743caa0a019d359ec4ba2ce965b)
+* [revert.css](https://github.com/sw4/revert.css)
+* [normalize.css](https://necolas.github.io/normalize.css/)
 
 #### Author Style Sheet
 
-`style`, `<style>`, `<link>`
+* `style`
+* `<style>`
+* `<link>`
 
 #### User Style Sheet
 
-[Stylish](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en): [Gallery](http://userstyles.org/)
+* [Stylish](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en) ([Gallery](http://userstyles.org/), )
 
 ### Importance order
 
