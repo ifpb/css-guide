@@ -1,10 +1,10 @@
 # Cascade
 
-* [Cascade](#Cascade)
-* [Importance](#Importance)
-* [Specificity](#Specificity)
-* [Source order](#Source order)
-* [Reference](#Reference)
+* [Cascade](#cascade)
+* [Importance](#importance)
+* [Specificity](#specificity)
+* [Source order](#source-order)
+* [Reference](#reference)
 
 ## Cascade
 ---
@@ -87,7 +87,8 @@ h1 {
 
 #### User Style Sheet
 
-* [Stylish](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en) ([Gallery](http://userstyles.org/), )
+* [Stylish Plugin](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en) ([Gallery](http://userstyles.org/))
+* [Stylus Plugin](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en)
 
 ### Importance order
 
