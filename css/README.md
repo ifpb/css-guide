@@ -8,7 +8,7 @@
 * Syntax
   * [Properties](property/) and [Values](property/values.md)
   * Selectors: [intro](selector/), [table](selector/selectors-table.md)
-  * [Functions](functions/)
+  * [Functions](function/)
   * [At-rules](at-rule/)
   * [Media Queries](media-query/)
   * [Comments](comment/)
