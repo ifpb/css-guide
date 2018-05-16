@@ -149,7 +149,7 @@ h1 {
 
 ### CSS Question
 
-> What is the color of `<h1>` Element?
+> What is the color of `<h1>` Element?<br>
 > Is it possible to inspect specificity?
 
 | Style	| Selector | Thousands | Hundreds | Tens | Ones | Total |
@@ -158,6 +158,11 @@ h1 {
 | color: orange | `#title` | 0 | 1 | 0 | 0 | 0100 |
 | color: blue | `h1` | 0 | 0 | 0 | 1 | 0001 |
 | color: red | `h1` | 0 | 0 | 0 | 1 | 0001 |
+
+> If you disable the color green and orange, what is the `<h1>` color?<br>
+
+![](https://i.imgflip.com/2a3fmn.jpg)
+<a href="https://i.imgflip.com/2a3ggp.jpg" style="color: #fff">https://i.imgflip.com/2a3ggp.jpg</a>
 
 ## [Source order](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance#Source_order)
 ---
