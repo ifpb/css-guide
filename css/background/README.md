@@ -367,7 +367,7 @@ background-attachment: local;
 
 ### Example
 
-[bg-attachement/](bg-attachement/)
+[bg-attachment/index.html](bg-attachment/)
 ```css
 header {
   background-color: tomato;
