@@ -475,7 +475,7 @@ background: border-box red;
 background: no-repeat center/80% url("../img/image.png");
 ```
 
-### Example
+### Example Shorthand
 
 ```css
 header {
@@ -495,6 +495,23 @@ header {
   background-blend-mode: multiply; 
 }
 ```
+
+### Example Sprite
+
+![](sprite/img/google.png)
+
+[sprite/](sprite/):
+```css
+.google {
+  background: url(../img/google.png) no-repeat -24px 0;
+  width: 116px;
+  height: 37px;
+}
+```
+
+References:
+* [Sprite Cow](http://www.spritecow.com)
+* [CSS Sprites](https://css-tricks.com/css-sprites/)
 
 ## [Filter](https://developer.mozilla.org/en-US/docs/Web/CSS/filter)
 ---
