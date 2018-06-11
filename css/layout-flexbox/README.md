@@ -27,7 +27,7 @@ Terminology:
 
 ### Example
 
-<iframe src="directions/index.html" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem; box-size: box-sizing"></iframe>
+<iframe src="directions/index.html" style="width: 100%; border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
 ## Flex Container - Orientation Wrap
 ---
@@ -37,7 +37,7 @@ Terminology:
 
 ### Example
 
-<iframe src="wraps/index.html" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem; box-size: box-sizing"></iframe>
+<iframe src="wraps/index.html" style="width: 100%; border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
 ## Flex Container - Orientation Direction & Wrap
 ---
@@ -48,7 +48,7 @@ Terminology:
 
 ### Example
 
-<iframe src="directions-wraps/index.html" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem; box-size: box-sizing"></iframe>
+<iframe src="directions-wraps/index.html" style="width: 100%; border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
 ## Flex Container - Alignment Content (Justify)
 ---
@@ -59,7 +59,7 @@ Terminology:
 
 ### Example
 
-<iframe src="justify-contents/index.html" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem; box-size: box-sizing"></iframe>
+<iframe src="justify-contents/index.html" style="width: 100%; border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
 ## Flex Container - Alignment Items
 ---
@@ -70,7 +70,7 @@ Terminology:
 
 ### Example
 
-<iframe src="alignment-items/index.html" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem; box-size: box-sizing"></iframe>
+<iframe src="alignment-items/index.html" style="width: 100%; border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
 ## Flex Container - Alignment Content
 ---
@@ -81,7 +81,7 @@ Terminology:
 
 ### Example
 
-<iframe src="alignment-content/index.html" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem; box-size: box-sizing"></iframe>
+<iframe src="alignment-content/index.html" style="width: 100%; border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
 ## Flex Item - Alignment Self
 ---
@@ -92,7 +92,7 @@ Terminology:
 
 ### Example
 
-<iframe src="alignment-self/index.html" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem; box-size: box-sizing"></iframe>
+<iframe src="alignment-self/index.html" style="width: 100%; border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
 ## Flex Item - Ordering
 ---
@@ -101,7 +101,7 @@ Terminology:
 > <b>Value:</b> `<integer>`<br>
 > <b>Initial:</b> 0<br>
 
-<iframe src="ordering/index.html" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem; box-size: box-sizing"></iframe>
+<iframe src="ordering/index.html" style="width: 100%; border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
 ## Flex Item - Flexibility Grow
 ---
