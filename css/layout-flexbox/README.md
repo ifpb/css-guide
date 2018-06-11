@@ -81,7 +81,7 @@ Terminology:
 
 ### Example
 
-<iframe src="alignment-contents/index.html" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem; box-size: box-sizing"></iframe>
+<iframe src="alignment-content/index.html" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem; box-size: box-sizing"></iframe>
 
 ## Flex Item - Alignment Self
 ---
