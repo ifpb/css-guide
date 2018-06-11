@@ -6,7 +6,6 @@ body {
 
 .direction {
   box-sizing: border-box;
-  width: 25%;
   padding: 1rem;
 }
 
@@ -35,6 +34,7 @@ body {
   display: flex;
   transition: all .4s;
   border: 1px solid #000;
+  min-width: calc(4 * 2rem + 8 * .6rem + 3rem);
 }
 
 .item {

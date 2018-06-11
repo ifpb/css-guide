@@ -145,3 +145,10 @@ Terminology:
 * [Flexbox - A friendly tutorial for modern CSS layouts](https://internetingishard.com/html-and-css/flexbox/)
 * [Flexbox - Use Flexbox para levar a criação de layouts CSS ao próximo nível](http://desenvolvimentoparaweb.com/css/flexbox/)
 * [Guia Flexbox](https://origamid.com/projetos/flexbox-guia-completo/)
+
+<script>
+  const iframes = Array.from(document.querySelectorAll('iframe'))
+  for (const iframe of iframes) {
+    iframe.style.height = iframe.contentDocument.body.offsetHeight+'px'
+  }
+</script>
