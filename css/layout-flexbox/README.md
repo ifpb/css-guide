@@ -27,7 +27,7 @@ Terminology:
 
 ### Example
 
-[directions/index.html" style](directions/index.html" style):
+[directions/index.html](directions/index.html):
 <iframe src="directions/index.html" style="width: 100%; border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
 ## Flex Container - Orientation Wrap
@@ -38,7 +38,7 @@ Terminology:
 
 ### Example
 
-[wraps/index.html" style="width: 1](wraps/index.html" style="width: 1):
+[wraps/index.html](wraps/index.html):
 <iframe src="wraps/index.html" style="width: 100%; border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
 ## Flex Container - Orientation Direction & Wrap
