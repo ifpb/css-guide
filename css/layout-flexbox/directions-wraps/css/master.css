@@ -6,7 +6,7 @@ body {
 
 .direction {
   box-sizing: border-box;
-  width: 25%;
+  min-width: 285px;
   padding: 1rem;
 }
 
