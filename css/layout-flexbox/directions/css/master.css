@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.direction {
+  box-sizing: border-box;
+  width: 25%;
+  padding: 1rem;
+}
+
+.direction .name {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.column-reverse {
+  flex-direction: column-reverse;
+}
+
+.container {
+  display: flex;
+  transition: all .4s;
+  border: 1px solid #000;
+}
+
+.item {
+  margin: .2rem;
+  padding: .4rem;
+  min-width: 2rem;
+  min-height: 2rem;
+  background: #888;
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: bold;
+}
