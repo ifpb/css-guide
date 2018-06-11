@@ -149,8 +149,10 @@ Terminology:
 <script>
   const iframes = Array.from(document.querySelectorAll('iframe'))
   for (const iframe of iframes) {
+    console.log(iframe)
     if(iframe.contentDocument.body) {
       const height = parseInt(iframe.contentDocument.body.offsetHeight) + 32
+      console.log(height)
       iframe.style.height = `${height}px`
     }
   }
