@@ -37,8 +37,8 @@ Terminology:
 ---
 
 > <b>Name:</b> display<br>
-> <b>Value:</b> flex \| inline-flex
-> <b>Initial:</b>	inline
+> <b>Value:</b> flex \| inline-flex<br>
+> <b>Initial:</b>	inline<br>
 
 ### Example
 
