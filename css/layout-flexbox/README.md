@@ -191,9 +191,9 @@ Terminology:
 ## Demo
 ---
 
-* [Cards](cards/) ([Article](https://codeburst.io/build-a-minimalist-html-card-in-just-53-lines-of-code-with-flexbox-b40801927eb5), [Source](https://github.com/bmorelli25/flexbox-card-tutorial))
-* [Holy Grail Layout](holy-grail-layout/) ([css-tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-examples))
-* [Menu](menu/) ([css-tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-examples))
+* [Cards](demo/cards/) ([Article](https://codeburst.io/build-a-minimalist-html-card-in-just-53-lines-of-code-with-flexbox-b40801927eb5), [Source](https://github.com/bmorelli25/flexbox-card-tutorial))
+* [Responsive Menu](demo/menu/) ([css-tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-examples))
+* [Holy Grail Layout](demo/holy-grail-layout/) ([css-tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-examples))
 
 ## References
 ---
