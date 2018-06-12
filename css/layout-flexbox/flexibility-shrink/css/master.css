@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
 }
 
 .example {
@@ -17,21 +17,22 @@ body {
 .container {
   display: flex;
   transition: all .4s;
+  width: 410px;
   border: 1px solid #000;
 }
 
-.order-1 {
-  order: 1;
+.shrink-0 {
+  flex-shrink: 0;
 }
 
-.order--1 {
-  order: -1;
+.shrink-3 {
+  flex-shrink: 3;
 }
 
 .item {
   margin: .2rem;
   padding: .4rem;
-  min-width: 2rem;
+  width: 50%;
   min-height: 2rem;
   background: #888;
   color: #fff;

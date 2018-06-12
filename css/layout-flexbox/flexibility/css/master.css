@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
 }
 
 .example {
@@ -17,15 +17,13 @@ body {
 .container {
   display: flex;
   transition: all .4s;
+  width: 400px;
   border: 1px solid #000;
+  flex-flow: row wrap;
 }
 
-.order-1 {
-  order: 1;
-}
-
-.order--1 {
-  order: -1;
+.content {
+  flex-basis: content;
 }
 
 .item {
@@ -38,4 +36,5 @@ body {
   font-size: 1.6rem;
   text-align: center;
   font-weight: bold;
+  flex: 1 auto;
 }

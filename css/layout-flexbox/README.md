@@ -98,7 +98,7 @@ Terminology:
 
 ### Example
 
-[alignment-self/index.html" style](alignment-self/index.html" style):
+[alignment-self/index.html](alignment-self/index.html):
 <iframe src="alignment-self/index.html" style="width: 100%; border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
 ## Flex Item - Ordering
@@ -108,7 +108,9 @@ Terminology:
 > <b>Value:</b> `<integer>`<br>
 > <b>Initial:</b> 0<br>
 
-[ordering/index.html" style](ordering/index.html" style):
+### Example
+
+[ordering/index.html](ordering/index.html):
 <iframe src="ordering/index.html" style="width: 100%; border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
 ## Flex Item - Flexibility Grow
@@ -118,12 +120,22 @@ Terminology:
 > <b>Value:</b> `<integer>`<br>
 > <b>Initial:</b> 0<br>
 
+### Example
+
+[flexibility-grow/index.html](flexibility-grow/index.html):
+<iframe src="flexibility-grow/index.html" style="width: 100%; border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
+
 ## Flex Item - Flexibility Shrink
 ---
 
 > <b>Name:</b> `flex-shrink`<br>
 > <b>Value:</b> `<integer>`<br>
 > <b>Initial:</b> 1<br>
+
+### Example
+
+[flexibility-shink/index.html](flexibility-shink/index.html):
+<iframe src="flexibility-shink/index.html" style="width: 100%; border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
 ## Flex Item - Flexibility Basis
 ---
@@ -132,12 +144,27 @@ Terminology:
 > <b>Value:</b> content | `<width>`<br>
 > <b>Initial:</b> auto<br>
 
+### Example
+
+[flexibility-basis/index.html](flexibility-basis/index.html):
+<iframe src="flexibility-basis/index.html" style="width: 100%; border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
+
 ## Flex Item - Flexibility Shorthand
 ---
 
 > <b>Name:</b> flex<br>
 > <b>Value:</b> none | [ `<flex-grow>` `<flex-shrink>`? || `<flex-basis>` ]<br>
 > <b>Initial:</b> 0 1 auto<br>
+
+### Example
+
+[flexibility/index.html](flexibility/index.html):
+<iframe src="flexibility/index.html" style="width: 100%; border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
+
+## Demo
+---
+
+[Cards](cards/) ([Article](https://codeburst.io/build-a-minimalist-html-card-in-just-53-lines-of-code-with-flexbox-b40801927eb5), [Source](https://github.com/bmorelli25/flexbox-card-tutorial)), [Holy Grail Layout](holy-grail-layout/), [Menu](menu/)
 
 ## References
 ---
