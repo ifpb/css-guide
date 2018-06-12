@@ -164,15 +164,15 @@ Terminology:
 ## Demo
 ---
 
-[Cards](cards/) ([Article](https://codeburst.io/build-a-minimalist-html-card-in-just-53-lines-of-code-with-flexbox-b40801927eb5), [Source](https://github.com/bmorelli25/flexbox-card-tutorial)), [Holy Grail Layout](holy-grail-layout/), [Menu](menu/)
+[Cards](cards/) ([Article](https://codeburst.io/build-a-minimalist-html-card-in-just-53-lines-of-code-with-flexbox-b40801927eb5), [Source](https://github.com/bmorelli25/flexbox-card-tutorial)), [Holy Grail Layout](holy-grail-layout/) ([css-tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-examples)), [Menu](menu/) ([css-tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-examples))
 
 ## References
 ---
 
 * [CSS Flexible Box Layout Module Level 1 \| W3C](https://www.w3.org/TR/css-flexbox-1/)
 * [Basic concepts of flexbox \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
-* [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-* [Can I Use - CSS Flexible Box Layout Module](https://caniuse.com/#feat=flexbox)
+* [A Complete Guide to Flexbox \| css-tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+* [CSS Flexible Box Layout Module \| Can I Use](https://caniuse.com/#feat=flexbox)
 * [Build a Minimalist HTML Card in just 53 lines of code (with Flexbox)](https://codeburst.io/build-a-minimalist-html-card-in-just-53-lines-of-code-with-flexbox-b40801927eb5)
 * [How Flexbox works — explained with big, colorful, animated gifs](https://medium.freecodecamp.org/an-animated-guide-to-flexbox-d280cf6afc35)
 * [Learn CSS Flexbox in 5 Minutes](https://medium.freecodecamp.org/learn-css-flexbox-in-5-minutes-b941f0affc34)
@@ -180,6 +180,8 @@ Terminology:
 * [Flexbox - A friendly tutorial for modern CSS layouts](https://internetingishard.com/html-and-css/flexbox/)
 * [Flexbox - Use Flexbox para levar a criação de layouts CSS ao próximo nível](http://desenvolvimentoparaweb.com/css/flexbox/)
 * [Guia Flexbox](https://origamid.com/projetos/flexbox-guia-completo/)
+* [Flexbox in CSS \| cssreference](https://cssreference.io/flexbox/)
+* Animated Flexbox ([1](https://codepen.io/osublake/full/dMLQJr), [2](https://codepen.io/osublake/pen/dMLQJr))
 
 <script>
   const iframes = Array.from(document.querySelectorAll('iframe'))
