@@ -36,7 +36,14 @@ Terminology:
 ## Display
 ---
 
+> <b>Name:</b> display<br>
 > <b>Value:</b> flex \| inline-flex
+> <b>Initial:</b>	inline
+
+### Example
+
+[display/index.html](display/index.html):
+<iframe src="display/index.html" style="width: 100%; border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
 ## Flex Container - Orientation Direction
 ---
