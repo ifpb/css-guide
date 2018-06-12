@@ -134,8 +134,8 @@ Terminology:
 
 ### Example
 
-[flexibility-shink/index.html](flexibility-shink/index.html):
-<iframe src="flexibility-shink/index.html" style="width: 100%; border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
+[flexibility-shrink/index.html](flexibility-shrink/index.html):
+<iframe src="flexibility-shrink/index.html" style="width: 100%; border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
 ## Flex Item - Flexibility Basis
 ---
