@@ -54,6 +54,10 @@ body {
   font-weight: bold;
 }
 
+.text-3 {
+  font-size: 3rem;
+}
+
 .item-1 {
   min-height: 50%;
 }
