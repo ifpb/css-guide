@@ -150,6 +150,12 @@ Output:
   <div style="height: 150px; width: 150px; margin: 1rem; display: inline-block; background-image: radial-gradient(farthest-corner at 40px 40px, rgba(0, 145, 200, .6), rgba(1, 193, 120, .6));"></div>
 </div>
 
+<!-- 
+### Conic Gradient
+https://css-tricks.com/snippets/css/css-conic-gradient/
+https://css-tricks.com/1-element-css-rainbow-gradient-infinity/?utm_source=CSS-Weekly&utm_campaign=Issue-319&utm_medium=email
+-->
+
 ### References
 * [linear-gradient()](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient)
 * [repeating-linear-gradient()](https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-linear-gradient)
