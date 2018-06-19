@@ -29,3 +29,4 @@
 * [Grid in CSS](https://cssreference.io/css-grid/)
 * [An Introduction to the CSS Grid Layout Module](https://www.sitepoint.com/introduction-css-grid-layout-module/)
 * [Can I Use - CSS Grid](https://caniuse.com/#feat=css-grid)
+* [The Layouts of Tomorrow](https://mxb.at/blog/layouts-of-tomorrow/)

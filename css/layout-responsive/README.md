@@ -1,1 +1,2 @@
-https://medium.com/samsung-internet-dev/common-responsive-layouts-with-css-grid-and-some-without-245a862f48df
+- https://medium.com/samsung-internet-dev/common-responsive-layouts-with-css-grid-and-some-without-245a862f48df
+- https://developers.google.com/web/fundamentals/codelabs/your-first-multi-screen-site/
