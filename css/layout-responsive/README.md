@@ -3,7 +3,6 @@
 * [Media query](#media-query)
 * [Mobile First and Breakpoints](#mobile-first-and-breakpoints)
 * [Responsive Image](#responsive-image)
-* [Responsive Table](#responsive-table)
 * [Demo](#demo)
 
 ## Viewport
@@ -68,16 +67,12 @@ ul {
 {% include_relative image-responsive/index.html %}
 ```
 
-## Responsive Table
----
-
-[table-responsive/index.html](table-responsive/index.html)
-
 ## Demo
 ---
 
 - [Portfólio](portfolio/)
 - [Holy Grail Layout](holy-grail-layout/)
+- [Responsive Table](table-responsive/index.html)
 - [Weather](https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ux/responsive/weather-2.html) ([Responsive Web Design Basics \| Google](https://developers.google.com/web/fundamentals/design-and-ux/responsive/))
 - [Responsive Web Design - Examples](https://responsivedesign.is/examples/)
 - [Common Responsive Layouts with CSS Grid (and some without!)](https://medium.com/samsung-internet-dev/common-responsive-layouts-with-css-grid-and-some-without-245a862f48df)
