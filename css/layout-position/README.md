@@ -18,7 +18,6 @@
   width="100%"
   height="300"
   frameborder="0"
-  style="border:0" 
   allowfullscreen>
 </iframe>
 
@@ -44,7 +43,6 @@
   width="100%"
   height="300"
   frameborder="0"
-  style="border:0" 
   allowfullscreen>
 </iframe>
 
@@ -72,7 +70,6 @@
   width="100%"
   height="300"
   frameborder="0"
-  style="border:0" 
   allowfullscreen>
 </iframe>
 
@@ -96,7 +93,6 @@
   width="100%"
   height="300"
   frameborder="0"
-  style="border:0" 
   allowfullscreen>
 </iframe>
 
@@ -128,7 +124,6 @@
   width="100%"
   height="300"
   frameborder="0"
-  style="border:0" 
   allowfullscreen>
 </iframe>
 
@@ -160,7 +155,6 @@
   width="100%"
   height="300"
   frameborder="0"
-  style="border:0" 
   allowfullscreen>
 </iframe>
 
@@ -194,7 +188,6 @@
   width="100%"
   height="300"
   frameborder="0"
-  style="border:0" 
   allowfullscreen>
 </iframe>
 
@@ -218,7 +211,6 @@
   width="100%"
   height="300"
   frameborder="0"
-  style="border:0" 
   allowfullscreen>
 </iframe>
 
@@ -241,7 +233,6 @@ dt {
   width="100%"
   height="300"
   frameborder="0"
-  style="border:0" 
   allowfullscreen>
 </iframe>
 
