@@ -14,6 +14,7 @@
 
 <iframe 
   src="demo/static.html" 
+  style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"
   width="100%"
   height="300"
   frameborder="0"
@@ -39,6 +40,7 @@
 
 <iframe 
   src="demo/relative.html" 
+  style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"
   width="100%"
   height="300"
   frameborder="0"
@@ -66,6 +68,7 @@
 
 <iframe 
   src="demo/z-index.html" 
+  style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"
   width="100%"
   height="300"
   frameborder="0"
@@ -89,6 +92,7 @@
 
 <iframe 
   src="demo/absolute.html" 
+  style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"
   width="100%"
   height="300"
   frameborder="0"
@@ -120,6 +124,7 @@
 
 <iframe 
   src="demo/static-absolute.html" 
+  style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"
   width="100%"
   height="300"
   frameborder="0"
@@ -151,6 +156,7 @@
 
 <iframe 
   src="demo/rel-absolute.html" 
+  style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"
   width="100%"
   height="300"
   frameborder="0"
@@ -184,6 +190,7 @@
 
 <iframe 
   src="demo/rel-rel-absolute.html" 
+  style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"
   width="100%"
   height="300"
   frameborder="0"
@@ -207,6 +214,7 @@
 
 <iframe 
   src="demo/fixed.html" 
+  style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"
   width="100%"
   height="300"
   frameborder="0"
@@ -229,6 +237,7 @@ dt {
 
 <iframe 
   src="demo/sticky.html" 
+  style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"
   width="100%"
   height="300"
   frameborder="0"
