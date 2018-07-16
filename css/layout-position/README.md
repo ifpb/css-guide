@@ -3,6 +3,8 @@
 ## Static positioning
 ---
 
+[demo/static.html](demo/static.html):
+
 ```css
 #two {
   background-color: #eee;
@@ -10,7 +12,6 @@
 }
 ```
 
-[demo/static.html](demo/static.html):
 <iframe 
   src="demo/static.html" 
   width="100%"
@@ -25,6 +26,8 @@
 
 ### top, bottom, left, and right
 
+[demo/relative.html](demo/relative.html):
+
 ```css
 #two {
   background-color: #eee;
@@ -34,7 +37,6 @@
 }
 ```
 
-[demo/relative.html](demo/relative.html):
 <iframe 
   src="demo/relative.html" 
   width="100%"
@@ -45,6 +47,8 @@
 </iframe>
 
 ### z-index
+
+[demo/z-index.html](demo/z-index.html):
 
 ```css
 #two {
@@ -60,7 +64,6 @@
 }
 ```
 
-[demo/z-index.html](demo/z-index.html):
 <iframe 
   src="demo/z-index.html" 
   width="100%"
@@ -73,6 +76,8 @@
 ## Absolute positioning
 ---
 
+[demo/absolute.html](demo/absolute.html):
+
 ```css
 #two {
   background-color: #eee;
@@ -82,9 +87,103 @@
 }
 ```
 
-[demo/absolute.html](demo/absolute.html):
 <iframe 
   src="demo/absolute.html" 
+  width="100%"
+  height="300"
+  frameborder="0"
+  style="border:0" 
+  allowfullscreen>
+</iframe>
+
+### Positioning contexts
+
+[demo/static-absolute.html](demo/static-absolute.html):
+
+```html
+<div class="static parent">
+  <div class="absolute child"></div>
+</div>
+```
+
+```css
+.static {
+  position: static;
+}
+
+.absolute {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+```
+
+<iframe 
+  src="demo/static-absolute.html" 
+  width="100%"
+  height="300"
+  frameborder="0"
+  style="border:0" 
+  allowfullscreen>
+</iframe>
+
+[demo/rel-absolute.html](demo/rel-absolute.html):
+
+```html
+<div class="relative parent">
+  <div class="absolute child"></div>
+</div>
+```
+
+```css
+.relative {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.absolute {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+```
+
+<iframe 
+  src="demo/rel-absolute.html" 
+  width="100%"
+  height="300"
+  frameborder="0"
+  style="border:0" 
+  allowfullscreen>
+</iframe>
+
+[demo/rel-rel-absolute.html](demo/rel-rel-absolute.html):
+
+```html
+<div class="relative grandparent">
+  <div class="relative parent">
+    <div class="absolute child"></div>
+  </div>
+</div>
+```
+
+```css
+.relative {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.absolute {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+```
+
+<iframe 
+  src="demo/rel-rel-absolute.html" 
   width="100%"
   height="300"
   frameborder="0"
@@ -95,6 +194,8 @@
 ## Fixed positioning
 ---
 
+[demo/fixed.html](demo/fixed.html):
+
 ```css
 #two {
   background-color: #eee;
@@ -104,7 +205,6 @@
 }
 ```
 
-[demo/fixed.html](demo/fixed.html):
 <iframe 
   src="demo/fixed.html" 
   width="100%"
@@ -117,6 +217,8 @@
 ## Sticky positioning
 ---
 
+[demo/sticky.html](demo/sticky.html):
+
 ```css
 dt {
     position: -webkit-sticky;
@@ -125,7 +227,6 @@ dt {
   }
 ```
 
-[demo/sticky.html](demo/sticky.html):
 <iframe 
   src="demo/sticky.html" 
   width="100%"
