@@ -10,7 +10,14 @@
 }
 ```
 
-{% include_relative demo/static.html %}
+<iframe 
+  src="demo/static.html" 
+  width="600"
+  height="600"
+  frameborder="0"
+  style="border:0" 
+  allowfullscreen>
+</iframe>
 
 ## Relative positioning
 ---
@@ -26,7 +33,14 @@
 }
 ```
 
-{% include_relative demo/relative.html %}
+<iframe 
+  src="demo/relative.html" 
+  width="600"
+  height="600"
+  frameborder="0"
+  style="border:0" 
+  allowfullscreen>
+</iframe>
 
 ### z-index
 
@@ -38,13 +52,20 @@
   left: 5.8vw;
   z-index: -1;
 }
-```
 
 #three {
   z-index: -2;
 }
+```
 
-{% include_relative demo/z-index.html %}
+<iframe 
+  src="demo/z-index.html" 
+  width="600"
+  height="600"
+  frameborder="0"
+  style="border:0" 
+  allowfullscreen>
+</iframe>
 
 ## Absolute positioning
 ---
@@ -58,7 +79,14 @@
 }
 ```
 
-{% include_relative demo/absolute.html %}
+<iframe 
+  src="demo/absolute.html" 
+  width="600"
+  height="600"
+  frameborder="0"
+  style="border:0" 
+  allowfullscreen>
+</iframe>
 
 ## Fixed positioning
 ---
@@ -72,7 +100,14 @@
 }
 ```
 
-{% include_relative demo/fixed.html %}
+<iframe 
+  src="demo/fixed.html" 
+  width="600"
+  height="600"
+  frameborder="0"
+  style="border:0" 
+  allowfullscreen>
+</iframe>
 
 ## Sticky positioning
 ---
@@ -85,7 +120,14 @@ dt {
   }
 ```
 
-{% include_relative demo/sticky.html %}
+<iframe 
+  src="demo/sticky.html" 
+  width="600"
+  height="600"
+  frameborder="0"
+  style="border:0" 
+  allowfullscreen>
+</iframe>
 
 ## References
 ---
