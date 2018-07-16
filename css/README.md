@@ -28,9 +28,9 @@
   * Layout
     * [Flexbox](layout-flexbox/)
     * [CSS Grid](layout-grid/)
-    * [Position](#)
+    * [Position](layout-position/)
+    * [Responsive Design](layout-responsive/)
   * [Animation](#)
-  * [Responsive Design](#)
 
 ## References
 ---
