@@ -10,10 +10,11 @@
 }
 ```
 
+[demo/static.html](demo/static.html):
 <iframe 
   src="demo/static.html" 
-  width="600"
-  height="600"
+  width="100%"
+  height="300"
   frameborder="0"
   style="border:0" 
   allowfullscreen>
@@ -33,10 +34,11 @@
 }
 ```
 
+[demo/relative.html](demo/relative.html):
 <iframe 
   src="demo/relative.html" 
-  width="600"
-  height="600"
+  width="100%"
+  height="300"
   frameborder="0"
   style="border:0" 
   allowfullscreen>
@@ -58,10 +60,11 @@
 }
 ```
 
+[demo/z-index.html](demo/z-index.html):
 <iframe 
   src="demo/z-index.html" 
-  width="600"
-  height="600"
+  width="100%"
+  height="300"
   frameborder="0"
   style="border:0" 
   allowfullscreen>
@@ -79,10 +82,11 @@
 }
 ```
 
+[demo/absolute.html](demo/absolute.html):
 <iframe 
   src="demo/absolute.html" 
-  width="600"
-  height="600"
+  width="100%"
+  height="300"
   frameborder="0"
   style="border:0" 
   allowfullscreen>
@@ -100,10 +104,11 @@
 }
 ```
 
+[demo/fixed.html](demo/fixed.html):
 <iframe 
   src="demo/fixed.html" 
-  width="600"
-  height="600"
+  width="100%"
+  height="300"
   frameborder="0"
   style="border:0" 
   allowfullscreen>
@@ -120,10 +125,11 @@ dt {
   }
 ```
 
+[demo/sticky.html](demo/sticky.html):
 <iframe 
   src="demo/sticky.html" 
-  width="600"
-  height="600"
+  width="100%"
+  height="300"
   frameborder="0"
   style="border:0" 
   allowfullscreen>
