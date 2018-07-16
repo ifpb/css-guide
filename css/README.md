@@ -30,7 +30,9 @@
     * [CSS Grid](layout-grid/)
     * [Position](layout-position/)
     * [Responsive Design](layout-responsive/)
-  * [Animation](#)
+  * [Transform](transform/)
+  * [Transition](transition/)
+  * [Animation](animation/)
 
 ## References
 ---
