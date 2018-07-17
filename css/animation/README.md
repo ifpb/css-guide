@@ -42,7 +42,7 @@ animation: 3s slidein;
 <iframe 
   src="spinner/index.html" 
   width="100%"
-  height="250px"
+  height="300px"
   frameborder="0"
   allowfullscreen>
 </iframe>
