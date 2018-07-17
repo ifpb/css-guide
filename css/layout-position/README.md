@@ -317,7 +317,7 @@ dt {
 
 ### Absolute Inside Relative Without a Specific Height
 
-[demo/rel-absolute-strech-heigh.html](demo/rel-absolute-strech-height.html):
+[demo/rel-absolute-strech-height.html](demo/rel-absolute-strech-height.html):
 
 ```css
 .parent {
