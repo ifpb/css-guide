@@ -93,10 +93,11 @@ animation: 3s slidein;
 ## References
 ---
 
-- [Using CSS animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
 - [CSS Animations - Guia de bolso](https://legacy.gitbook.com/book/daliannyvieira/css-animations-pocket-guide/details)
+- [Using CSS animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
 - [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/)
 - [Keyframe Animation Syntax](https://css-tricks.com/snippets/css/keyframe-animation-syntax/)
+- [@keyframes](https://tympanus.net/codrops/css_reference/keyframes/)
 - Library
   - [The Top 9 Animation Libraries for UI Designers in 2017](https://www.sitepoint.com/our-top-9-animation-libraries/)
   - [Animate.css](https://daneden.github.io/animate.css/)
