@@ -64,6 +64,8 @@ transition: all 0.5s ease-out;
 
 <iframe 
   src="demo/opacity.html" 
+  width="100%"
+  height="250px"
   frameborder="0"
   allowfullscreen>
 </iframe>
@@ -86,6 +88,8 @@ transition: all 0.5s ease-out;
 
 <iframe 
   src="demo/border-inset.html" 
+  width="100%"
+  height="250px"
   frameborder="0"
   allowfullscreen>
 </iframe>
@@ -108,6 +112,8 @@ transition: all 0.5s ease-out;
 
 <iframe 
   src="demo/transform-grow.html" 
+  width="100%"
+  height="250px"
   frameborder="0"
   allowfullscreen>
 </iframe>
@@ -130,6 +136,8 @@ transition: all 0.5s ease-out;
 
 <iframe 
   src="demo/transform-shrink.html" 
+  width="100%"
+  height="250px"
   frameborder="0"
   allowfullscreen>
 </iframe>
@@ -156,6 +164,8 @@ transition: all 0.5s ease-out;
 
 <iframe 
   src="demo/transform-scale.html" 
+  width="100%"
+  height="250px"
   frameborder="0"
   allowfullscreen>
 </iframe>
@@ -178,6 +188,8 @@ transition: all 0.5s ease-out;
 
 <iframe 
   src="demo/transform-translate.html" 
+  width="100%"
+  height="250px"
   frameborder="0"
   allowfullscreen>
 </iframe>
@@ -200,6 +212,8 @@ transition: all 0.5s ease-out;
 
 <iframe 
   src="demo/filter-blur.html" 
+  width="100%"
+  height="250px"
   frameborder="0"
   allowfullscreen>
 </iframe>
@@ -221,6 +235,8 @@ transition: all 0.5s ease-out;
 
 <iframe 
   src="demo/filter-contrast.html" 
+  width="100%"
+  height="250px"
   frameborder="0"
   allowfullscreen>
 </iframe>
@@ -236,12 +252,15 @@ transition: all 0.5s ease-out;
 
 .sepia:hover {
   filter: sepia(0%);
-}```
+}
+```
 
 [demo/filter-sepia.html](demo/filter-sepia.html):
 
 <iframe 
   src="demo/filter-sepia.html" 
+  width="100%"
+  height="250px"
   frameborder="0"
   allowfullscreen>
 </iframe>
@@ -264,6 +283,8 @@ transition: all 0.5s ease-out;
 
 <iframe 
   src="demo/filter-gray-scale.html" 
+  width="100%"
+  height="250px"
   frameborder="0"
   allowfullscreen>
 </iframe>
@@ -286,6 +307,8 @@ transition: all 0.5s ease-out;
 
 <iframe 
   src="demo/filter-drop-shadow.html" 
+  width="100%"
+  height="250px"
   frameborder="0"
   allowfullscreen>
 </iframe>
@@ -308,6 +331,8 @@ transition: all 0.5s ease-out;
 
 <iframe 
   src="demo/background-color.html" 
+  width="100%"
+  height="250px"
   frameborder="0"
   allowfullscreen>
 </iframe>
@@ -331,6 +356,8 @@ transition: all 0.5s ease-out;
 
 <iframe 
   src="demo/background-blend-mode.html" 
+  width="100%"
+  height="250px"
   frameborder="0"
   allowfullscreen>
 </iframe>
