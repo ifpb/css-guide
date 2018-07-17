@@ -85,7 +85,7 @@ animation: 3s slidein;
 <iframe 
   src="bounce/index.html" 
   width="100%"
-  height="250px"
+  height="300px"
   frameborder="0"
   allowfullscreen>
 </iframe>
@@ -104,6 +104,7 @@ animation: 3s slidein;
   - [Hover.css - A collection of CSS3 powered hover effects](http://ianlunn.github.io/Hover/)
   - [Animista](http://animista.net/play/basic/slide-fwd)
 - CSS Animations 
+  - [Pure CSS Loaders](https://loading.io/css/)
   - [16 top CSS animation examples](https://www.creativebloq.com/inspiration/css-animation-examples)
   - [15 New Awesome Creative CSS Animations](https://cssnewbie.com/15-new-awesome-creative-css-animations/#.W049pS2ZM0o)
   - [30 Cool CSS Animations You Have To See](https://www.hongkiat.com/blog/creative-css-animations/)
