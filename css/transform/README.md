@@ -82,7 +82,7 @@ translate3d(tx, ty, tz)
 <iframe 
   src="demo/translate.html" 
   width="100%"
-  height="310"
+  height="330"
   frameborder="0"
   allowfullscreen>
 </iframe>
