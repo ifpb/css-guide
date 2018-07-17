@@ -74,7 +74,6 @@ transition: all 0.5s ease-out;
 ---
 
 ```css
-.fade {
 .inset-border {
   transition: box-shadow 1s;
 }
