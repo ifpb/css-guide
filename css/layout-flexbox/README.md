@@ -211,6 +211,7 @@ Terminology:
 * [Flexbox - Use Flexbox para levar a criação de layouts CSS ao próximo nível](http://desenvolvimentoparaweb.com/css/flexbox/)
 * [Guia Flexbox](https://origamid.com/projetos/flexbox-guia-completo/)
 * [Flexbox in CSS \| cssreference](https://cssreference.io/flexbox/)
+* [Flexbox - Align last itemin grid to the left](https://haizdesign.com/css/flexbox-align-last-item-grid-left/)
 * Animated Flexbox ([1](https://codepen.io/osublake/full/dMLQJr), [2](https://codepen.io/osublake/pen/dMLQJr))
 
 <script>
