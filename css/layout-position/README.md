@@ -381,3 +381,10 @@ https://css-tricks.com/display-flow-root/
 - [5 Things You Might Not Know About the CSS Positioning Types](https://scotch.io/bar-talk/5-things-you-might-not-know-about-the-css-positioning-types)
 - [How browsers position floats – Monica Dinculescu](https://meowni.ca/posts/float-layout/)
 - [CSS: Stretch a Box to Its Parent's Bounds](http://www.devign.me/css-stretch-a-box-to-its-parent-bounds)
+
+
+<!-- 
+Fixed page header overlaps in-page anchors
+https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors
+http://jsfiddle.net/FRpHE/225/
+ -->
