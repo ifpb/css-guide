@@ -17,6 +17,7 @@
 
 * [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 * [Basic concepts of grid layout (Subgrid) \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#Subgrid)
+* [CSS Grid — The Beginner’s Guide](https://medium.freecodecamp.org/css-grid-the-beginners-guide-45998e6f6b8)
 * [Grid Level 2 and Subgrid](https://rachelandrew.co.uk/archives/2018/04/27/grid-level-2-and-subgrid/)
 * [CSS Grid Level 2: Here Comes Subgrid](https://www.smashingmagazine.com/2018/07/css-grid-2/)
 * [Introduction to CSS Grid Layout \| MDN](https://mozilladevelopers.github.io/playground/css-grid/)
