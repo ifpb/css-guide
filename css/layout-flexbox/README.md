@@ -214,6 +214,7 @@ Terminology:
 * [Flexbox - Align last itemin grid to the left](https://haizdesign.com/css/flexbox-align-last-item-grid-left/)
 * Animated Flexbox ([1](https://codepen.io/osublake/full/dMLQJr), [2](https://codepen.io/osublake/pen/dMLQJr))
 * [The Complete Illustrated Flexbox Tutorial](https://medium.freecodecamp.org/the-complete-illustrated-flexbox-tutorial-d35c085dbf35) 👍
+* [Flexbox — The Animated Tutorial](https://medium.com/@js_tut/flexbox-the-animated-tutorial-8075cbe4c1b2)
 
 <script>
   const iframes = Array.from(document.querySelectorAll('iframe'))

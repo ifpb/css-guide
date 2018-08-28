@@ -34,3 +34,5 @@
 * [Can I Use - CSS Grid](https://caniuse.com/#feat=css-grid)
 * [The Layouts of Tomorrow](https://mxb.at/blog/layouts-of-tomorrow/)
 * [The simpleton’s guide to CSS Grid](https://blog.logrocket.com/the-simpletons-guide-to-css-grid-1767565b3cf7)
+* [Grid Cheat Sheet](http://grid.malven.co)
+* [CSS Grid layout — crossed sections](https://medium.com/deemaze-software/css-grid-layout-crossed-sections-fca9e956e725)

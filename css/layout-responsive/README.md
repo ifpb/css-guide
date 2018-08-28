@@ -86,3 +86,4 @@ ul {
 * [Responsive layout grid \| Material Design](https://material.io/design/layout/responsive-layout-grid.html)
 * [Web para dispositivos móveis \| Caelum](https://www.caelum.com.br/apostila-html-css-javascript/web-para-dispositivos-moveis/): [CSS media types](https://www.caelum.com.br/apostila-html-css-javascript/web-para-dispositivos-moveis/#css-media-types), [CSS media queries](https://www.caelum.com.br/apostila-html-css-javascript/web-para-dispositivos-moveis/#css3-media-queries),  [Vieport](https://www.caelum.com.br/apostila-html-css-javascript/web-para-dispositivos-moveis/#viewport)
 * [How to create a fully responsive navbar with Flexbox](https://medium.freecodecamp.org/how-to-create-a-fully-responsive-navbar-with-flexbox-a4435d175dd3)
+* [Using Media Queries For Responsive Design In 2018](https://www.smashingmagazine.com/2018/02/media-queries-responsive-design-2018/?utm_campaign=CSS%2BLayout%2BNews&utm_medium=email&utm_source=CSS_Layout_News_132)

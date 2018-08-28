@@ -98,6 +98,7 @@ animation: 3s slidein;
 - [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/)
 - [Keyframe Animation Syntax](https://css-tricks.com/snippets/css/keyframe-animation-syntax/)
 - [@keyframes](https://tympanus.net/codrops/css_reference/keyframes/)
+- [Create 2-state, SVG-powered animated icons (Icon Transition Generator)](https://blog.nucleoapp.com/create-2-state-svg-powered-animated-icons-76ed19160a7e)
 - Library
   - [The Top 9 Animation Libraries for UI Designers in 2017](https://www.sitepoint.com/our-top-9-animation-libraries/)
   - [Animate.css](https://daneden.github.io/animate.css/)

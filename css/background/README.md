@@ -629,4 +629,6 @@ Output:
   * [`background-clip`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip)
   * [-webkit-background-clip:text CSS effect](https://codepen.io/Jintos/pen/crlxk)
 * [`background-origin`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin)
+* [SVG Backgrounds](https://www.svgbackgrounds.com)
+* [Advanced effects with CSS background blend modes](https://blog.logrocket.com/advanced-effects-with-css-background-blend-modes-4b750198522a)
 
