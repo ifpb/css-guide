@@ -49,6 +49,7 @@
 * [10 CSS HTML Form Designs](https://www.sanwebe.com/2014/08/css-html-forms-designs)
 * [Advanced CSS-Only Form Styling](https://jonathan-harrell.com/advanced-css-form-styling/)
 * UX/UI Form
+  * [Best Practices For Mobile Form Design](https://www.smashingmagazine.com/2018/08/best-practices-for-mobile-form-design/)
   * [Designing Form Layout: Alignment](https://www.sitepoint.com/designing-form-layout-alignment/)
   * [How to Design a Form Wizard](https://medium.com/commonux/how-to-design-a-form-wizard-b85fe1cc665a)
   * [Design a Pre-Formatted Text Box for Phone Numbers and Credit Cards](https://medium.com/ux-power-tools/design-a-pre-formatted-text-box-for-phone-numbers-and-credit-cards-cba75c0ed49e)
