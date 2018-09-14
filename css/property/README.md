@@ -31,7 +31,7 @@ p {
 
 Output:
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <p style="font: italic bold 20px Times;">Lorem ipsum dolor</p>
 </div>
 
@@ -44,6 +44,7 @@ p {
   font: italic bold 20px Times;
 }
 ```
+
 ```html
 <body>
   <p>Lorem ipsum dolor</p>
@@ -52,7 +53,7 @@ p {
 
 Output:
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <p style="font: italic bold 20px Times;">Lorem ipsum dolor</p>
 </div>
 

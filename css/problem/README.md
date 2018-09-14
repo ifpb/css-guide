@@ -19,7 +19,7 @@
 
 Output:
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <center><p>Lorem ipsum dolor</p></center>
 </div>
 
@@ -31,7 +31,7 @@ Output:
 
 Output:
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <p>Lorem ipsum dolor sit amet, <big>consectetur adipisicing elit.</big></p>
 </div>
 
@@ -43,7 +43,7 @@ Output:
 
 Output:
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
 <font size="20px" color="red" face="Helvetica">Lorem ipsum dolor</font>
 </div>
 
@@ -60,7 +60,7 @@ Output:
 
 Output:
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <table border="1" cellspacing="0" style="display: table;">
     <tr>
       <td bgcolor="yellow"> Item 1.1</td>
@@ -81,7 +81,7 @@ Output:
 
 Output:
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <ul type="square">
     <li>Item 1</li>
     <li>Item 2</li>
