@@ -1,6 +1,5 @@
 # [Selectors](https://docs.webplatform.org/wiki/css/selectors)
 
-* [Group of Selectors](#group-of-selectors)
 * [Basic selectors](#basic-selectors)
   * [Element](#element)
   * [`#id`](#id)
@@ -13,17 +12,7 @@
   * `:nth-child()`: [`:nth-child(2)`](#nth-child2), [`:nth-child(2n)`](#nth-child2n)
 * [Pseudo-element](#pseudo-element)
   * [`::selection`](#selection)
-
-## Group of Selectors 
----
-
-```css
-elementname-1, elementname-2
-```
-
-```css
-h1, p
-```
+* [Group of Selectors](#group-of-selectors)
 
 ## Basic selectors
 ---
@@ -50,7 +39,7 @@ span {
 
 Output:
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <h1 style="color: blue;">Lorem ipsum dolor</h1>
   <p>Lorem ipsum, <span style="font-weight: bold; font-size: 1.2rem; color: tomato;">dolor</span> sit amet consectetur adipisicing elit. Id, quia...</p>
 </div>
@@ -73,7 +62,7 @@ div {
 
 Output:
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <h1 style="color: #606c71;">Lorem ipsum dolor</h1>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
   <div style="color: tomato;">
@@ -106,7 +95,7 @@ p {
 
 Output:
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <h1 style="color: #606c71;">Lorem ipsum</h1>
   <p style="color: red;">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
   <p style="color: green;">Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
@@ -130,18 +119,18 @@ p {
 <body>
   <h1>Lorem ipsum</h1>
   <p class="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-  <p class="red">Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
   <p>Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
+  <p class="red">Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
 </body>
 ```
 
 Output:
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <h1 style="color: #606c71;">Lorem ipsum</h1>
   <p style="color: red;">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-  <p style="color: red;">Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
   <p style="color: green;">Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
+  <p style="color: red;">Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
 </div>
 
 ### `.class.class`
@@ -201,7 +190,7 @@ header ul {
 
 Output:
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <header>
     <ul style="list-style-type: none;">
       <li><a href="#">Menu 1</a></li>
@@ -228,8 +217,8 @@ Output:
 [examples/p-hover.html](examples/p-hover.html)
 ```css
 p:hover {
-      font-weight: bold;
-    }
+  font-weight: bold;
+}
 ```
 
 ```html
@@ -260,7 +249,7 @@ p:first-child {
 
 Output:
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <p style="color: green;">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
   <p>Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
   <p>Culpa possimus obcaecati laudantium nesciunt consequatur...</p>
@@ -291,7 +280,7 @@ p:nth-child(2) {
 
 Output:
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <h1 style="color: #606c71;">Lorem ipsum dolor</h1>
   <p style="color: green;">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
   <p>Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
@@ -319,7 +308,7 @@ p:nth-child(2n) {
 
 Output:
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <h1 style="color: #606c71;">Lorem ipsum dolor</h1>
   <p style="color: green;">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
   <p>Eveniet amet laudantium aperiam nisi ratione at, blanditiis...</p>
@@ -353,6 +342,17 @@ p::selection {
 Output:
 
 <iframe src="examples/p-selection.html" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
+
+## Group of Selectors 
+---
+
+```css
+elementname-1, elementname-2
+```
+
+```css
+h1, p
+```
 
 ## References
 ---

@@ -60,12 +60,12 @@ Output:
 ## Other Properties
 ---
 
-* [Typography](typography.html)
-* [Web Font](web-font.html)
-* [Icons](icon.html)
-* [Hyperlinks](links.html)
-* [Box model](box-model.html)
-* [Background](background.html)
+* [Typography](../typography/)
+* [Web Font](../web-font/)
+* [Icons](../icon/)
+* [Hyperlinks](../links/)
+* [Box model](../box-model/)
+* [Background](../background/)
 
 ## References
 ---
