@@ -43,7 +43,7 @@ a:hover, a:active, a:focus {
 
 Output:
 
-<iframe src="state/index.html" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
+<iframe src="state/index.html" width="100%" style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
 ## References
 ---

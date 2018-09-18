@@ -68,7 +68,7 @@
 
 Output:
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <h1 style="text-align: center;">Lorem ipsum dolor</h1>
   <p style="color: blue;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
 </div>

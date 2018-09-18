@@ -59,7 +59,7 @@ li img {
 
 Output:
 
-<iframe src="flat-icon/" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
+<iframe src="flat-icon/" width="100%" style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
 ## [Font Awesome](https://fontawesome.com/)
 ---
@@ -94,7 +94,7 @@ a {
 
 Output:
 
-<iframe src="font-awesome/" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
+<iframe src="font-awesome/" width="100%" style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
 ## Google [Material Icon](https://material.io/icons/)
 ---
@@ -136,7 +136,7 @@ a {
 
 Output:
 
-<iframe src="material-icon/" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
+<iframe src="material-icon/" width="100%" style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
 ## References
 ---

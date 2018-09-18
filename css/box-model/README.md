@@ -35,7 +35,9 @@ Fonte: [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Bo
 <span>dolor</span>
 ```
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+Output:
+
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <span>Lorem ipsum</span>
   <span>dolor</span>
 </div>
@@ -47,7 +49,9 @@ Fonte: [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Bo
 <p>Lorem ipsum</p>
 ```
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+Output:
+
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <p>Lorem ipsum</p>
   <p>Lorem ipsum</p>
 </div>
@@ -67,7 +71,9 @@ ul li {
 </ul>
 ```
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+Output:
+
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <ul>
     <li style="display: inline-block;">Lorem ipsum</li>
     <li style="display: inline-block;">dolor</li>
@@ -114,7 +120,9 @@ border: medium dashed green;
 <p id="last">Lorem ipsum</p>
 ```
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+Output:
+
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <p style="border: 2px dotted #000;">Lorem ipsum</p>
   <p style="border: 5px solid #000;">Lorem ipsum</p>
 </div>
@@ -146,7 +154,9 @@ span {
 <span>Lorem ipsum</span>
 ```
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+Output:
+
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <span style="border: 2px solid #000; border-top: dotted; border-right: outset; border-bottom: dashed;">Lorem ipsum</span>
 </div>
 
@@ -185,16 +195,46 @@ margin: 2px 1em 0 auto;
 <p class="margin">Lorem ipsum</p>
 ```
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+Output:
+
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <p>Lorem ipsum</p>
   <p style="border: 5px solid #000; margin: 3rem;">Lorem ipsum</p>
 </div>
 
 ### Shorthand and Longhand options
 
-| Shorthand | Longhand |
-|-|-|
-| [`margin`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin) | [`margin-bottom`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom)<br>[`margin-left`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-left)<br>[`margin-right`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-right)<br>[`margin-top`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top) |
+<table>
+  <thead>
+    <tr>
+      <th>Shorthand</th>
+      <th>Longhand</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin">
+          <code class="highlighter-rouge">margin</code>
+        </a>
+      </td>
+      <td>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom">
+          <code class="highlighter-rouge">margin-bottom</code>
+        </a><br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin-left">
+          <code class="highlighter-rouge">margin-left</code>
+        </a><br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin-right">
+          <code class="highlighter-rouge">margin-right</code>
+        </a><br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top">
+          <code class="highlighter-rouge">margin-top</code>
+        </a><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
 <br>
 
 ```css
@@ -209,7 +249,9 @@ span {
 <p>Lorem <span>ipsum</span> dolor.</p>
 ```
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+Output:
+
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <p>Lorem <span style="border: 2px solid #000;margin-left: 20px; margin-right: 1em;">ipsum</span> dolor.</p>
 </div>
 
@@ -247,7 +289,9 @@ p {
 <p>Lorem ipsum</p>
 ```
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+Output:
+
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <p style="border: 5px solid #000; padding: 3rem;">Lorem ipsum</p>
 </div>
 
@@ -256,6 +300,7 @@ p {
 | Shorthand | Longhand |
 |-|-|
 | [`padding`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding) | [`padding-bottom`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-bottom)<br>[`padding-left`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-left)<br>[`padding-right`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-right)<br>[`padding-top`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-top) |
+<br>
 
 ```css
 span {
@@ -270,7 +315,9 @@ span {
 <p>Lorem <span>ipsum</span> dolor.</p>
 ```
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+Output:
+
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <p>Lorem <span style="border: 2px solid #000;padding-left: 20px; padding-right: 1em; padding-top: 1em;">ipsum</span> dolor.</p>
 </div>
 
@@ -317,7 +364,9 @@ p {
 <p class="w_400 ml_auto">Lorem ipsum</p>
 ```
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+Output:
+
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <p style="border: 5px solid #000;">Lorem ipsum</p>
   <p style="border: 5px solid #000; width: 400px;">Lorem ipsum</p>
   <p style="border: 5px solid #000; width: 400px; margin: auto;">Lorem ipsum</p>
@@ -338,7 +387,9 @@ p {
 <p>Lorem ipsum</p>
 ```
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+Output:
+
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <p style="border: 5px solid #000;width: 40%; min-width: 200px;">Lorem ipsum</p>
 </div>
 
@@ -377,7 +428,9 @@ p {
 <p class="h_100">Lorem ipsum</p>
 ```
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+Output:
+
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <p style="border: 5px solid #000;">Lorem ipsum</p>
   <p style="border: 5px solid #000;"></p>
   <p style="border: 5px solid #000; height: 100px;">Lorem ipsum</p>
@@ -442,7 +495,9 @@ p {
 <p class="br_20_10">Lorem ipsum</p>
 ```
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+Output:
+
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <p style="text-align:center; border: 5px solid #000; padding: .5rem; width: 200px; border-radius: 10px;">Lorem ipsum</p>
   <p style="text-align:center; border: 5px solid #000; padding: .5rem; width: 200px; border-radius: 20px 10px;">Lorem ipsum</p>
 </div>
@@ -452,6 +507,7 @@ p {
 | Shorthand | Longhand |
 |-|-|
 | [`border-radius`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius) | [`border-top-left-radius`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-left-radius)<br>[`border-top-right-radius`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-right-radius)<br>[`border-bottom-right-radius`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-right-radius)<br>[`border-bottom-left-radius`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-left-radius) |
+<br>
 
 ```css
 border-radius: 1em/5em;
@@ -518,7 +574,9 @@ p {
 <p class="bs_short">Lorem ipsum</p>
 ```
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+Output:
+
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <p style="text-align:center; border: 5px solid #000; padding: .5rem; width: 200px; border-radius: 10px; box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.6);">Lorem ipsum</p>
 </div>
 
@@ -623,7 +681,9 @@ tr {
 </table>
 ```
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+Output:
+
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <table style="display: table; border-spacing: 2px; border-collapse: separate;margin-bottom: 1rem; border: 1px solid #000;">
     <tbody>
       <tr>

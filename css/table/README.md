@@ -140,4 +140,4 @@ table tbody tr:hover {
 
 Output:
 
-<iframe src="table-striped-row/index.html" width="100%" style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem; height: 420px"></iframe>
+<iframe src="table-striped-row/index.html" width="100%" style="border-radius: 0.3rem; border: solid 1px #dce6f0; height: 420px;"></iframe>

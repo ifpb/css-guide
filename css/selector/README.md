@@ -227,7 +227,7 @@ p:hover {
 
 Output:
 
-<iframe src="examples/p-hover.html" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
+<iframe src="examples/p-hover.html" width="100%" style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
 ### `:first-child`
 
@@ -341,7 +341,7 @@ p::selection {
 
 Output:
 
-<iframe src="examples/p-selection.html" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
+<iframe src="examples/p-selection.html" width="100%" style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
 ## Group of Selectors 
 ---

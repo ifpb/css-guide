@@ -21,17 +21,19 @@
 
 ![Document Object Model (DOM)](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/full-process.png)
 
+<!--
 ### [CSS Object Model (CSSOM)](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/constructing-the-object-model#css_object_model_cssom)
-
 ![](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/cssom-construction.png)
 ![](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/cssom-tree.png)
+-->
 
 ### [Render-tree](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction)
 ![](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/render-tree-construction.png)
 
+<!--
 ### [Rendering](https://developers.google.com/web/fundamentals/performance/rendering/)
-
 ![](https://developers.google.com/web/fundamentals/performance/rendering/images/intro/frame-full.jpg)
+-->
 
 ## [Importance](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Cascade_and_inheritance#Importance)
 ---

@@ -49,7 +49,9 @@ h1 {
 }
 ```
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+Output:
+
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <h1 style="background-color: #000; color: #fff; padding: 20px;">Lorem ipsum dolor</h1>
 </div>
 
@@ -79,7 +81,7 @@ h1 {
 
 Output:
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <h1 style="background-image: url(bg-image/img/hexagonal-pattern.jpg); padding: 20px;">Lorem ipsum dolor</h1>
 </div>
 
@@ -113,7 +115,7 @@ Output:
 
 Output:
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <div style="height: 150px; width: 150px; margin: 1rem; display: inline-block; background-image: linear-gradient(#000, #fff);"></div>
   <div style="height: 150px; width: 150px; margin: 1rem; display: inline-block; background-image: linear-gradient(to right top, #000, #fff);"></div>
   <div style="height: 150px; width: 150px; margin: 1rem; display: inline-block; background-image: linear-gradient(45deg, rgba(0, 0, 0, .70), transparent);"></div>
@@ -143,7 +145,7 @@ Output:
 
 Output:
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <div style="height: 150px; width: 150px; margin: 1rem; display: inline-block; background-image: radial-gradient(#000, #fff);"></div>
   <div style="height: 150px; width: 150px; margin: 1rem; display: inline-block; background-image: radial-gradient(circle at center, #000, #fff);"></div>
   <div style="height: 150px; width: 150px; margin: 1rem; display: inline-block; background-image: radial-gradient(circle at 10px 10px, rgba(0, 0, 0, .70), transparent);"></div>
@@ -179,7 +181,7 @@ https://css-tricks.com/1-element-css-rainbow-gradient-infinity/?utm_source=CSS-W
 
 Output:
 
-<div style="border-radius: 0.3rem;background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <div style="height: 150px; width: 150px; margin: 1rem; display: inline-block; background-image: url(bg-image-multiple/img/image.jpg); background-size: cover;"></div>
   <div style="height: 150px; width: 150px; margin: 1rem; display: inline-block; background-image: linear-gradient(45deg, rgba(0, 0, 0, .70) 10%, transparent), url(bg-image-multiple/img/image.jpg); background-size: cover;"></div>
   <div style="height: 150px; width: 150px; margin: 1rem; display: inline-block; background-image: linear-gradient(45deg, rgba(0, 145, 200, .6), rgba(1, 193, 120, .6)), url(bg-image-multiple/img/image.jpg); background-size: cover;"></div>
@@ -218,7 +220,7 @@ body {
 
 Output:
 
-<div style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <div style="height: 200px; background-image: url(bg-repeat/img/pattern.png); background-color: #fff;"></div>
 </div>
 
@@ -233,7 +235,7 @@ body {
 
 Output:
 
-<div style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <div style="height: 200px; background-image: url(bg-repeat/img/pattern.png); background-repeat: no-repeat; background-color: #fff;"></div>
 </div>
 
@@ -288,7 +290,7 @@ a[href*="http"] {
 
 Output:
 
-<iframe src="bg-position/index.html" width="100%" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
+<iframe src="bg-position/index.html" width="100%" style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
 ### Reference
 
@@ -350,7 +352,7 @@ background-size: 6px, auto, contain;
 
 Output:
 
-<div style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <div style="width: 150px; height: 150px; display: inline-block; background-image: url(bg-size/img/image.jpg); background-size: auto;"></div>
   <div style="width: 150px; height: 150px; display: inline-block; background-image: url(bg-size/img/image.jpg); background-size: 100px;"></div>
   <div style="width: 150px; height: 150px; display: inline-block; background-image: url(bg-size/img/image.jpg); background-size: cover;"></div>
@@ -388,7 +390,7 @@ header {
 
 Output:
 
-<iframe src="bg-attachment/index.html" width="100%" height="500px" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
+<iframe src="bg-attachment/index.html" width="100%" height="500px" style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
 ## [Background Blend Mode](https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode)
 ---
@@ -444,7 +446,7 @@ background-blend-mode: darken, luminosity;
 
 Output:
 
-<div style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <div style="width: 150px; height: 150px; display: inline-block; background-image: url(bg-blend-mode/img/computer.jpg); background-size: cover; background-blend-mode: normal; background-color: rgba(1, 193, 120, .9);"></div>
   <div style="width: 150px; height: 150px; display: inline-block; background-image: url(bg-blend-mode/img/computer.jpg); background-size: cover; background-blend-mode: multiply; background-color: rgba(1, 193, 120, .9);"></div>
   <div style="width: 150px; height: 150px; display: inline-block; background-image: url(bg-blend-mode/img/computer.jpg); background-size: cover; background-blend-mode: screen; background-color: rgba(1, 193, 120, .9);"></div>
@@ -580,7 +582,7 @@ filter: contrast(175%) brightness(3%);
 
 Output:
 
-<div style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;">
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
   <div style="width: 150px; height: 150px; display: inline-block; background-image: url(bg-blend-mode/img/computer.jpg); background-size: cover;"></div>
   <div style="width: 150px; height: 150px; display: inline-block; background-image: url(bg-blend-mode/img/computer.jpg); background-size: cover; filter: blur(5px);"></div>
   <div style="width: 150px; height: 150px; display: inline-block; background-image: url(bg-blend-mode/img/computer.jpg); background-size: cover; filter: brightness(0.4);"></div>
@@ -618,7 +620,7 @@ img:hover {
 
 Output:
 
-<iframe src="../opacity/image-opacity/index.html" width="100%" height="400px" style="border-radius: 0.3rem; background-color: #f3f6fa;border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
+<iframe src="../opacity/image-opacity/index.html" width="100%" height="400px" style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
 
 ## References
 ---
