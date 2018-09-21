@@ -322,7 +322,7 @@ Fonte: [O surpreendente text-shadow](https://medium.com/jaguaribetech/o-surpreen
 
 Output:
 
-<div style="text-align:center;color: #f74646; text-shadow: -2px 0 0 #fff, -1px -1px 0 #fff, 0 -2px 0 #fff, 1px -1px 0 #fff, 2px 0 0 #fff, 1px 1px 0 #fff,  0 2px 0 #fff, 12px 16px 0 #00ac94;  font-weight: bolder; font-size: 6em;">
+<div style="text-align:center; color: #f74646; text-shadow: -2px 0 0 #fff, -1px -1px 0 #fff, 0 -2px 0 #fff, 1px -1px 0 #fff, 2px 0 0 #fff, 1px 1px 0 #fff,  0 2px 0 #fff, 12px 16px 0 #00ac94;  font-weight: bolder; font-size: 6em; border-radius: 0.3rem; border: solid 1px #dce6f0;">
   Lorem
 </div>
 
