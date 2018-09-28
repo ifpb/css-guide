@@ -153,4 +153,4 @@ p {
 ## References
 ---
 
-* Doc: [WP](https://docs.webplatform.org/wiki/css/atrules) e [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule)
+* Doc: [WP](https://webplatform.github.io/docs/css/atrules/) e [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule)
