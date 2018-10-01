@@ -38,10 +38,10 @@ color: red;
 color: #009900;
 
 /* <rgb-color> value */
-color: rgb(34, 12, 64, .6);
+color: rgb(34, 12, 64);
 
 /* <hsl-color> value */
-color: hsl(30, 100%, 50%, .6);
+color: hsl(30, 100%, 50%);
 ```
 
 #### Example
