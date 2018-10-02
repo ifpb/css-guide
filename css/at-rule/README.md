@@ -1,8 +1,8 @@
 # [At-rules](https://docs.webplatform.org/wiki/css/atrules)
 
 * [Meta-data Information](#meta-data-information)
-  * [`@import`](#important)
   * [`@charset`](#charset)
+  * [`@import`](#important)
 * [Conditional Information](#conditional-information)
   * [`@media`](#media)
   * [`@document`](#document)
@@ -13,7 +13,27 @@
 ## Meta-data Information
 ---
 
+### [`@charset`](https://developer.mozilla.org/en-US/docs/Web/CSS/%40charset)
+
+```css
+@charset "utf-8";
+
+p {
+  color: green;
+}
+```
+
 ### [`@import`](https://developer.mozilla.org/en-US/docs/Web/CSS/%40import)
+
+```
+@import
+├── css
+│   ├── _color.css
+│   ├── _text.css
+│   └── main.css
+└── index.html
+```
+
 [@import/index.html](@import/index.html)
 ```html
 <!DOCTYPE html>
@@ -73,16 +93,6 @@ Output:
   <p style="color: blue;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
 </div>
 
-### [`@charset`](https://developer.mozilla.org/en-US/docs/Web/CSS/%40charset)
-
-```css
-@charset "utf-8";
-
-p {
-  color: green;
-}
-```
-
 ## Conditional Information
 ---
 
@@ -140,8 +150,6 @@ reference:
 ```css
 @font-face {
   font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
   src: url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2) format('woff2');
 }
 

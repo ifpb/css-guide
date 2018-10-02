@@ -19,7 +19,6 @@ Properties: [color](https://developer.mozilla.org/en-US/docs/Web/CSS/color), [cu
 [state/index.html](state/index.html):
 ```css
 a {
-  outline: none;
   text-decoration: none;
 }
 

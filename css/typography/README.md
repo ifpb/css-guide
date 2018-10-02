@@ -463,16 +463,16 @@ line-height: 34%;
       <td style="line-height: normal; width: 240px">Lorem ipsum dolor amet, consectetur.</td>
     </tr>
     <tr>
-      <td>line-height: 1.5;</td>
-      <td style="line-height: 1.5; width: 240px">Lorem ipsum dolor amet, consectetur.</td>
+      <td>line-height: 3;</td>
+      <td style="line-height: 3; width: 240px">Lorem ipsum dolor amet, consectetur.</td>
     </tr>
     <tr>
-      <td>line-height: 1.5em;</td>
-      <td style="line-height: 1.5em; width: 240px">Lorem ipsum dolor amet, consectetur.</td>
+      <td>line-height: 3em;</td>
+      <td style="line-height: 3em; width: 240px">Lorem ipsum dolor amet, consectetur.</td>
     </tr>
     <tr>
-      <td>line-height: 150%;</td>
-      <td style="line-height: 150%; width: 240px">Lorem ipsum dolor amet, consectetur.</td>
+      <td>line-height: 300%;</td>
+      <td style="line-height: 300%; width: 240px">Lorem ipsum dolor amet, consectetur.</td>
     </tr>
   </tbody>
 </table>

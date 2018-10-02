@@ -13,6 +13,18 @@ p {
 }
 ```
 
+```html
+<h1>Lorem ipsum dolor</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quia...</p>
+```
+
+Output:
+
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
+  <h1 style="color: rgb(255, 0, 0);">Lorem ipsum dolor</h1>
+  <p style="color: rgba(255, 0, 0, .5);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quia...</p>
+</div>
+
 ## References
 ---
 
