@@ -199,6 +199,10 @@ p {
 * [CSS values and units \| MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units) (Numeric values, Percentages, Colors, Coordinate positions, Functions)
 * [Value definition syntax \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax)
 * Color
+  * CSS Color
+    * [CSS Color Module Level 4](https://www.w3.org/TR/css-color-4/)
+    * [CSS color codes](https://www.rapidtables.com/web/css/css-color.html)
+    * [Color Names](https://www.color-hex.com/color-names.html)
   * Tools
     * [Color name](http://www.color-hex.com/color-names.html)
     * Suport [#rrggbbaa](https://caniuse.com/#feat=css-rrggbbaa)
