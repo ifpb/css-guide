@@ -1,7 +1,9 @@
 # Table
 
-* [Collapsed](#collapsed)
-* [Striped rows](#striped-rows)
+- [Table](#table)
+  - [## Collapsed](#collapsed)
+  - [## Striped rows](#striped-rows)
+  - [## Reference](#reference)
 
 ## Collapsed
 ---
@@ -141,3 +143,8 @@ table tbody tr:hover {
 Output:
 
 <iframe src="table-striped-row/index.html" width="100%" style="border-radius: 0.3rem; border: solid 1px #dce6f0; height: 420px;"></iframe>
+
+## Reference
+---
+
+- [How To Architect A Complex Web Table](https://www.smashingmagazine.com/2019/02/complex-web-tables/)
