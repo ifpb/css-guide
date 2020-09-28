@@ -1,11 +1,11 @@
 # Table
 
-- [Table](#table)
-  - [## Collapsed](#collapsed)
-  - [## Striped rows](#striped-rows)
-  - [## Reference](#reference)
+  - [Collapsed](#collapsed)
+  - [Striped rows](#striped-rows)
+  - [Reference](#reference)
 
 ## Collapsed
+
 ---
 
 [table-collapse/index.html](table-collapse/index.html):
@@ -72,6 +72,7 @@ Output:
 <iframe src="table-collapse/index.html" width="100%" style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem; height: 240px"></iframe>
 
 ## Striped rows
+
 ---
 
 [table-striped-row/index.html](table-striped-row/index.html):
@@ -145,6 +146,7 @@ Output:
 <iframe src="table-striped-row/index.html" width="100%" style="border-radius: 0.3rem; border: solid 1px #dce6f0; height: 420px;"></iframe>
 
 ## Reference
+
 ---
 
 - [How To Architect A Complex Web Table](https://www.smashingmagazine.com/2019/02/complex-web-tables/)
