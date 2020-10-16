@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root {
+      --teal-900: #004d40;
+      --teal-200: #80cbc4;
+
+      --primary-color: var(--teal-900);
+      --active-color: var(--teal-200);
+      --secondary-color: #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    input[type=range] {
+      width: 50px;
+    }
+
+    .flex-property-selection {
+      display: flex;
+    }
+
+    .flex-actions {
+      margin: .5rem;
+    }
+
+    .flex-container {
+      margin-right: .5rem;
+    }
+
+    .flex-container,
+    .flex-item {
+      padding: .5rem;
+      margin-bottom: .5rem
+    }
+
+    .flex-container,
+    .flex-item {
+      border: 1px solid var(--primary-color);
+    }
+
+    .flex-container .flex-properties,
+    .flex-item .flex-properties {
+      display: flex;
+    }
+
+    .flex-container .flex-inputs,
+    .flex-item .flex-inputs {
+      display: flex;
+    }
+
+    .flex-property {
+      margin-right: 1rem;
+    }
+
+    .container {
+      background: var(--primary-color);
+      padding: 1rem;
+    }
+
+    .item {
+      display: flex;
+      flex-flow: row wrap;
+      place-content: center center;
+      margin: 1rem;
+      background: var(--secondary-color);
+      color: var(--primary-color);;
+      font-size: 4rem;
+      font-weight: bold;
+    }
+
+    .item:hover {
+      cursor: pointer;
+    }
+
+    .item.focus {
+      background: var(--active-color);
+    }
+
+    .item .flex-item-values {
+      display: flex;
+      font-size: 1rem;
+      flex-flow: column wrap;
+      place-content: center center;
+      margin-left: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <section class="flex-actions">
+    <div class="flex-property-selection">
+      <section class="flex-container">
+        <header>
+          <h2>Flex Container</h2>
+        </header>
+        <main>
+          <div class="flex-properties">
+            <div class="flex-ranges"></div>
+            <div class="flex-inputs"></div>
+          </div>
+        </main>
+      </section>
+      <section class="flex-item">
+        <header>
+          <h2>Flex Item</h2>
+        </header>
+        <main>
+          <div class="flex-properties">
+            <div class="flex-ranges"></div>
+            <div class="flex-inputs"></div>
+          </div>
+        </main>
+      </section>
+    </div>
+
+    <button onclick="loadInitialValues()">Initial Value</button>
+  </section>
+
+  <div class="container"></div>
+
+  <script>
+    const container = document.querySelector('.container');
+
+    const properties = [
+      {
+        name: 'height',
+        initial: '600',
+        flex: 'container',
+        input: 'range',
+        min: '100',
+        max: '600',
+        measure: 'px',
+      },
+      {
+        name: 'display',
+        values: ['block', 'flex', 'flex-inline'],
+        initial: 'block',
+        flex: 'container',
+        input: 'radio',
+      },
+      {
+        name: 'flex-direction',
+        values: ['row', 'row-reverse', 'column', 'column-reverse'],
+        initial: 'row',
+        flex: 'container',
+        input: 'radio',
+      },
+      {
+        name: 'flex-wrap',
+        values: ['nowrap', 'wrap', 'wrap-reverse'],
+        initial: 'nowrap',
+        flex: 'container',
+        input: 'radio',
+      },
+      {
+        name: 'justify-content',
+        values: ['flex-start', 'flex-end', 'center', 'space-between', 'space-around'],
+        initial: 'flex-start',
+        flex: 'container',
+        input: 'radio',
+      },
+      {
+        name: 'align-items',
+        values: ['flex-start', 'flex-end', 'center', 'baseline', 'stretch'],
+        initial: 'stretch',
+        flex: 'container',
+        input: 'radio',
+      },
+      {
+        name: 'align-content',
+        values: ['flex-start', 'flex-end', 'center', 'space-between', 'space-around', 'stretch'],
+        initial: 'stretch',
+        flex: 'container',
+        input: 'radio',
+      },
+      {
+        name: 'width',
+        initial: '10',
+        flex: 'item',
+        input: 'range',
+        min: '1',
+        max: '100',
+        measure: '%',
+      },
+      {
+        name: 'height',
+        initial: '100',
+        flex: 'item',
+        input: 'range',
+        min: '100',
+        max: '600',
+        measure: 'px',
+      },
+      {
+        name: 'order',
+        initial: '0',
+        flex: 'item',
+        input: 'range',
+        min: '0',
+        max: '9',
+        measure: '',
+      },
+      {
+        name: 'flex-grow',
+        initial: '0',
+        flex: 'item',
+        input: 'range',
+        min: '0',
+        max: '9',
+        measure: '',
+      },
+      {
+        name: 'flex-shrink',
+        initial: '1',
+        flex: 'item',
+        input: 'range',
+        min: '0',
+        max: '9',
+        measure: '',
+      },
+      {
+        name: 'align-self',
+        values: ['auto', 'normal', 'center', 'start', 'end', 'self-start', 'self-end', 'flex-start', 'flex-end'],
+        initial: 'auto',
+        flex: 'item',
+        input: 'radio',
+      },
+    ];
+
+    function applyContainerRange() {
+      const input = document.querySelector('.flex-container .flex-ranges');
+
+      const rangeInput = input.querySelector('input');
+      const rangeLabel = input.querySelector('label');
+      const measure = rangeInput.dataset.measure;
+
+      rangeLabel.innerHTML = `${rangeInput.value}${measure}`;
+
+      container.style.height = `${rangeInput.value}${measure}`;
+    }
+
+    function updateItemRange() {
+      const inputs = document.querySelectorAll('.flex-item .flex-ranges .flex-property');
+
+      let item = document.querySelector('.container .item.focus');
+
+      if (!item) {
+        item = document.querySelector('.container .item')
+      }
+
+      inputs.forEach(input => {
+        const rangeInput = input.querySelector('input');
+        const rangeLabel = input.querySelector('label');
+        const property = rangeInput.dataset.property;
+
+        rangeLabel.innerHTML = item.style[property];
+        rangeInput.value = item.style[property].replace(/(%|px)/, '');
+      });
+    }
+
+    function applyItemRange() {
+      const inputs = document.querySelectorAll('.flex-item .flex-ranges .flex-property');
+
+      inputs.forEach(input => {
+        const rangeInput = input.querySelector('input');
+        const rangeLabel = input.querySelector('label');
+        const property = rangeInput.dataset.property;
+        const measure = rangeInput.dataset.measure;
+
+        rangeLabel.innerHTML = `${rangeInput.value}${measure}`;
+
+        const itemFocus = document.querySelector('.container .item.focus');
+
+        if (itemFocus) {
+          itemFocus.style.cssText += `${property}: ${rangeInput.value}${measure};`;
+
+          if(['order', 'flex-grow', 'flex-shrink'].includes(property)) {
+            itemFocus.querySelector(`.flex-item-values .${property}-value`).innerHTML = rangeInput.value;
+          }
+        } else {
+          const items = document.querySelectorAll('.container .item');
+
+          items.forEach((item) => {
+            item.style.cssText += `${property}: ${rangeInput.value}${measure};`;
+
+            if(['order', 'flex-grow', 'flex-shrink'].includes(property)) {
+              item.querySelector(`.flex-item-values .${property}-value`).innerHTML = rangeInput.value;
+            }
+          })
+        }
+
+      });
+    }
+
+    function applyProperties() {
+      const allContainerChecked = Array.from(document.querySelectorAll('.flex-container input:checked'));
+
+      container.style.cssText += allContainerChecked
+        .map(checked => `${checked.name}: ${checked.value}`)
+        .join('; ');
+
+      const allItemChecked = Array.from(document.querySelectorAll('.flex-item input:checked'));
+
+      const itemFocus = document.querySelector('.container .item.focus');
+
+      if (itemFocus) {
+        itemFocus.style.cssText += allItemChecked
+          .map(checked => `${checked.name}: ${checked.value}`)
+          .join('; ');
+      } else {
+        const items = document.querySelectorAll('.item');
+
+        items.forEach((item) => {
+          item.style.cssText += allItemChecked
+            .map(checked => `${checked.name}: ${checked.value}`)
+            .join('; ');
+        })
+      }
+    }
+
+    function getInputRadio(property) {
+      const { name, values, initial } = property;
+      return values
+        .map(value => `<div>
+          <input
+            type="radio"
+            name="${name}"
+            value="${value}"
+            id="${value}"
+            ${initial === value ? 'checked' : ''}
+            onclick="applyProperties()"
+          >
+          <label for="${value}">${value}</label>
+        <div>`)
+        .join('');
+    }
+
+    function getInputRange(property) {
+      const {flex, name, initial, min, max, measure } = property;
+
+      const oninput = flex === 'container' ? 'applyContainerRange' : 'applyItemRange';
+
+      return `
+        <input
+          type="range"
+          name="${flex}-${name}"
+          id="${flex}-${name}"
+          min="${min}"
+          max="${max}"
+          step="1"
+          value="${initial}"
+          oninput="${oninput}()"
+          data-measure="${measure}"
+          data-property="${name}"
+        >
+        <label for="${flex}-${name}">${initial}${measure}</label>
+      `;
+    }
+
+    function showInputs(property) {
+      let inputView = '';
+
+      switch (property.input) {
+        case 'radio':
+          inputView = getInputRadio(property);
+          break;
+        case 'range':
+          inputView = getInputRange(property);
+          break;
+      }
+
+      const flexProperty = `<div class="flex-property">
+        <h4>${property.name}</h4>
+        <div class="flex-values">
+          ${inputView}
+        </div>
+      </div>`;
+
+      let target = `.flex-${property.flex} .flex-inputs`;
+
+      if (property.input === 'range') {
+        target = `.flex-${property.flex} .flex-properties .flex-ranges`
+      }
+
+      const flexProperties = document.querySelector(target);
+
+      flexProperties.insertAdjacentHTML('beforeend', flexProperty);
+    }
+
+    function loadProperties(properties) {
+      for (const property of properties) {
+        showInputs(property);
+      }
+      applyProperties();
+      applyContainerRange();
+      applyItemRange();
+    }
+
+    function loadInitialValues() {
+      document.querySelector('.flex-container .flex-inputs').innerHTML = '';
+      document.querySelector('.flex-item .flex-inputs').innerHTML = '';
+      document.querySelector('.flex-container .flex-ranges').innerHTML = '';
+      document.querySelector('.flex-item .flex-ranges').innerHTML = '';
+
+      loadProperties(properties)
+    }
+
+    function focusItem(itemNumber) {
+      const items = document.querySelectorAll('.container .item');
+
+      items.forEach((item, index) => {
+        if (index + 1 === itemNumber) {
+          item.classList.toggle('focus');
+        } else {
+          item.classList.remove('focus');
+        }
+      })
+
+      updateItemRange();
+    }
+
+    function loadItems(focus, total = 4) {
+      let items = '';
+
+      for (let number = 1; number <= total; number++) {
+        items += `<div class="item" id="item-${number}" onclick="focusItem(${number})">
+          <p>${number}</p>
+          <table class="flex-item-values">
+            <tr>
+              <td class="order-name">order:</td>
+              <td class="order-value"></td>
+            </tr>
+            <tr>
+              <td class="flex-grow-name">grow:</td>
+              <td class="flex-grow-value"></td>
+            </tr>
+            <tr>
+              <td class="flex-shrink-name">shrink:</td>
+              <td class="flex-shrink-value"></td>
+            </tr>
+          </table>
+        </div>`;
+      }
+
+      container.innerHTML = items;
+    }
+
+    loadItems();
+    loadProperties(properties);
+  </script>
+</body>
+</html>
