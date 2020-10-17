@@ -3,11 +3,11 @@
 * [Flexbox Terminology](#flexbox-terminology)
 * Flex Container
   * [Display](#display)
-  * Orientation 
+  * Orientation
     * [Direction](#flex-container---orientation-direction)
     * [Wrap](#flex-container---orientation-wrap)
     * [Direction & Wrap](#flex-container---orientation-direction--wrap)
-  * Alignment 
+  * Alignment
     * [Content (Justify)](#flex-container---alignment-content-justify)
     * [Items](#flex-container---alignment-items)
     * [Content](#flex-container---alignment-content)
@@ -27,7 +27,7 @@
 ![](https://www.w3.org/TR/css-flexbox-1/images/flex-direction-terms.svg)<br>
 Reference: [W3C](https://www.w3.org/TR/css-flexbox-1/)
 
-Terminology: 
+Terminology:
 * Flex container
 * Flex item
 * Main axis (main-start, main-end)
@@ -200,11 +200,14 @@ Terminology:
 ---
 
 * [CSS Flexible Box Layout Module Level 1 \| W3C](https://www.w3.org/TR/css-flexbox-1/)
+* [CSS Box Alignment Module Level 3 \| W3C](https://www.w3.org/TR/css-align-3/)
+* [CSS Flexible Box Layout \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)
 * [Basic concepts of flexbox \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
 * [A Complete Guide to Flexbox \| css-tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 * [CSS Flexible Box Layout Module \| Can I Use](https://caniuse.com/#feat=flexbox)
 * [Build a Minimalist HTML Card in just 53 lines of code (with Flexbox)](https://codeburst.io/build-a-minimalist-html-card-in-just-53-lines-of-code-with-flexbox-b40801927eb5)
 * [How Flexbox works — explained with big, colorful, animated gifs](https://medium.freecodecamp.org/an-animated-guide-to-flexbox-d280cf6afc35)
+* [Flexbox - The Ultimate CSS Flex Cheatsheet (with animated diagrams!)](https://www.freecodecamp.org/news/flexbox-the-ultimate-css-flex-cheatsheet/)
 * [Learn CSS Flexbox in 5 Minutes](https://medium.freecodecamp.org/learn-css-flexbox-in-5-minutes-b941f0affc34)
 * [Flexbox Cheat Sheet](https://yoksel.github.io/flex-cheatsheet/)
 * [Flexbox - A friendly tutorial for modern CSS layouts](https://internetingishard.com/html-and-css/flexbox/)
@@ -216,6 +219,10 @@ Terminology:
 * [The Complete Illustrated Flexbox Tutorial](https://medium.freecodecamp.org/the-complete-illustrated-flexbox-tutorial-d35c085dbf35) 👍
 * [Flexbox — The Animated Tutorial](https://medium.com/@js_tut/flexbox-the-animated-tutorial-8075cbe4c1b2)
 * [CSS Flex—An Interactive Tutorial](https://medium.freecodecamp.org/css-flex-an-interactive-tutorial-19ff6e93558)
+* [Flexbox Playground](https://ifpb.github.io/lm/css-exercises/css/portfolio-initial/)
+* [Flex Guide](https://flexbox.malven.co/)
+* [Meet the first visual flexbox builder](https://flexbox.webflow.com/)
+* [Flexbox — The Animated Tutorial](https://jstutorial.medium.com/flexbox-the-animated-tutorial-8075cbe4c1b2)
 
 <script>
   const iframes = Array.from(document.querySelectorAll('iframe'))
