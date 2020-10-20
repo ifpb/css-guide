@@ -39,7 +39,7 @@ mindmapDiagram {
 + FlexBox
 -- display <<containerStyle>>
 ---_ flex
----_ flex-inline
+---_ inline-flex
 -- Orientation
 --- flex-direction <<containerStyle>>
 ----_ <u>row</u>

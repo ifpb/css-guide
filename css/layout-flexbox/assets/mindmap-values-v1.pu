@@ -60,7 +60,7 @@ mindmapDiagram {
 ----_ <flex-grow> <flex-shrink>? || <flex-basis>
 ++ display <<containerStyle>>
 +++_ flex
-+++_ flex-inline
++++_ inline-flex
 ++ Alignment
 +++ justify-content <<containerStyle>>
 ++++_ <u>flex-start</u>
